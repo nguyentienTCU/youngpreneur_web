@@ -10,6 +10,18 @@ export default defineNuxtConfig({
     "@nuxt/ui",
     "@pinia/nuxt",
     "@vueuse/nuxt",
+    [
+      "@nuxtjs/i18n",
+      {
+        lazy: true,
+        langDir: "locales",
+        defaultLocale: "en",
+        locales: [
+          { code: "en", name: "English", file: "en.json" },
+          { code: "vi", name: "Vietnamese", file: "vi.json" },
+        ],
+      },
+    ],
   ],
   colorMode: {
     preference: "light",

@@ -11,9 +11,9 @@
                     <!-- Additional content space -->
                     <div class="flex-1 flex flex-col justify-end">
                         <div class="text-sm text-gray-500 text-center">
-                            <p class="mb-2">Experience: </p>
+                            <!-- <p class="mb-2">Experience: </p>
                             <p class="mb-2">Skills: </p>
-                            <p>Availability:</p>
+                            <p>Availability:</p> -->
                         </div>
                     </div>
                 </div>
@@ -36,19 +36,12 @@
 import { Carousel, Slide, Navigation } from 'vue3-carousel';
 import 'vue3-carousel/dist/carousel.css';
 import { ref } from 'vue'
+import type { Item } from '~/type/info';
 
 const config = {
     height: 600,
     itemsToShow: 3,
     gap: 5,
-}
-
-interface Item {
-    id: number;
-    name: string;
-    role: string;
-    image: string;
-    description: string;
 }
 
 defineProps<{

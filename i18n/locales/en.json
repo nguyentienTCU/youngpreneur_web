@@ -1,0 +1,322 @@
+{
+  "header": {
+    "home": "Home",
+    "timeline": "Timeline",
+    "profiles": "Profiles",
+    "projects": "Projects",
+    "settings": "Settings",
+    "apply": "Apply",
+    "blog": "Blog",
+    "login": "Login Now"
+  },
+  "home": {
+    "title": "Join the Future of Entrepreneurship",
+    "description": "Empowering young minds to become tomorrow's business leaders",
+    "apply": "Apply Now",
+    "learn": "Learn More"
+  },
+  "feature": {
+    "title": "About Our Program",
+    "content1": {
+      "title": "Mentorship",
+      "description": "One-on-one guidance from experienced entrepreneurs and industry leaders",
+      "icon": "i-heroicons:chart-bar"
+    },
+    "content2": {
+      "title": "Learning",
+      "description": "Practical skills and knowledge to kickstart your entrepreneurial journey",
+      "icon": "i-heroicons:light-bulb"
+    },
+    "content3": {
+      "title": "Community",
+      "description": "Connect with like-minded peers and build your professional network",
+      "icon": "i-heroicons:arrow-up-circle"
+    }
+  },
+  "testimonials": {
+    "title": "Success Stories",
+    "testimonial1": {
+      "name": "Sarah Johnson",
+      "role": "Founder of TechStart",
+      "quote": "This program transformed my approach to business and gave me the confidence to launch my startup. The mentorship and resources provided were invaluable.",
+      "avatar": "/app.png",
+      "rating": "5",
+      "date": "June 2024"
+    },
+    "testimonial2": {
+      "name": "Michael Chen",
+      "role": "CEO of GreenSolutions",
+      "quote": "The mentorship I received was invaluable. My mentor helped me navigate challenges I never expected and provided insights that shaped my business strategy.",
+      "avatar": "/Thumbnail.png",
+      "rating": "5",
+      "date": "May 2024"
+    },
+    "testimonial3": {
+      "name": "Emma Rodriguez",
+      "role": "Product Manager",
+      "quote": "The community and networking opportunities through this program opened doors I never thought possible. The connections I made were just as valuable as the mentorship.",
+      "avatar": "/app.png",
+      "rating": "5",
+      "date": "April 2024"
+    },
+    "testimonial4": {
+      "name": "David Kim",
+      "role": "Startup Founder",
+      "quote": "The practical workshops and hands-on learning experiences were exactly what I needed to take my business to the next level. Highly recommended!",
+      "avatar": "/Thumbnail.png",
+      "rating": "5",
+      "date": "March 2024"
+    }
+  },
+  "profiles": "View All Members",
+  "mentor": {
+    "title": "Meet Our Mentors",
+    "description": "Our mentors are experienced entrepreneurs and industry leaders who are dedicated to helping you succeed.",
+    "mentor1": {
+      "id": "1",
+      "name": "Dr. Michael Chen",
+      "role": "Tech Entrepreneur",
+      "image": "/app.png",
+      "description": "Serial entrepreneur with 3 successful exits"
+    },
+    "mentor2": {
+      "id": "2",
+      "name": "Lisa Rodriguez",
+      "role": "Business Strategist",
+      "image": "/Thumbnail.png",
+      "description": "20+ years of experience in business development"
+    },
+    "mentor3": {
+      "id": "3",
+      "name": "David Kim",
+      "role": "Investment Expert",
+      "image": "/app.png",
+      "description": "Venture capitalist specializing in early-stage startups"
+    },
+    "mentor4": {
+      "id": "4",
+      "name": "Emma Wilson",
+      "role": "Marketing Guru",
+      "image": "/Thumbnail.png",
+      "description": "Digital marketing expert with global brand experience"
+    }
+  },
+  "mentee": {
+    "title": "Our Mentees",
+    "description": "Meet the talented individuals shaping our future",
+    "mentee1": {
+      "id": "1",
+      "name": "A",
+      "role": "Business Student",
+      "image": "/app.png",
+      "description": "Passionate about entrepreneurship and innovation"
+    },
+    "mentee2": {
+      "id": "2",
+      "name": "B",
+      "role": "Engineering Student",
+      "image": "/Thumbnail.png",
+      "description": "Tech enthusiast with a focus on sustainable solutions"
+    },
+    "mentee3": {
+      "id": "3",
+      "name": "C",
+      "role": "Design Student",
+      "image": "/app.png",
+      "description": "Creative thinker with a passion for user experience"
+    },
+    "mentee4": {
+      "id": "4",
+      "name": "D",
+      "role": "Marketing Student",
+      "image": "/Thumbnail.png",
+      "description": "Digital marketing expert with global brand experience"
+    },
+    "mentee5": {
+      "id": "5",
+      "name": "E",
+      "role": "Business Student",
+      "image": "/app.png",
+      "description": "Passionate about entrepreneurship and innovation"
+    },
+    "mentee6": {
+      "id": "6",
+      "name": "F",
+      "role": "Business Student",
+      "image": "/Thumbnail.png",
+      "description": "Passionate about entrepreneurship and innovation"
+    },
+    "mentee7": {
+      "id": "7",
+      "name": "G",
+      "role": "Business Student",
+      "image": "/app.png",
+      "description": "Passionate about entrepreneurship and innovation"
+    }
+  },
+  "timeline": {
+    "title": "Business Case Training Sessions",
+    "event1": {
+      "title": "Session 1: Introduction to Business Case & Strategic Thinking",
+      "description": "Learn about Business Case Competitions structure, MECE Framework, and hypothesis-driven approach. Analyze real cases to identify core issues.",
+      "date": "Week 1",
+      "location": "Training Room A",
+      "image": "/app.png"
+    },
+    "event2": {
+      "title": "Session 2: Market & Competitive Analysis",
+      "description": "Master Porter's Five Forces, PESTLE Analysis, TAM/SAM/SOM, and SWOT analysis. Apply these frameworks to real market cases.",
+      "date": "Week 2",
+      "location": "Training Room A",
+      "image": "/Thumbnail.png"
+    },
+    "event3": {
+      "title": "Session 3: Business Strategy & Financials",
+      "description": "Explore growth strategies, Business Model Canvas, and financial forecasting including break-even analysis, ROI, and NPV.",
+      "date": "Week 3",
+      "location": "Training Room A",
+      "image": "/app.png"
+    },
+    "event4": {
+      "title": "Session 4: Marketing & Go-to-Market Strategy",
+      "description": "Dive into 4Ps Marketing Mix, STP, digital marketing strategies, and develop comprehensive Go-to-Market plans.",
+      "date": "Week 4",
+      "location": "Training Room A",
+      "image": "/Thumbnail.png"
+    },
+    "event5": {
+      "title": "Session 5: Pitching & Storytelling",
+      "description": "Learn effective pitch structure, public speaking techniques, and Q&A handling. Practice group pitching with detailed feedback.",
+      "date": "Week 5",
+      "location": "Training Room A",
+      "image": "/app.png"
+    },
+    "event6": {
+      "title": "Session 6: Mock Business Case Competition (Preliminary)",
+      "description": "Team-based business case challenge. Develop strategy, analyze market, prepare financials, and pitch to judging panel.",
+      "date": "Week 6",
+      "location": "Competition Hall",
+      "image": "/Thumbnail.png"
+    },
+    "event7": {
+      "title": "Session 7: Final Pitch Preparation & Revisions",
+      "description": "Refine strategies based on feedback, optimize pitches, and practice handling tough questions from judges.",
+      "date": "Week 7",
+      "location": "Training Room A",
+      "image": "/app.png"
+    },
+    "event8": {
+      "title": "Session 8: Business Case Simulation (Final Competition)",
+      "description": "Full-scale mock competition with complete pitches, rebuttals, scoring, and detailed evaluations from instructors.",
+      "date": "Week 8",
+      "location": "Competition Hall",
+      "image": "/Thumbnail.png"
+    }
+  },
+  "projects": {
+    "title": "Project Showcase",
+    "button1": "View All Projects →",
+    "button2": "View Project →",
+    "project1": {
+      "id": "1",
+      "title": "Eco-Friendly Packaging Solution",
+      "description": "A sustainable packaging solution that reduces waste and costs for e-commerce businesses.",
+      "image": "/app.png",
+      "team": "Team Green Innovators",
+      "category": "Business Case"
+    },
+    "project2": {
+      "id": "2",
+      "title": "AI-Powered Learning Platform",
+      "description": "Personalized learning experience using artificial intelligence to adapt to student needs.",
+      "image": "/Thumbnail.png",
+      "team": "TechEd Solutions",
+      "category": "Startup Pitch"
+    },
+    "project3": {
+      "id": "3",
+      "title": "Mobile Healthcare Application",
+      "description": "Mobile application connecting local healthcare providers with patients in underserved areas.",
+      "image": "/app.png",
+      "team": "HealthTech Team",
+      "category": "Hackathon"
+    },
+    "project4": {
+      "id": "4",
+      "title": "Urban Tech Solutions",
+      "description": "An innovative platform that uses IoT and AI to optimize city resources and improve urban living conditions.",
+      "image": "/Thumbnail.png",
+      "team": "UrbanTech Collective",
+      "category": "Business Case"
+    }
+  },
+  "blog": {
+    "title1": "Latest Insights",
+    "title2": "All Posts",
+    "button1": "Read More",
+    "button2": "View All Posts →",
+    "button3": "Read More →",
+    "author": "By: ",
+    "post1": {
+      "id": "1",
+      "title": "The Future of Entrepreneurship",
+      "description": "Exploring emerging trends and opportunities in the entrepreneurial landscape.",
+      "image": "/app.png",
+      "author": "Sarah Johnson",
+      "date": "March 15, 2024",
+      "category": "Entrepreneurship"
+    },
+    "post2": {
+      "id": "2",
+      "title": "Digital Transformation Strategies",
+      "description": "Key strategies for businesses to adapt and thrive in the digital age.",
+      "image": "/Thumbnail.png",
+      "author": "Michael Chen",
+      "date": "March 10, 2024",
+      "category": "Business Strategy"
+    },
+    "post3": {
+      "id": "3",
+      "title": "Innovation in Education",
+      "description": "How technology is reshaping the future of learning and development.",
+      "image": "/app.png",
+      "author": "Emily Davis",
+      "date": "February 20, 2024",
+      "category": "Education"
+    },
+    "post4": {
+      "id": "4",
+      "title": "Sustainable Business Practices",
+      "description": "Implementing eco-friendly solutions in modern business operations.",
+      "image": "/Thumbnail.png",
+      "author": "David Wilson",
+      "date": "February 28, 2024",
+      "category": "Sustainability"
+    }
+  },
+  "apply": {
+    "title": "Join Our Community",
+    "title1": "Personal Information",
+    "title2": "Education & Experience",
+    "title3": "Interests & Goals",
+    "title4": "Resume Upload",
+    "button": "Submit Application",
+    "label1,1": "First Name",
+    "label1,2": "Last Name",
+    "label1,3": "Email",
+    "label1,4": "Phone",
+    "label2,1": "Current School/University",
+    "label2,2": "Major/Field of Study",
+    "label2,3": "Previous Experience",
+    "label3,1": "Areas of Interest",
+    "label3,2": "Technology",
+    "label3,3": "Marketing",
+    "label3,4": "Finance",
+    "label3,5": "Social Impact",
+    "label3,6": "Career Goals",
+    "label4,1": "Upload Resume",
+    "label4,2": "Upload a file",
+    "label4,3": "or drag and drop",
+    "label4,4": "PDF, DOC, DOCX up to 10MB"
+  }
+}

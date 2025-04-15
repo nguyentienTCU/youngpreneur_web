@@ -1,46 +1,54 @@
 <template>
     <div class="py-16">
-        <h2 class="text-3xl font-bold text-center mb-8">Our Mentors</h2>
-        <p class="text-xl text-gray-600 text-center mb-12">Learn from industry experts and successful entrepreneurs</p>
+        <h2 class="text-3xl font-bold text-center mb-8">{{ t('mentor.title') }}</h2>
+        <p class="text-xl text-gray-600 text-center mb-12">{{ t('mentor.description') }}</p>
 
         <ScrollableCarousel :items="mentors" />
     </div>
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { reactive } from 'vue';
 import ScrollableCarousel from '~/components/custom ui/carousel/Scrollable/index.vue';
+import { useI18n } from '#imports';
+import type { Item } from '~/type/info';
 
-const mentors = ref([
+const { t } = useI18n();
+
+
+const mentors = reactive<Item[]>([
     {
-        id: 1,
-        name: 'Dr. Michael Chen',
-        role: 'Tech Entrepreneur',
-        image: '/app.png',
-        description: 'Serial entrepreneur with 3 successful exits'
+        id: parseInt(t('mentor.mentor1.id')),
+        name: t('mentor.mentor1.name'),
+        role: t('mentor.mentor1.role'),
+        image: t('mentor.mentor1.image'),
+        description: t('mentor.mentor1.description')
     },
     {
-        id: 2,
-        name: 'Lisa Rodriguez',
-        role: 'Business Strategist',
-        image: '/Thumbnail.png',
-        description: '20+ years of experience in business development'
+        id: parseInt(t('mentor.mentor2.id')),
+        name: t('mentor.mentor2.name'),
+        role: t('mentor.mentor2.role'),
+        image: t('mentor.mentor2.image'),
+        description: t('mentor.mentor2.description')
     },
     {
-        id: 3,
-        name: 'David Kim',
-        role: 'Investment Expert',
-        image: '/app.png',
-        description: 'Venture capitalist specializing in early-stage startups'
+        id: parseInt(t('mentor.mentor3.id')),
+        name: t('mentor.mentor3.name'),
+        role: t('mentor.mentor3.role'),
+        image: t('mentor.mentor3.image'),
+        description: t('mentor.mentor3.description')
     },
     {
-        id: 4,
-        name: 'Emma Wilson',
-        role: 'Marketing Guru',
-        image: '/Thumbnail.png',
-        description: 'Digital marketing expert with global brand experience'
+        id: parseInt(t('mentor.mentor4.id')),
+        name: t('mentor.mentor4.name'),
+        role: t('mentor.mentor4.role'),
+        image: t('mentor.mentor4.image'),
+        description: t('mentor.mentor4.description')
     }
-]);
+])
+
+
+
 </script>
 
 <style>

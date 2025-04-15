@@ -35,13 +35,16 @@ import ProjectsSection from '../components/projects/index.vue';
 import BlogSection from '../components/blog/index.vue';
 import ApplySection from '../components/apply/ApplySection.vue';
 import FAQSection from '~/components/home/faq.vue';
+import { useI18n } from '#imports';
+
+const { locale } = useI18n()
 
 useHead({
-  title: `Welcome | Future Entrepreneurs Community`,
+  title: locale.value === 'en' ? `Welcome | Future Entrepreneurs Community` : `Chào mừng | Cộng đồng Doanh nhân Tương lai`,
   meta: [
     {
-      name: "description",
-      content: `Join our mentorship community for young entrepreneurs. Get guidance, learn skills, and build your network with experienced mentors.`,
+      name: locale.value === 'en' ? "description" : "mô tả",
+      content: locale.value === 'en' ? `Join our mentorship community for young entrepreneurs. Get guidance, learn skills, and build your network with experienced mentors.` : `Tham gia cộng đồng tư vấn cho doanh nhân trẻ. Nhận hướng dẫn, học kỹ năng và xây dựng mạng lưới cộng tác với các đồng nghiệp kinh nghiệm.`,
     },
   ],
 });

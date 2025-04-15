@@ -6,12 +6,18 @@
 
 <script setup lang="ts">
 import SignUp from '~/components/auth/SignUp.vue';
+import { useI18n } from '#imports';
+
+const { locale } = useI18n()
 
 // Set page title
 useHead({
-  title: 'Sign Up | FinBud',
+  title: locale.value === 'en' ? 'Sign Up | FinBud' : 'Đăng ký | FinBud',
   meta: [
-    { name: 'description', content: 'Create a new FinBud account' }
+    {
+      name: locale.value === 'en' ? 'description' : 'mô tả',
+      content: locale.value === 'en' ? 'Create a new FinBud account' : 'Tạo tài khoản FinBud mới'
+    }
   ]
 })
-</script> 
+</script>

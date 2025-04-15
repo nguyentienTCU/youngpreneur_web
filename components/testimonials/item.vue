@@ -2,11 +2,7 @@
   <div class="bg-gray-50 p-6 rounded-lg">
     <div class="flex items-center mb-4">
       <div class="w-12 h-12 rounded-full overflow-hidden mr-4">
-        <img 
-          :src="testimonial.avatar" 
-          :alt="testimonial.name"
-          class="w-full h-full object-cover"
-        />
+        <img :src="testimonial.avatar" :alt="testimonial.name" class="w-full h-full object-cover" />
       </div>
       <div>
         <h4 class="font-semibold">{{ testimonial.name }}</h4>
@@ -24,16 +20,9 @@
 </template>
 
 <script setup lang="ts">
-interface Testimonial {
-  name: string;
-  role: string;
-  quote: string;
-  avatar: string;
-  rating: number;
-  date: string;
-}
+import type { Testimonial } from '~/type/info';
 
 const props = defineProps<{
   testimonial: Testimonial;
 }>();
-</script> 
+</script>

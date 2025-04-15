@@ -20,13 +20,11 @@
                   @click="isOpenMenu = false">{{ item.name }}</NuxtLink>
               </div>
             </div>
-
           </USlideover>
           <NuxtLink to="/">
             <NuxtImg preload class="w-10 h-10" src="/logo.svg" />
           </NuxtLink>
         </div>
-
 
         <div class="ml-3 hidden flex-grow gap-2 lg:flex">
           <NuxtLink v-for="item in navItems" :key="item.path"
@@ -35,11 +33,16 @@
             @click="isOpenMenu = false">{{ item.name }}</NuxtLink>
         </div>
         <div class="flex items-center gap-3">
+          <button v-for="locale in locales" :key="locale.code" @click="clicked(locale.code)"
+            class="flex items-center gap-2">
+            <img :src="`/${locale.code === 'vi' ? 'vietnamese-flag' : 'english-flag'}.png`" class="w-6 h-4"
+              :alt="locale.name" />
+          </button>
           <!-- User is logged out -->
           <template v-if="!auth.res || Object.keys(auth.res).length === 0">
             <NuxtLink to="/sign-in">
               <UButton class="rounded-full" size="lg">
-                Login Now
+                {{ t('header.login') }}
               </UButton>
             </NuxtLink>
           </template>
@@ -98,37 +101,39 @@
 
 <script lang="ts" setup>
 import { useAuthStore } from '~/stores/auth'
+import { useI18n } from '#imports'
+
 const route = useRoute();
 const router = useRouter()
 const auth = useAuthStore()
+const { t, locales, setLocale } = useI18n()
 
 // Add console logging to debug auth state
 console.log('Auth state:', auth)
 console.log('Auth res:', auth.res)
 
-const navItems = [
+const navItems = computed(() => [
   {
     path: "/timeline",
-    name: "Timeline",
+    name: t('header.timeline'),
   },
   {
     path: "/profiles",
-    name: "Profiles",
+    name: t('header.profiles'),
   },
   {
     path: "/projects",
-    name: "Projects",
+    name: t('header.projects'),
   },
   {
     path: "/apply",
-    name: "Apply",
+    name: t('header.apply'),
   },
   {
     path: "/blog",
-    name: "Blog",
+    name: t('header.blog'),
   },
-
-];
+]);
 
 // async function handleLogout() {
 //   await auth.logout()
@@ -136,4 +141,8 @@ const navItems = [
 // }
 
 const isOpenMenu = ref(false);
+const clicked = (code: 'en' | 'vi') => {
+  setLocale(code)
+  localStorage.setItem('locale', code)
+}
 </script>

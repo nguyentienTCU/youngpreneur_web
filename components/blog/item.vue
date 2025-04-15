@@ -9,9 +9,9 @@
       <h3 class="text-xl font-semibold mb-2">{{ post.title }}</h3>
       <p class="text-gray-700 mb-4">{{ post.description }}</p>
       <div class="flex justify-between items-center">
-        <span class="text-sm text-gray-600">By: {{ post.author }}</span>
+        <span class="text-sm text-gray-600">{{ t('blog.author') }}{{ post.author }}</span>
         <NuxtLink :to="`/blog/${post.id}`" class="text-blue-600 font-semibold hover:text-blue-800">
-          Read More →
+          {{ t('blog.button3') }}
         </NuxtLink>
       </div>
     </div>
@@ -19,17 +19,12 @@
 </template>
 
 <script setup lang="ts">
-interface BlogPost {
-  id: string;
-  title: string;
-  description: string;
-  image: string;
-  author: string;
-  date: string;
-  category: string;
-}
+import type { BlogPost } from '~/type/info';
+import { useI18n } from '#imports';
+
+const { t } = useI18n();
 
 defineProps<{
   post: BlogPost;
 }>();
-</script> 
+</script>

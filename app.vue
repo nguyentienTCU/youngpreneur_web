@@ -5,10 +5,37 @@
   </NuxtLayout>
 </template>
 <script lang="ts" setup>
+const { locale, setLocale } = useI18n()
+
+
+onMounted(() => {
+  const lang = localStorage.getItem('locale')
+  if (lang) {
+    console.log(lang)
+    if (lang === 'en') {
+      setLocale('en')
+    } else {
+      setLocale('vi')
+    }
+  }
+})
+
+watch(locale, (newLocale) => {
+  const lang = localStorage.getItem('locale')
+  if (lang) {
+    console.log(lang)
+    if (lang === 'en') {
+      setLocale('en')
+    } else {
+      setLocale('vi')
+    }
+  }
+})
+
 useHead({
   title: 'YoungPreneur Academy',
   meta: [
-  { name: 'keywords', content: 'YoungPreneur, young, entrepreneur, tech, finance, money' },
+    { name: 'keywords', content: 'YoungPreneur, young, entrepreneur, tech, finance, money' },
     // Open Graph metadata
     { property: 'og:description', content: 'Learn and grow to be entrepreneur with YoungPreneur Academy' },
     { property: 'og:image', content: '/Thumbnail.png' }, // Thumbnail image

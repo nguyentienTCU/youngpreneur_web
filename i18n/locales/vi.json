@@ -1,0 +1,322 @@
+{
+  "header": {
+    "home": "Trang chủ",
+    "timeline": "Dòng thời gian",
+    "profiles": "Hồ sơ",
+    "projects": "Dự án",
+    "settings": "Cài đặt",
+    "apply": "Ứng tuyển",
+    "blog": "Blog",
+    "login": "Đăng nhập"
+  },
+  "home": {
+    "title": "Tham Gia Vào Tương Lai Của Khởi Nghiệp",
+    "description": "Trao quyền cho thế hệ trẻ trở thành những nhà lãnh đạo kinh doanh tương lai",
+    "apply": "Ứng tuyển ngay",
+    "learn": "Tìm hiểu thêm"
+  },
+  "feature": {
+    "title": "Về Chương Trình Của Chúng Tôi",
+    "content1": {
+      "title": "Cố vấn",
+      "description": "Hướng dẫn một kèm một từ các doanh nhân và lãnh đạo ngành có kinh nghiệm",
+      "icon": "i-heroicons:chart-bar"
+    },
+    "content2": {
+      "title": "Học tập",
+      "description": "Kỹ năng và kiến thức thực tế để bắt đầu hành trình khởi nghiệp của bạn",
+      "icon": "i-heroicons:light-bulb"
+    },
+    "content3": {
+      "title": "Cộng đồng",
+      "description": "Kết nối với những người cùng chí hướng và xây dựng mạng lưới chuyên nghiệp của bạn",
+      "icon": "i-heroicons:arrow-up-circle"
+    }
+  },
+  "testimonials": {
+    "title": "Câu Chuyện Thành Công",
+    "testimonial1": {
+      "name": "Sarah Johnson",
+      "role": "Người sáng lập TechStart",
+      "quote": "Chương trình này đã thay đổi cách tiếp cận kinh doanh của tôi và cho tôi tự tin để khởi nghiệp. Sự cố vấn và nguồn lực được cung cấp vô cùng quý giá.",
+      "avatar": "/app.png",
+      "rating": "5",
+      "date": "Tháng 6, 2024"
+    },
+    "testimonial2": {
+      "name": "Michael Chen",
+      "role": "CEO của GreenSolutions",
+      "quote": "Sự cố vấn tôi nhận được vô cùng quý giá. Người cố vấn đã giúp tôi vượt qua những thách thức không ngờ tới và cung cấp những hiểu biết đã định hình chiến lược kinh doanh của tôi.",
+      "avatar": "/Thumbnail.png",
+      "rating": "5",
+      "date": "Tháng 5, 2024"
+    },
+    "testimonial3": {
+      "name": "Emma Rodriguez",
+      "role": "Quản lý Sản phẩm",
+      "quote": "Cộng đồng và cơ hội kết nối thông qua chương trình này đã mở ra những cánh cửa mà tôi chưa bao giờ nghĩ tới. Những kết nối tôi tạo được cũng quý giá như sự cố vấn.",
+      "avatar": "/app.png",
+      "rating": "5",
+      "date": "Tháng 4, 2024"
+    },
+    "testimonial4": {
+      "name": "David Kim",
+      "role": "Người sáng lập Startup",
+      "quote": "Các workshop thực hành và trải nghiệm học tập thực tế chính xác là những gì tôi cần để đưa doanh nghiệp của mình lên tầm cao mới. Rất đáng để tham gia!",
+      "avatar": "/Thumbnail.png",
+      "rating": "5",
+      "date": "Tháng 3, 2024"
+    }
+  },
+  "profiles": "Xem tất cả thành viên",
+  "mentor": {
+    "title": "Gặp gỡ các cố vấn của chúng tôi",
+    "description": "Các cố vấn của chúng tôi là những doanh nhân và lãnh đạo ngành có kinh nghiệm, luôn tận tâm giúp bạn thành công.",
+    "mentor1": {
+      "id": "1",
+      "name": "Michael Chen",
+      "role": "Doanh nhân công nghệ",
+      "image": "/app.png",
+      "description": "Doanh nhân kỳ cựu với 3 lần thoái vốn thành công"
+    },
+    "mentor2": {
+      "id": "2",
+      "name": "Lisa Rodriguez",
+      "role": "Chiến lược gia kinh doanh",
+      "image": "/Thumbnail.png",
+      "description": "Hơn 20 năm kinh nghiệm trong phát triển kinh doanh"
+    },
+    "mentor3": {
+      "id": "3",
+      "name": "David Kim",
+      "role": "Chuyên gia đầu tư",
+      "image": "/app.png",
+      "description": "Nhà đầu tư mạo hiểm chuyên về các startup giai đoạn đầu"
+    },
+    "mentor4": {
+      "id": "4",
+      "name": "Emma Wilson",
+      "role": "Chuyên gia tiếp thị",
+      "image": "/Thumbnail.png",
+      "description": "Chuyên gia tiếp thị với hơn 15 năm kinh nghiệm"
+    }
+  },
+  "mentee": {
+    "title": "Học Viên Của Chúng Tôi",
+    "description": "Gặp gỡ những cá nhân tài năng đang định hình tương lai",
+    "mentee1": {
+      "id": "1",
+      "name": "A",
+      "role": "Sinh viên Kinh doanh",
+      "image": "/app.png",
+      "description": "Đam mê khởi nghiệp và đổi mới"
+    },
+    "mentee2": {
+      "id": "2",
+      "name": "B",
+      "role": "Sinh viên Kỹ thuật",
+      "image": "/Thumbnail.png",
+      "description": "Yêu thích công nghệ với trọng tâm vào các giải pháp bền vững"
+    },
+    "mentee3": {
+      "id": "3",
+      "name": "C",
+      "role": "Sinh viên Thiết kế",
+      "image": "/app.png",
+      "description": "Tư duy sáng tạo với niềm đam mê trải nghiệm người dùng"
+    },
+    "mentee4": {
+      "id": "4",
+      "name": "D",
+      "role": "Sinh viên Marketing",
+      "image": "/Thumbnail.png",
+      "description": "Chuyên gia marketing kỹ thuật số với kinh nghiệm thương hiệu toàn cầu"
+    },
+    "mentee5": {
+      "id": "5",
+      "name": "E",
+      "role": "Sinh viên Kinh doanh",
+      "image": "/app.png",
+      "description": "Đam mê khởi nghiệp và đổi mới"
+    },
+    "mentee6": {
+      "id": "6",
+      "name": "F",
+      "role": "Sinh viên Kinh doanh",
+      "image": "/Thumbnail.png",
+      "description": "Đam mê khởi nghiệp và đổi mới"
+    },
+    "mentee7": {
+      "id": "7",
+      "name": "G",
+      "role": "Sinh viên Kinh doanh",
+      "image": "/app.png",
+      "description": "Đam mê khởi nghiệp và đổi mới"
+    }
+  },
+  "timeline": {
+    "title": "Lộ trình 8 buổi học chuyên sâu",
+    "event1": {
+      "title": "Buổi 1: Giới thiệu về Đề Án Kinh doanh & Tư duy Chiến lược",
+      "description": "Tìm hiểu về cấu trúc Cuộc thi Tình huống Kinh doanh, Khung MECE và cách tiếp cận dựa trên giả thuyết. Phân tích các tình huống thực tế để xác định vấn đề cốt lõi.",
+      "date": "Tuần 1",
+      "location": "Phòng Đào tạo A",
+      "image": "/app.png"
+    },
+    "event2": {
+      "title": "Buổi 2: Phân tích Thị trường & Cạnh tranh",
+      "description": "Thành thạo Mô hình 5 Lực lượng của Porter, Phân tích PESTLE, TAM/SAM/SOM và phân tích SWOT. Áp dụng các khung phân tích này vào các tình huống thị trường thực tế.",
+      "date": "Tuần 2",
+      "location": "Phòng Đào tạo A",
+      "image": "/Thumbnail.png"
+    },
+    "event3": {
+      "title": "Buổi 3: Chiến lược Kinh doanh & Tài chính",
+      "description": "Khám phá các chiến lược tăng trưởng, Mô hình Kinh doanh Canvas và dự báo tài chính bao gồm phân tích hòa vốn, ROI và NPV.",
+      "date": "Tuần 3",
+      "location": "Phòng Đào tạo A",
+      "image": "/app.png"
+    },
+    "event4": {
+      "title": "Buổi 4: Tiếp thị & Chiến lược Thâm nhập Thị trường",
+      "description": "Đi sâu vào Marketing Mix 4P, STP, các chiến lược tiếp thị kỹ thuật số và phát triển kế hoạch Thâm nhập Thị trường toàn diện.",
+      "date": "Tuần 4",
+      "location": "Phòng Đào tạo A",
+      "image": "/Thumbnail.png"
+    },
+    "event5": {
+      "title": "Buổi 5: Thuyết trình & Kể chuyện",
+      "description": "Học cấu trúc thuyết trình hiệu quả, kỹ thuật nói chuyện trước công chúng và xử lý Q&A. Thực hành thuyết trình nhóm với phản hồi chi tiết.",
+      "date": "Tuần 5",
+      "location": "Phòng Đào tạo A",
+      "image": "/app.png"
+    },
+    "event6": {
+      "title": "Buổi 6: Cuộc thi Tình huống Kinh doanh Mô phỏng (Vòng sơ loại)",
+      "description": "Thử thách tình huống kinh doanh theo nhóm. Phát triển chiến lược, phân tích thị trường, chuẩn bị tài chính và thuyết trình trước ban giám khảo.",
+      "date": "Tuần 6",
+      "location": "Hội trường Thi đấu",
+      "image": "/Thumbnail.png"
+    },
+    "event7": {
+      "title": "Buổi 7: Chuẩn bị & Chỉnh sửa Bài Thuyết trình Chung kết",
+      "description": "Tinh chỉnh chiến lược dựa trên phản hồi, tối ưu hóa bài thuyết trình và thực hành xử lý các câu hỏi khó từ ban giám khảo.",
+      "date": "Tuần 7",
+      "location": "Phòng Đào tạo A",
+      "image": "/app.png"
+    },
+    "event8": {
+      "title": "Buổi 8: Mô phỏng Tình huống Kinh doanh (Vòng Chung kết)",
+      "description": "Cuộc thi mô phỏng toàn diện với bài thuyết trình hoàn chỉnh, phản biện, chấm điểm và đánh giá chi tiết từ giảng viên.",
+      "date": "Tuần 8",
+      "location": "Hội trường Thi đấu",
+      "image": "/Thumbnail.png"
+    }
+  },
+  "projects": {
+    "title": "Các Dự án",
+    "button1": "Xem tất cả dự án →",
+    "button2": "Xem dự án →",
+    "project1": {
+      "id": "1",
+      "title": "Giải pháp Đóng gói Thân thiện Môi trường",
+      "description": "Giải pháp đóng gói bền vững giúp giảm thiểu chất thải và chi phí cho các doanh nghiệp thương mại điện tử.",
+      "image": "/app.png",
+      "team": "Đội Sáng tạo Xanh",
+      "category": "Business Case"
+    },
+    "project2": {
+      "id": "2",
+      "title": "Nền tảng Học Trí tuệ Nhân tạo",
+      "description": "Trải nghiệm học tập cá nhân hóa sử dụng trí tuệ nhân tạo để thích ứng với nhu cầu của học viên.",
+      "image": "/Thumbnail.png",
+      "team": "Giải pháp Giáo dục Công nghệ",
+      "category": "Startup Pitch"
+    },
+    "project3": {
+      "id": "3",
+      "title": "Ứng dụng Chăm sóc Sức khỏe Di động",
+      "description": "Ứng dụng di động kết nối nhà cung cấp dịch vụ y tế địa phương với bệnh nhân ở các khu vực thiếu dịch vụ.",
+      "image": "/app.png",
+      "team": "Đội Công nghệ Y tế",
+      "category": "Hackathon"
+    },
+    "project4": {
+      "id": "4",
+      "title": "Giải pháp Công nghệ Đô thị",
+      "description": "Nền tảng sáng tạo sử dụng IoT và AI để tối ưu hóa tài nguyên thành phố và cải thiện điều kiện sống đô thị.",
+      "image": "/Thumbnail.png",
+      "team": "Tập thể Công nghệ Đô thị",
+      "category": "Business Case"
+    }
+  },
+  "blog": {
+    "title1": "Thông Tin Mới Nhất",
+    "title2": "Tất Cả Bài Viết",
+    "button1": "Đọc Thêm",
+    "button2": "Xem Tất Cả Bài Viết →",
+    "button3": "Đọc Thêm →",
+    "author": "Viết bởi: ",
+    "post1": {
+      "id": "1",
+      "title": "Tương Lai Của Khởi Nghiệp",
+      "description": "Khám phá xu hướng và cơ hội mới nổi trong lĩnh vực khởi nghiệp.",
+      "image": "/app.png",
+      "author": "Sarah Johnson",
+      "date": "15 tháng 3, 2024",
+      "category": "Entrepreneurship"
+    },
+    "post2": {
+      "id": "2",
+      "title": "Chiến Lược Chuyển Đổi Số",
+      "description": "Chiến lược then chốt để doanh nghiệp thích ứng và phát triển trong kỷ nguyên số.",
+      "image": "/Thumbnail.png",
+      "author": "Michael Chen",
+      "date": "10 tháng 3, 2024",
+      "category": "Business Strategy"
+    },
+    "post3": {
+      "id": "3",
+      "title": "Đổi Mới Trong Giáo Dục",
+      "description": "Công nghệ đang định hình tương lai của học tập và phát triển như thế nào.",
+      "image": "/app.png",
+      "author": "Emily Davis",
+      "date": "20 tháng 2, 2024",
+      "category": "Education"
+    },
+    "post4": {
+      "id": "4",
+      "title": "Thực Hành Kinh Doanh Bền Vững",
+      "description": "Triển khai các giải pháp thân thiện với môi trường trong hoạt động kinh doanh hiện đại.",
+      "image": "/Thumbnail.png",
+      "author": "David Wilson",
+      "date": "28 tháng 2, 2024",
+      "category": "Sustainability"
+    }
+  },
+  "apply": {
+    "title": "Tham Gia Cộng Đồng Của Chúng Tôi",
+    "title1": "Thông Tin Cá Nhân",
+    "title2": "Học Vấn & Kinh Nghiệm",
+    "title3": "Sở Thích & Mục Tiêu",
+    "title4": "Tải Lên CV",
+    "button": "Gửi Đơn Đăng Ký",
+    "label1,1": "Tên",
+    "label1,2": "Họ",
+    "label1,3": "Email",
+    "label1,4": "Số Điện Thoại",
+    "label2,1": "Trường/Đại Học Hiện Tại",
+    "label2,2": "Chuyên Ngành",
+    "label2,3": "Kinh Nghiệm Trước Đây",
+    "label3,1": "Lĩnh Vực Quan Tâm",
+    "label3,2": "Công Nghệ",
+    "label3,3": "Marketing",
+    "label3,4": "Tài Chính",
+    "label3,5": "Tác Động Xã Hội",
+    "label3,6": "Mục Tiêu Nghề Nghiệp",
+    "label4,1": "Tải Lên CV",
+    "label4,2": "Tải lên tệp",
+    "label4,3": "hoặc kéo và thả",
+    "label4,4": "PDF, DOC, DOCX tối đa 10MB"
+  }
+}

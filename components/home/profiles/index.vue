@@ -8,7 +8,7 @@
                 <NuxtLink to="/profiles">
                     <button
                         class="bg-blue-600 text-white px-8 py-3 rounded-full font-semibold hover:bg-blue-700 transition">
-                        View All Members
+                        {{ t('profiles') }}
                     </button>
                 </NuxtLink>
             </div>
@@ -19,4 +19,7 @@
 <script setup lang="ts">
 import Mentor from './mentor/index.vue';
 import Mentee from './mentee/index.vue';
+import { useI18n } from '#imports';
+
+const { t } = useI18n();
 </script>

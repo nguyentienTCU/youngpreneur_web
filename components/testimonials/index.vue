@@ -1,54 +1,54 @@
 <template>
   <section class="py-20">
     <div class="container mx-auto px-4">
-      <h2 class="text-3xl font-bold text-center mb-12">Success Stories</h2>
-      
+      <h2 class="text-3xl font-bold text-center mb-12">{{ t('testimonials.title') }}</h2>
+
       <div class="grid md:grid-cols-2 gap-8">
-        <HomeTestimonialsItem
-          v-for="testimonial in testimonials"
-          :key="testimonial.name"
-          :testimonial="testimonial"
-        />
+        <TestimonialsItem v-for="testimonial in testimonials" :key="testimonial.name" :testimonial="testimonial" />
       </div>
     </div>
   </section>
 </template>
 
 <script setup lang="ts">
-import HomeTestimonialsItem from './item.vue';
+import TestimonialsItem from './item.vue';
+import { useI18n } from '#imports';
+import type { Testimonial } from '~/type/info';
 
-const testimonials = [
+const { t } = useI18n();
+
+const testimonials = reactive<Testimonial[]>([
   {
-    name: "Sarah Johnson",
-    role: "Founder of TechStart",
-    quote: "This program transformed my approach to business and gave me the confidence to launch my startup. The mentorship and resources provided were invaluable.",
-    avatar: "/app.png",
-    rating: 5,
-    date: "June 2024"
+    name: t('testimonials.testimonial1.name'),
+    role: t('testimonials.testimonial1.role'),
+    quote: t('testimonials.testimonial1.quote'),
+    avatar: t('testimonials.testimonial1.avatar'),
+    rating: parseInt(t('testimonials.testimonial1.rating')),
+    date: t('testimonials.testimonial1.date')
   },
   {
-    name: "Michael Chen",
-    role: "CEO of GreenSolutions",
-    quote: "The mentorship I received was invaluable. My mentor helped me navigate challenges I never expected and provided insights that shaped my business strategy.",
-    avatar: "/Thumbnail.png",
-    rating: 5,
-    date: "May 2024"
+    name: t('testimonials.testimonial2.name'),
+    role: t('testimonials.testimonial2.role'),
+    quote: t('testimonials.testimonial2.quote'),
+    avatar: t('testimonials.testimonial2.avatar'),
+    rating: parseInt(t('testimonials.testimonial2.rating')),
+    date: t('testimonials.testimonial2.date')
   },
   {
-    name: "Emma Rodriguez",
-    role: "Product Manager",
-    quote: "The community and networking opportunities through this program opened doors I never thought possible. The connections I made were just as valuable as the mentorship.",
-    avatar: "/app.png",
-    rating: 5,
-    date: "April 2024"
+    name: t('testimonials.testimonial3.name'),
+    role: t('testimonials.testimonial3.role'),
+    quote: t('testimonials.testimonial3.quote'),
+    avatar: t('testimonials.testimonial3.avatar'),
+    rating: parseInt(t('testimonials.testimonial3.rating')),
+    date: t('testimonials.testimonial3.date')
   },
   {
-    name: "David Kim",
-    role: "Startup Founder",
-    quote: "The practical workshops and hands-on learning experiences were exactly what I needed to take my business to the next level. Highly recommended!",
-    avatar: "/Thumbnail.png",
-    rating: 5,
-    date: "March 2024"
+    name: t('testimonials.testimonial4.name'),
+    role: t('testimonials.testimonial4.role'),
+    quote: t('testimonials.testimonial4.quote'),
+    avatar: t('testimonials.testimonial4.avatar'),
+    rating: parseInt(t('testimonials.testimonial4.rating')),
+    date: t('testimonials.testimonial4.date')
   }
-];
-</script> 
+]);
+</script>
