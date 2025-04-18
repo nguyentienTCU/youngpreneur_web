@@ -118,6 +118,10 @@ const navItems = computed(() => [
     name: t('header.timeline'),
   },
   {
+    path: "/services",
+    name: t('header.services'),
+  },
+  {
     path: "/profiles",
     name: t('header.profiles'),
   },

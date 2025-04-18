@@ -10,8 +10,6 @@
     <!-- Profiles Section -->
     <ProfilesSection />
 
-    <TimeLine />
-
     <!-- Projects Section -->
     <ProjectsSection />
 
@@ -29,7 +27,6 @@
 import HomeHero from '../components/home/index.vue';
 import Intro from '../components/home/feature/index.vue';
 import Testimonials from '../components/testimonials/index.vue';
-import TimeLine from '../components/timeline/index.vue';
 import ProfilesSection from '../components/home/profiles/index.vue';
 import ProjectsSection from '../components/projects/index.vue';
 import BlogSection from '../components/blog/index.vue';

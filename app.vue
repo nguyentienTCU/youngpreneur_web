@@ -53,3 +53,13 @@ useHead({
   ]
 });
 </script>
+
+<style>
+:root {
+  --primary-color: #564497;
+  --secondary-color: #f8a025;
+  --background-color: #f0d394;
+  --mentor-color: #e5cc95;
+  --text-color: white;
+}
+</style>

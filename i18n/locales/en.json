@@ -7,7 +7,8 @@
     "settings": "Settings",
     "apply": "Apply",
     "blog": "Blog",
-    "login": "Login Now"
+    "login": "Login Now",
+    "services": "Services"
   },
   "home": {
     "title": "Join the Future of Entrepreneurship",
@@ -318,5 +319,39 @@
     "label4,2": "Upload a file",
     "label4,3": "or drag and drop",
     "label4,4": "PDF, DOC, DOCX up to 10MB"
+  },
+  "services": {
+    "title": "Our Services",
+    "description": "We offer a range of services to help you achieve your goals.",
+    "button1,1": "Hide Details",
+    "button1,2": "View Details",
+    "button2": "Learn More",
+    "button3": "Register Now",
+    "service1": {
+      "id": "1",
+      "title": "Internships/Research Finding for Freshman & Sophomore",
+      "description": "Support students in finding suitable internships and research opportunities",
+      "start": "Flexible",
+      "duration": "3-6 months",
+      "people": "1-2 students",
+      "fee": "Cost - Contact Us",
+      "detail1": "Personalized internship matching",
+      "detail2": "Research opportunity guidance",
+      "detail3": "Application support",
+      "detail4": "Interview preparation"
+    },
+    "service2": {
+      "id": "2",
+      "title": "Business Case Competition Training",
+      "description": "Prepare students for business case competitions with expert guidance",
+      "start": "Monthly",
+      "duration": "2-3 weeks",
+      "people": "3-5 students",
+      "fee": "Cost - Contact Us",
+      "detail1": "Case analysis techniques",
+      "detail2": "Presentation skills",
+      "detail3": "Team collaboration",
+      "detail4": "Competition strategy"
+    }
   }
 }

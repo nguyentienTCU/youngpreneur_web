@@ -7,7 +7,8 @@
     "settings": "Cài đặt",
     "apply": "Ứng tuyển",
     "blog": "Blog",
-    "login": "Đăng nhập"
+    "login": "Đăng nhập",
+    "services": "Dịch vụ"
   },
   "home": {
     "title": "Tham Gia Vào Tương Lai Của Khởi Nghiệp",
@@ -318,5 +319,39 @@
     "label4,2": "Tải lên tệp",
     "label4,3": "hoặc kéo và thả",
     "label4,4": "PDF, DOC, DOCX tối đa 10MB"
+  },
+  "services": {
+    "title": "Dịch Vụ Của Chúng Tôi",
+    "description": "Chúng tôi cung cấp nhiều dịch vụ để giúp bạn đạt được mục tiêu của mình.",
+    "button1,1": "Ẩn Chi Tiết",
+    "button1,2": "Xem Chi Tiết",
+    "button2": "Tìm Hiểu Thêm",
+    "button3": "Đăng Ký Ngay",
+    "service1": {
+      "id": "1",
+      "title": "Tìm Kiếm Thực Tập/Nghiên Cứu Cho Sinh Viên Năm Nhất & Năm Hai",
+      "description": "Hỗ trợ sinh viên tìm kiếm cơ hội thực tập và nghiên cứu phù hợp",
+      "start": "Linh Hoạt",
+      "duration": "3-6 tháng",
+      "people": "1-2 sinh viên",
+      "fee": "Chi Phí - Liên Hệ",
+      "detail1": "Kết nối thực tập phù hợp với từng cá nhân",
+      "detail2": "Hướng dẫn tìm kiếm cơ hội nghiên cứu",
+      "detail3": "Hỗ trợ quá trình nộp đơn",
+      "detail4": "Chuẩn bị phỏng vấn"
+    },
+    "service2": {
+      "id": "2",
+      "title": "Đào Tạo Cuộc Thi Business Case",
+      "description": "Chuẩn bị cho sinh viên tham gia các cuộc thi business case với sự hướng dẫn chuyên môn",
+      "start": "Hàng Tháng",
+      "duration": "2-3 tuần",
+      "people": "3-5 sinh viên",
+      "fee": "Chi Phí - Liên Hệ",
+      "detail1": "Kỹ thuật phân tích case study",
+      "detail2": "Kỹ năng thuyết trình",
+      "detail3": "Làm việc nhóm",
+      "detail4": "Chiến lược thi đấu"
+    }
   }
 }

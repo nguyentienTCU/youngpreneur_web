@@ -23,6 +23,9 @@ export default defineNuxtConfig({
       },
     ],
   ],
+  build: {
+    transpile: ["@ant-design/icons-vue"],
+  },
   colorMode: {
     preference: "light",
   },

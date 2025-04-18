@@ -46,3 +46,14 @@ export type BlogPost = {
   date: string;
   category: string;
 };
+
+export type Service = {
+  id: string;
+  title: string;
+  description: string;
+  start: string;
+  duration: string;
+  people: string;
+  fee: string;
+  details: string[];
+};

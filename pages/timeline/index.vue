@@ -2,9 +2,7 @@
   <div>
     <TimelineBanner />
     <!-- Timeline Content -->
-    <div class="container mx-auto px-4 py-16">
-      <Timeline />
-    </div>
+    <Timeline />
 
     <!-- CTA Section -->
     <section class="py-20 bg-gray-50">
