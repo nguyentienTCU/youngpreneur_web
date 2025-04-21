@@ -15,7 +15,7 @@ export default defineNuxtConfig({
       {
         lazy: true,
         langDir: "locales",
-        defaultLocale: "en",
+        defaultLocale: "vi",
         locales: [
           { code: "en", name: "English", file: "en.json" },
           { code: "vi", name: "Vietnamese", file: "vi.json" },

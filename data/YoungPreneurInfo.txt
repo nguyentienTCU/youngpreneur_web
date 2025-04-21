@@ -1,0 +1,28 @@
+YoungPreneur Information
+=================
+
+Name: YoungPreneur
+Description: A comprehensive platform connecting financial professionals with resources, mentorship, and community support to advance their careers in the financial industry.
+
+Mission: To empower financial professionals by providing access to quality education, mentorship, and networking opportunities that accelerate career growth and professional development.
+
+Features:
+- Peer-to-Peer Mentoring
+- Resource Library
+- Community Forums
+- Career Development Tools
+- Industry Insights
+- Networking Events
+
+Benefits:
+- Accelerated career growth
+- Access to industry experts
+- Practical learning resources
+- Professional networking
+- Community support
+- Industry recognition
+
+Statistics:
+- Succesful mentees: over 100
+- Mentors across the United Statfes: over 100
+- Over 15 years of experience
