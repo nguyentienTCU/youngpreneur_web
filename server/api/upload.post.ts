@@ -1,56 +1,61 @@
+import { v2 as cloudinary } from "cloudinary";
 import { defineEventHandler, readMultipartFormData } from "h3";
-import { writeFile } from "node:fs/promises";
-import { join } from "node:path";
+
+interface CloudinaryUploadResult {
+  secure_url: string;
+  public_id: string;
+}
+
+// Configure Cloudinary
+cloudinary.config({
+  cloud_name: process.env.CLOUDINARY_CLOUD_NAME,
+  api_key: process.env.CLOUDINARY_API_KEY,
+  api_secret: process.env.CLOUDINARY_API_SECRET,
+});
 
 export default defineEventHandler(async (event) => {
   try {
     const formData = await readMultipartFormData(event);
-    if (!formData) {
-      return {
-        error: "No file uploaded",
-      };
-    }
+    const file = formData?.find((item) => item.name === "file");
 
-    const file = formData.find((item) => item.name === "file");
     if (!file) {
       return {
-        error: "No file found in form data",
+        error: "No file uploaded",
+        details: "Please provide a file to upload",
       };
     }
 
-    // Validate file type
-    if (!file.type?.includes("pdf")) {
-      return {
-        error: "Only PDF files are allowed",
-      };
-    }
+    // Upload to Cloudinary
+    const result = await new Promise<CloudinaryUploadResult>(
+      (resolve, reject) => {
+        const uploadStream = cloudinary.uploader.upload_stream(
+          {
+            resource_type: "raw",
+            folder: "resumes",
+            format: "pdf",
+            use_filename: true,
+            unique_filename: true,
+            timestamp: Math.round(Date.now() / 1000),
+          },
+          (error, result) => {
+            if (error) reject(error);
+            else resolve(result as CloudinaryUploadResult);
+          }
+        );
 
-    // Validate file size (5MB limit)
-    if (file.data.length > 5 * 1024 * 1024) {
-      return {
-        error: "File size should be less than 5MB",
-      };
-    }
-
-    // Generate unique filename
-    const timestamp = Date.now();
-    const filename = `${timestamp}_${file.filename}`;
-    const uploadPath = join(process.cwd(), "uploads", filename);
-
-    // Save file
-    await writeFile(uploadPath, file.data);
+        uploadStream.end(file.data);
+      }
+    );
 
     return {
-      url: `/uploads/${filename}`,
-      filename: filename,
-      size: file.data.length,
-      mimetype: file.type,
+      url: result.secure_url,
+      public_id: result.public_id,
     };
-  } catch (error) {
+  } catch (error: any) {
     console.error("Upload error:", error);
     return {
       error: "Failed to upload file",
-      details: error instanceof Error ? error.message : "Unknown error",
+      details: error.message,
     };
   }
 });

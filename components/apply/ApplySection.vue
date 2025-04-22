@@ -81,8 +81,10 @@
 <script setup>
 import { useI18n } from 'vue-i18n';
 import { ref, reactive } from 'vue';
+import { useRuntimeConfig } from '#imports';
 
 const { t } = useI18n();
+const config = useRuntimeConfig();
 
 const formData = reactive({
   firstName: '',
@@ -192,6 +194,7 @@ const handleSubmit = async () => {
       });
 
       if (response.error) {
+        console.log(response.details)
         throw new Error(response.error);
       }
 
@@ -214,13 +217,18 @@ const handleSubmit = async () => {
       }
     };
 
-    const sheetyResponse = await $fetch('https://api.sheety.co/8235ce3eb8c996ac80dc9334fc264d38/youngpreneurApplicant/info', {
+    console.log("check here 1");
+    console.log(sheetyData);
+
+    const sheetyResponse = await $fetch(config.public.sheetyUrl, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
       },
       body: JSON.stringify(sheetyData)
     });
+
+    console.log("check here 2");
 
     isSuccess.value = true;
 

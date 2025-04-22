@@ -35,4 +35,9 @@ export default defineNuxtConfig({
       link: [{ rel: "icon", href: "/favicon.ico", id: "favicon" }],
     },
   },
+  runtimeConfig: {
+    public: {
+      sheetyUrl: process.env.SHEETY_URL,
+    },
+  },
 });
