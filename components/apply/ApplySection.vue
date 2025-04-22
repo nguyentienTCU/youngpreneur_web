@@ -214,7 +214,7 @@ const handleSubmit = async () => {
       }
     };
 
-    const sheetyResponse = await $fetch('', {
+    const sheetyResponse = await $fetch('https://api.sheety.co/8235ce3eb8c996ac80dc9334fc264d38/youngpreneurApplicant/info', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
