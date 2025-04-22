@@ -1,121 +1,248 @@
 <template>
   <section class="py-20 bg-gray-50">
     <div class="container mx-auto px-4 max-w-2xl">
-      <h2 class="text-4xl font-bold text-center mb-12">{{ t('apply.title') }}</h2>
+
+      <h2 class="text-4xl font-bold text-center mb-6">{{ t('apply.title') }}</h2>
+      <p class="text-gray-600 text-center mb-12">
+        {{ t('apply.description') }}
+      </p>
+
+      <!-- Success Message -->
+      <UAlert v-if="isSuccess" type="success" :title="successMessage" class="mb-6" />
+
+      <!-- Error Message -->
+      <UAlert v-if="error" type="error" :title="error" class="mb-6" />
 
       <!-- Application Form -->
-      <form class="space-y-6">
+      <UForm :state="formData" @submit="handleSubmit" class="space-y-6">
         <!-- Personal Information -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">{{ t('apply.title1') }}</h3>
+        <UCard :title="t('apply.title1')">
           <div class="grid md:grid-cols-2 gap-4">
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">{{ t('apply.label1,1') }}</label>
-              <input type="text" class="w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500">
-            </div>
-            <div>
-              <label class="block text-sm font-medium text-gray-700 mb-1">{{ t('apply.label1,2') }}</label>
-              <input type="text" class="w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500">
-            </div>
+            <UFormGroup :label="t('apply.label1,1')" name="firstName" required>
+              <UInput v-model="formData.firstName" />
+            </UFormGroup>
+            <UFormGroup :label="t('apply.label1,2')" name="lastName" required>
+              <UInput v-model="formData.lastName" />
+            </UFormGroup>
           </div>
-          <div class="mt-4">
-            <label class="block text-sm font-medium text-gray-700 mb-1">{{ t('apply.label1,3') }}</label>
-            <input type="email" class="w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500">
-          </div>
-          <div class="mt-4">
-            <label class="block text-sm font-medium text-gray-700 mb-1">{{ t('apply.label1,4') }}</label>
-            <input type="tel" class="w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500">
-          </div>
-        </div>
+          <UFormGroup :label="t('apply.label1,3')" name="email" required>
+            <UInput v-model="formData.email" type="email" />
+          </UFormGroup>
+          <UFormGroup :label="t('apply.label1,4')" name="phone" required>
+            <UInput v-model="formData.phone" type="tel" />
+          </UFormGroup>
+        </UCard>
 
         <!-- Education & Experience -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">{{ t('apply.title2') }}</h3>
-          <div class="mt-4">
-            <label class="block text-sm font-medium text-gray-700 mb-1">{{ t('apply.label2,1') }}</label>
-            <input type="text" class="w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500">
-          </div>
-          <div class="mt-4">
-            <label class="block text-sm font-medium text-gray-700 mb-1">{{ t('apply.label2,2') }}</label>
-            <input type="text" class="w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500">
-          </div>
-          <div class="mt-4">
-            <label class="block text-sm font-medium text-gray-700 mb-1">{{ t('apply.label2,3') }}</label>
-            <textarea class="w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500"
-              rows="4"></textarea>
-          </div>
-        </div>
+        <UCard :title="t('apply.title2')">
+          <UFormGroup :label="t('apply.label2,1')" name="education" required>
+            <UInput v-model="formData.education" />
+          </UFormGroup>
+          <UFormGroup :label="t('apply.label2,2')" name="major" required>
+            <UInput v-model="formData.major" />
+          </UFormGroup>
+          <UFormGroup :label="t('apply.label2,3')" name="experience" required>
+            <UTextarea v-model="formData.experience" :rows="4" />
+          </UFormGroup>
+        </UCard>
 
         <!-- Interests & Goals -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">{{ t('apply.title3') }}</h3>
-          <div class="mt-4">
-            <label class="block text-sm font-medium text-gray-700 mb-1">{{ t('apply.label3,1') }}</label>
-            <div class="flex flex-wrap gap-2 mt-2">
-              <label class="inline-flex items-center">
-                <input type="checkbox" class="rounded border-gray-300 text-blue-600">
-                <span class="ml-2">{{ t('apply.label3,2') }}</span>
-              </label>
-              <label class="inline-flex items-center">
-                <input type="checkbox" class="rounded border-gray-300 text-blue-600">
-                <span class="ml-2">{{ t('apply.label3,3') }}</span>
-              </label>
-              <label class="inline-flex items-center">
-                <input type="checkbox" class="rounded border-gray-300 text-blue-600">
-                <span class="ml-2">{{ t('apply.label3,4') }}</span>
-              </label>
-              <label class="inline-flex items-center">
-                <input type="checkbox" class="rounded border-gray-300 text-blue-600">
-                <span class="ml-2">{{ t('apply.label3,5') }}</span>
-              </label>
+        <UCard :title="t('apply.title3')">
+          <UFormGroup :label="t('apply.label3,1')" name="interests" required>
+            <div class="grid grid-cols-2 gap-4">
+              <UCheckbox v-for="interest in interests" :key="interest.value" v-model="formData.interests"
+                :value="interest.value" :label="interest.label" />
             </div>
-          </div>
-          <div class="mt-4">
-            <label class="block text-sm font-medium text-gray-700 mb-1">{{ t('apply.label3,6') }}</label>
-            <textarea class="w-full px-4 py-2 border rounded-md focus:ring-blue-500 focus:border-blue-500"
-              rows="4"></textarea>
-          </div>
-        </div>
+          </UFormGroup>
+          <UFormGroup :label="t('apply.label3,6')" name="goals" required>
+            <UTextarea v-model="formData.goals" :rows="4" />
+          </UFormGroup>
+        </UCard>
 
         <!-- Resume Upload -->
-        <div class="bg-white p-6 rounded-lg shadow-md">
-          <h3 class="text-xl font-semibold mb-4">{{ t('apply.title4') }}</h3>
-          <div class="mt-4">
-            <label class="block text-sm font-medium text-gray-700 mb-1">{{ t('apply.label4,1') }}</label>
-            <div class="mt-1 flex justify-center px-6 pt-5 pb-6 border-2 border-gray-300 border-dashed rounded-md">
-              <div class="space-y-1 text-center">
-                <svg class="mx-auto h-12 w-12 text-gray-400" stroke="currentColor" fill="none" viewBox="0 0 48 48">
-                  <path
-                    d="M28 8H12a4 4 0 00-4 4v20m32-12v8m0 0v8a4 4 0 01-4 4H12a4 4 0 01-4-4v-4m32-4l-3.172-3.172a4 4 0 00-5.656 0L28 28M8 32l9.172-9.172a4 4 0 015.656 0L28 28m0 0l4 4m4-24h8m-4-4v8m-12 4h.02"
-                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
-                </svg>
-                <div class="flex text-sm text-gray-600">
-                  <label
-                    class="relative cursor-pointer bg-white rounded-md font-medium text-blue-600 hover:text-blue-500 focus-within:outline-none">
-                    <span>{{ t('apply.label4,2') }}</span>
-                    <input type="file" class="sr-only">
-                  </label>
-                  <p class="pl-1">{{ t('apply.label4,3') }}</p>
-                </div>
-                <p class="text-xs text-gray-500">{{ t('apply.label4,4') }}</p>
-              </div>
-            </div>
-          </div>
-        </div>
+        <UCard :title="t('apply.title4')">
+          <UFormGroup :label="t('apply.label4,1')" name="resume" required>
+            <UInput type="file" accept=".pdf" @change="handleFileUpload" />
+            <p class="text-sm text-gray-500 mt-2">{{ t('apply.label4,2') }}</p>
+          </UFormGroup>
+        </UCard>
 
         <!-- Submit Button -->
         <div class="flex justify-end">
-          <button type="submit" class="bg-blue-600 text-white px-8 py-3 rounded-md hover:bg-blue-700 transition">
-            {{ t('apply.button') }}
-          </button>
+          <UButton type="submit" color="primary" :loading="isSubmitting" :disabled="isSubmitting">
+            {{ isSubmitting ? t('apply.submitting') : t('apply.button') }}
+          </UButton>
         </div>
-      </form>
+      </UForm>
     </div>
   </section>
 </template>
 
 <script setup>
 import { useI18n } from 'vue-i18n';
+import { ref, reactive } from 'vue';
 
 const { t } = useI18n();
+
+const formData = reactive({
+  firstName: '',
+  lastName: '',
+  email: '',
+  phone: '',
+  education: '',
+  major: '',
+  experience: '',
+  interests: [],
+  goals: '',
+  resume: null
+});
+
+const formRules = {
+  firstName: [{ required: true, message: t('apply.firstNameRequired') }],
+  lastName: [{ required: true, message: t('apply.lastNameRequired') }],
+  email: [
+    { required: true, message: t('apply.emailRequired') },
+    { type: 'email', message: t('apply.invalidEmail') }
+  ],
+  phone: [{ required: true, message: t('apply.phoneRequired') }],
+  education: [{ required: true, message: t('apply.educationRequired') }],
+  major: [{ required: true, message: t('apply.majorRequired') }],
+  experience: [{ required: true, message: t('apply.experienceRequired') }],
+  interests: [{ required: true, message: t('apply.interestsRequired') }],
+  goals: [{ required: true, message: t('apply.goalsRequired') }],
+  resume: [{ required: true, message: t('apply.resumeRequired') }]
+};
+
+const isSubmitting = ref(false);
+const isSuccess = ref(false);
+const error = ref('');
+
+const interests = [
+  { value: 'technology', label: t('apply.label3,2') },
+  { value: 'marketing', label: t('apply.label3,3') },
+  { value: 'finance', label: t('apply.label3,4') },
+  { value: 'social impact', label: t('apply.label3,5') }
+]
+
+const successMessage = t('apply.success')
+
+const handleFileUpload = (event) => {
+  console.log("check here", event);
+
+  // The event is a FileList object, get the first file
+  const file = event[0];
+
+  if (!file) {
+    error.value = t('apply.fileUploadError');
+    return;
+  }
+
+  console.log("File object:", file);
+
+  // Validate file type (only allow PDFs)
+  if (!file.type || !file.type.includes('pdf')) {
+    error.value = t('apply.fileTypeError');
+    return;
+  }
+
+  // Validate file size (max 5MB)
+  if (!file.size || file.size > 5 * 1024 * 1024) {
+    error.value = t('apply.fileSizeError');
+    return;
+  }
+
+  formData.resume = file;
+  error.value = '';
+};
+
+const handleSubmit = async () => {
+  try {
+    // Validate all required fields
+    for (const [key, value] of Object.entries(formData)) {
+      if (formRules[key]?.[0]?.required) {
+        if (!value || (Array.isArray(value) && value.length === 0)) {
+          error.value = formRules[key][0].message;
+          return;
+        }
+      }
+    }
+
+    // Validate email format
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    if (!emailRegex.test(formData.email)) {
+      error.value = t('apply.invalidEmail');
+      return;
+    }
+
+    isSubmitting.value = true;
+    error.value = '';
+    isSuccess.value = false;
+
+    let resumeUrl = '';
+
+    // Handle file upload if a file was selected
+    if (formData.resume) {
+      const formDataFile = new FormData();
+      formDataFile.append('file', formData.resume);
+
+      // Upload file using Nuxt server route
+      const response = await $fetch('/api/upload', {
+        method: 'POST',
+        body: formDataFile
+      });
+
+      if (response.error) {
+        throw new Error(response.error);
+      }
+
+      resumeUrl = response.url;
+    }
+
+    // Prepare the data for Sheety
+    const sheetyData = {
+      info: {
+        firstName: formData.firstName,
+        lastName: formData.lastName,
+        email: formData.email,
+        phone: formData.phone,
+        education: formData.education,
+        major: formData.major,
+        experience: formData.experience,
+        interests: formData.interests.join(', '),
+        goals: formData.goals,
+        resume: resumeUrl
+      }
+    };
+
+    const sheetyResponse = await $fetch('', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(sheetyData)
+    });
+
+    isSuccess.value = true;
+
+    // Reset form
+    Object.keys(formData).forEach(key => {
+      if (Array.isArray(formData[key])) {
+        formData[key] = [];
+      } else {
+        formData[key] = '';
+      }
+    });
+  } catch (err) {
+    error.value = t('apply.error')
+    console.error('Error:', err.message);
+  } finally {
+    isSubmitting.value = false;
+  }
+};
 </script>
+
+<style scoped>
+.container {
+  max-width: 42rem;
+}
+</style>
