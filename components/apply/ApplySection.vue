@@ -1,75 +1,79 @@
 <template>
-  <section class="py-20 bg-gray-50">
+  <section class="py-20 bg-gradient-to-b from-gray-50 to-white hero-section">
+    <div class="text-center mb-12 mt-8">
+        <h2 class="text-4xl font-bold text-gray-900 mb-4">{{ t('apply.title') }}</h2>
+        <p class="text-gray-600 text-lg max-w-xl mx-auto">
+          {{ t('apply.description') }}
+        </p>
+      </div>
     <div class="container mx-auto px-4 max-w-2xl">
 
-      <h2 class="text-4xl font-bold text-center mb-6">{{ t('apply.title') }}</h2>
-      <p class="text-gray-600 text-center mb-12">
-        {{ t('apply.description') }}
-      </p>
-
       <!-- Success Message -->
-      <UAlert v-if="isSuccess" type="success" :title="successMessage" class="mb-6" />
+      <UAlert v-if="isSuccess" type="success" :title="successMessage" class="mb-6 rounded-lg shadow-sm" />
 
       <!-- Error Message -->
-      <UAlert v-if="error" type="error" :title="error" class="mb-6" />
+      <UAlert v-if="error" type="error" :title="error" class="mb-6 rounded-lg shadow-sm" />
 
       <!-- Application Form -->
-      <UForm :state="formData" @submit="handleSubmit" class="space-y-6">
+      <UForm :state="formData" @submit="handleSubmit" class="space-y-8">
         <!-- Personal Information -->
-        <UCard :title="t('apply.title1')">
-          <div class="grid md:grid-cols-2 gap-4">
-            <UFormGroup :label="t('apply.label1,1')" name="firstName" required>
-              <UInput v-model="formData.firstName" />
+        <UCard :title="t('apply.title1')" class="shadow-sm hover:shadow-md transition-shadow duration-200">
+          <div class="grid md:grid-cols-2 gap-6">
+            <UFormGroup :label="t('apply.label1,1')" name="firstName" required class="mb-6">
+              <UInput v-model="formData.firstName" class="focus:ring-2 focus:ring-primary-500" />
             </UFormGroup>
-            <UFormGroup :label="t('apply.label1,2')" name="lastName" required>
-              <UInput v-model="formData.lastName" />
+            <UFormGroup :label="t('apply.label1,2')" name="lastName" required class="mb-6">
+              <UInput v-model="formData.lastName" class="focus:ring-2 focus:ring-primary-500" />
             </UFormGroup>
           </div>
-          <UFormGroup :label="t('apply.label1,3')" name="email" required>
-            <UInput v-model="formData.email" type="email" />
+          <UFormGroup :label="t('apply.label1,3')" name="email" required class="mb-6">
+            <UInput v-model="formData.email" type="email" class="focus:ring-2 focus:ring-primary-500" />
           </UFormGroup>
-          <UFormGroup :label="t('apply.label1,4')" name="phone" required>
-            <UInput v-model="formData.phone" type="tel" />
+          <UFormGroup :label="t('apply.label1,4')" name="phone" required class="mb-6">
+            <UInput v-model="formData.phone" type="tel" class="focus:ring-2 focus:ring-primary-500" />
           </UFormGroup>
         </UCard>
 
         <!-- Education & Experience -->
-        <UCard :title="t('apply.title2')">
-          <UFormGroup :label="t('apply.label2,1')" name="education" required>
-            <UInput v-model="formData.education" />
+        <UCard :title="t('apply.title2')" class="shadow-sm hover:shadow-md transition-shadow duration-200">
+          <UFormGroup :label="t('apply.label2,1')" name="education" required class="mb-6">
+            <UInput v-model="formData.education" class="focus:ring-2 focus:ring-primary-500" />
           </UFormGroup>
-          <UFormGroup :label="t('apply.label2,2')" name="major" required>
-            <UInput v-model="formData.major" />
+          <UFormGroup :label="t('apply.label2,2')" name="major" required class="mb-6">
+            <UInput v-model="formData.major" class="focus:ring-2 focus:ring-primary-500" />
           </UFormGroup>
-          <UFormGroup :label="t('apply.label2,3')" name="experience" required>
-            <UTextarea v-model="formData.experience" :rows="4" />
+          <UFormGroup :label="t('apply.label2,3')" name="experience" required class="mb-6">
+            <UTextarea v-model="formData.experience" :rows="4" class="focus:ring-2 focus:ring-primary-500" />
           </UFormGroup>
         </UCard>
 
         <!-- Interests & Goals -->
-        <UCard :title="t('apply.title3')">
-          <UFormGroup :label="t('apply.label3,1')" name="interests" required>
+        <UCard :title="t('apply.title3')" class="shadow-sm hover:shadow-md transition-shadow duration-200">
+          <UFormGroup :label="t('apply.label3,1')" name="interests" required class="mb-6">
             <div class="grid grid-cols-2 gap-4">
               <UCheckbox v-for="interest in interests" :key="interest.value" v-model="formData.interests"
-                :value="interest.value" :label="interest.label" />
+                :value="interest.value" :label="interest.label"
+                class="hover:bg-gray-50 p-2 rounded-lg transition-colors duration-200" />
             </div>
           </UFormGroup>
-          <UFormGroup :label="t('apply.label3,6')" name="goals" required>
-            <UTextarea v-model="formData.goals" :rows="4" />
+          <UFormGroup :label="t('apply.label3,6')" name="goals" required class="mb-6">
+            <UTextarea v-model="formData.goals" :rows="4" class="focus:ring-2 focus:ring-primary-500" />
           </UFormGroup>
         </UCard>
 
         <!-- Resume Upload -->
-        <UCard :title="t('apply.title4')">
-          <UFormGroup :label="t('apply.label4,1')" name="resume" required>
-            <UInput type="file" accept=".pdf" @change="handleFileUpload" />
-            <p class="text-sm text-gray-500 mt-2">{{ t('apply.label4,2') }}</p>
+        <UCard :title="t('apply.title4')" class="shadow-sm hover:shadow-md transition-shadow duration-200">
+          <UFormGroup :label="t('apply.label4,1')" name="resume" required class="mb-6">
+            <UInput type="file" accept=".pdf" @change="handleFileUpload"
+              class="mt-3 file:mr-4 file:py-2 file:px-4 file:rounded-full file:border-0 file:text-sm file:font-semibold file:bg-primary-50 file:text-primary-700 hover:file:bg-primary-100" />
+            <p class="text-sm text-gray-500 mt-3">{{ t('apply.label4,2') }}</p>
           </UFormGroup>
         </UCard>
 
         <!-- Submit Button -->
-        <div class="flex justify-end">
-          <UButton type="submit" color="primary" :loading="isSubmitting" :disabled="isSubmitting">
+        <div class="flex justify-center">
+          <UButton type="submit" color="primary" :loading="isSubmitting" :disabled="isSubmitting"
+            class="custom-action-button px-6 py-2.5">
             {{ isSubmitting ? t('apply.submitting') : t('apply.button') }}
           </UButton>
         </div>
@@ -250,6 +254,31 @@ const handleSubmit = async () => {
 </script>
 
 <style scoped>
+.custom-action-button {
+    @apply flex items-center justify-center;
+    background-color: #1890ff;
+    color: white;
+    padding: 0.5rem 2rem;
+    border-radius: 9999px;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 12rem;
+    text-align: center;
+}
+
+.custom-action-button:hover {
+    background-color: #40a9ff;
+    transform: translateY(-2px);
+}
+
+.hero-section {
+    @apply flex flex-col bg-gradient-to-r from-orange-600 to-yellow-600;
+}
+
+.bg-gray {
+  background-color: #F5F5F5;
+}
+
 .container {
   max-width: 42rem;
 }

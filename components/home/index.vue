@@ -5,13 +5,17 @@
       <h1 class="text-5xl font-bold mb-6">{{ t('home.title') }}</h1>
       <p class="text-xl mb-8">{{ t('home.description') }}</p>
       <div class="space-x-4">
-        <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition">
-          {{ t('home.apply') }}
-        </button>
-        <button
-          class="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition">
-          {{ t('home.learn') }}
-        </button>
+        <NuxtLink to="/apply" class="no-underline">
+          <button class="bg-white text-blue-600 px-8 py-3 rounded-full font-semibold hover:bg-blue-50 transition">
+            {{ t('home.apply') }}
+          </button>
+        </NuxtLink>
+        <NuxtLink to="/timeline" class="no-underline">
+          <button
+            class="border-2 border-white px-8 py-3 rounded-full font-semibold hover:bg-white hover:text-blue-600 transition">
+            {{ t('home.learn') }}
+          </button>
+        </NuxtLink>
       </div>
     </div>
   </section>

@@ -8,17 +8,16 @@
             <ServiceItem v-for="service in services" :key="service.id" :service="service" />
 
             <div class="global-action-buttons">
-                <a href="https://www.facebook.com/pathwise.techmentorship" target="_blank" class="no-underline">
+                <a href="https://www.facebook.com/profile.php?id=61574975645471" target="_blank" class="no-underline">
                     <UButton class="custom-action-button max-w-48">
                         {{ t('services.button2') }}
                     </UButton>
                 </a>
-                <a href="https://docs.google.com/forms/d/e/1FAIpQLSf44FrJ2powtp9MMvGfHcz8F7irZLyfjxaCkIpr-HAr0Fl4oQ/viewform?pli=1"
-                    target="_blank" class="no-underline">
+                <NuxtLink to="/apply" class="no-underline">
                     <UButton class="custom-action-button max-w-48">
                         {{ t('services.button3') }}
                     </UButton>
-                </a>
+                </NuxtLink>
             </div>
         </div>
     </section>

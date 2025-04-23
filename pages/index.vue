@@ -16,9 +16,6 @@
     <!-- Blog Section -->
     <BlogSection />
 
-    <!-- Apply Section -->
-    <ApplySection />
-
     <FAQSection />
   </div>
 </template>
@@ -30,7 +27,6 @@ import Testimonials from '../components/testimonials/index.vue';
 import ProfilesSection from '../components/home/profiles/index.vue';
 import ProjectsSection from '../components/projects/index.vue';
 import BlogSection from '../components/blog/index.vue';
-import ApplySection from '../components/apply/ApplySection.vue';
 import FAQSection from '~/components/home/faq.vue';
 import { useI18n } from '#imports';
 
