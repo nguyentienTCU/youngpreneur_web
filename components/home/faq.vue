@@ -1,7 +1,7 @@
 <template>
   <div class="py-12 sm:py-24 max-w-7xl mx-auto px-4 md:px-8">
     <h2 class="text-center text-2xl sm:text-4xl mb-8 sm:mb-16 font-semibold">
-        Frequently Asked Questions
+        {{ t("faq.title") }}
       </h2>
     <div>
       <UAccordion
@@ -42,38 +42,45 @@
   </div>
 </template>
 <script setup lang="ts">
+import { useI18n } from 'vue-i18n';
+
+const { t } = useI18n();
+
 const faqList = ref([
   {
-    id: "1",
+    id: t("faq.question1.id"),
     label:
-      "Is FinBud free to use, or are there any subscription plans?",
+      t("faq.question1.label"),
     answer:
-      `FinBud offers both a free package with basic features and a subscription plan for some advanced features. Let’s register to try all the free financial tools of FinBud before looking for more advanced options from us.`,
+      t("faq.question1.answer"),
   },
   {
-    id: "2",
+    id: t("faq.question2.id"),
     label:
-      "What kind of questions can the FinBud chatbot solve?",
+      t("faq.question2.label"),
     answer:
-      "The FinBud chatbot is designed to assist with a wide range of inquiries, covering both financial and non-financial topics. Additionally, the chatbot allows you to directly execute various commands within FinBud's financial management, investment, and educational features. For example, you can buy or sell stocks, manage your budget, or look up financial terms. Simply click on the chat icon and follow the guidance to explore the full capabilities of the FinBud chatbot.",
+      t("faq.question2.answer"),
   },
   {
-    id: "3",
-    label: `Does FinBud support investment tracking and management?`,
+    id: t("faq.question3.id"),
+    label:
+      t("faq.question3.label"),
     answer:
-      "Yes, our Quant and Simulator pages provide an immersive experience for those exploring advanced finance. You can manage your investment portfolio, access in-depth stock analysis, and even practice real stock trading through our Simulator - perfect for beginners looking to gain hands-on investment experience.",
+      t("faq.question3.answer"),
   },
   {
-    id: "4",
-    label: `Can I set financial goals with FinBud and track my progress`,
+    id: t("faq.question4.id"),
+    label:
+      t("faq.question4.label"),
     answer:
-      "Absolutely! With FinBud, you can set specific financial goals by defining details such as the category, target date, required amount, and current savings. On the Goal page, we help you stay on track by monitoring your daily transactions and providing detailed charts, ensuring you can reach each goal more effectively.",
+      t("faq.question4.answer"),
   },
   {
-    id: "5",
-    label: `Is FinBud available on mobile devices, and does it sync across platforms?`,
+    id: t("faq.question5.id"),
+    label:
+      t("faq.question5.label"),
     answer:
-      "Yes, FinBud is available on both mobile devices and laptops. Simply log in to your account, and your data will automatically sync across all platforms for seamless access.",
+      t("faq.question5.answer"),
   },
 ]);
 </script>

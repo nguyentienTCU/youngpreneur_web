@@ -62,13 +62,43 @@ const services = ref<Service[]>([
             t('services.service2.detail3'),
             t('services.service2.detail4')
         ]
+    },
+    {
+        id: t('services.service3.id'),
+        title: t('services.service3.title'),
+        description: t('services.service3.description'),
+        start: t('services.service3.start'),
+        duration: t('services.service3.duration'),
+        people: t('services.service3.people'),
+        fee: t('services.service3.fee'),
+        details: [
+            t('services.service3.detail1'),
+            t('services.service3.detail2'),
+            t('services.service3.detail3'),
+            t('services.service3.detail4')
+        ]
+    },
+    {
+        id: t('services.service4.id'),
+        title: t('services.service4.title'),
+        description: t('services.service4.description'),
+        start: t('services.service4.start'),
+        duration: t('services.service4.duration'),
+        people: t('services.service4.people'),
+        fee: t('services.service4.fee'),
+        details: [
+            t('services.service4.detail1'),
+            t('services.service4.detail2'),
+            t('services.service4.detail3'),
+            t('services.service4.detail4')
+        ]
     }
 ]);
 </script>
 
 <style scoped>
 .hero-section {
-    @apply relative h-[120vh] flex flex-col bg-gradient-to-r from-orange-600 to-yellow-600;
+    @apply relative flex flex-col bg-gradient-to-r from-orange-600 to-yellow-600;
 }
 
 .services-container {
@@ -79,7 +109,8 @@ const services = ref<Service[]>([
 .global-action-buttons {
     display: flex;
     gap: 1rem;
-    margin-top: 2rem;
+    margin: 2rem 0 2rem 0;
+    padding: 2rem 0;
     justify-content: center;
 }
 

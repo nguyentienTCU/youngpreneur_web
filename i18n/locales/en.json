@@ -7,7 +7,6 @@
     "settings": "Settings",
     "apply": "Apply",
     "blog": "Blog",
-    "login": "Login Now",
     "services": "Services"
   },
   "home": {
@@ -107,112 +106,220 @@
     "description": "Meet the talented individuals shaping our future",
     "mentee1": {
       "id": "1",
-      "name": "A",
-      "role": "Business Student",
+      "name": "Minh Anh",
+      "role": "12th grade student - Hanoi Amsterdam High School for the Gifted, Hanoi, Vietnam",
       "image": "/app.png",
-      "description": "Passionate about entrepreneurship and innovation"
+      "description": "Won second prize in a city-wide business idea competition for a student-led tutoring platform."
     },
     "mentee2": {
       "id": "2",
-      "name": "B",
-      "role": "Engineering Student",
-      "image": "/Thumbnail.png",
-      "description": "Tech enthusiast with a focus on sustainable solutions"
+      "name": "Quang Huy",
+      "role": "12th grade student - Kim Lien High School, Hanoi, Vietnam",
+      "image": "/app.png",
+      "description": "Developed a basic mobile app to help classmates review for computer science exams."
     },
     "mentee3": {
       "id": "3",
-      "name": "C",
-      "role": "Design Student",
+      "name": "Thu Hà",
+      "role": "12th grade student - Tran Dai Nghia High School for the Gifted, Ho Chi Minh City, Vietnam",
       "image": "/app.png",
-      "description": "Creative thinker with a passion for user experience"
+      "description": "Designed posters and social media visuals for her school's literature club events."
     },
     "mentee4": {
       "id": "4",
-      "name": "D",
-      "role": "Marketing Student",
-      "image": "/Thumbnail.png",
-      "description": "Digital marketing expert with global brand experience"
+      "name": "Đức Duy",
+      "role": "10th grade student - Hanoi Amsterdam High School for the Gifted, Hanoi, Vietnam",
+      "image": "/app.png",
+      "description": "Built a YouTube channel focused on science topics for teens, gaining over 1,000 subscribers."
     },
     "mentee5": {
       "id": "5",
-      "name": "E",
-      "role": "Business Student",
+      "name": "Ngọc Trâm",
+      "role": "12th grade student - High School for The Gifted VNUHCM, Ho Chi Minh City, Vietnam",
       "image": "/app.png",
-      "description": "Passionate about entrepreneurship and innovation"
+      "description": "Reached the national finals of a math and finance simulation game for high schoolers."
     },
     "mentee6": {
       "id": "6",
-      "name": "F",
-      "role": "Business Student",
-      "image": "/Thumbnail.png",
-      "description": "Passionate about entrepreneurship and innovation"
+      "name": "Phúc Thịnh",
+      "role": "11th grade student - Chu Van An High School for the Gifted, Hanoi, Vietnam",
+      "image": "/app.png",
+      "description": "Conducted a mini-survey on study habits and visualized the results using Excel and charts."
     },
     "mentee7": {
       "id": "7",
-      "name": "G",
-      "role": "Business Student",
+      "name": "Lan Chi",
+      "role": "11th grade student - HUS High School for Gifted Students, Hanoi, Vietnam",
       "image": "/app.png",
-      "description": "Passionate about entrepreneurship and innovation"
+      "description": "Led her class's charity fair organization team, raising funds for underprivileged students."
+    },
+    "mentee8": {
+      "id": "8",
+      "name": "Tuấn Khôi",
+      "role": "12th grade student - Le Hong Phong High School for the Gifted, Nam Dinh, Vietnam",
+      "image": "/app.png",
+      "description": "Represented his school in a regional innovation challenge, pitching an education tech idea."
+    },
+    "mentee9": {
+      "id": "9",
+      "name": "Mai Linh",
+      "role": "11th grade student - HNUE High School for Gifted Students, Hanoi, Vietnam",
+      "image": "/app.png",
+      "description": "Wrote an award-winning essay analyzing the impacts of inflation on teen spending habits."
+    },
+    "mentee10": {
+      "id": "10",
+      "name": "Khánh Vân",
+      "role": "11th grade student - Nguyen Hue High School for the Gifted, Hanoi, Vietnam",
+      "image": "/app.png",
+      "description": "Won first prize in her school's comic design contest with a piece promoting online safety."
+    },
+    "mentee11": {
+      "id": "11",
+      "name": "Gia Bảo",
+      "role": "10th grade student - High School for The Gifted VNUHCM, Ho Chi Minh City, Vietnam",
+      "image": "/app.png",
+      "description": "Co-created a simple Arduino-based experiment in her school's STEM club to monitor air quality."
+    },
+    "mentee12": {
+      "id": "12",
+      "name": "Trọng Nhân",
+      "role": "12th grade student - Quoc Hoc Hue High School for the Gifted, Thua Thien Hue, Vietnam",
+      "image": "/app.png",
+      "description": "Launched a mini handmade product business during a school entrepreneurship week."
+    },
+    "mentee13": {
+      "id": "13",
+      "name": "Diễm Quỳnh",
+      "role": "12th grade student - Thang Long High School, Hanoi, Vietnam",
+      "image": "/app.png",
+      "description": "Produced short videos and highlight reels for multiple school events and graduation ceremonies."
+    },
+    "mentee14": {
+      "id": "14",
+      "name": "Nhật Minh",
+      "role": "11th grade student - Phan Boi Chau High School for the Gifted, Nghe An, Vietnam",
+      "image": "/app.png",
+      "description": "Managed communication and logistics for a district-level debate tournament hosted by his school."
+    },
+    "mentee15": {
+      "id": "15",
+      "name": "Thanh Hương",
+      "role": "10th grade student - Tran Dai Nghia High School for the Gifted, Ho Chi Minh City, Vietnam",
+      "image": "/app.png",
+      "description": "Co-founded a student support group to mentor younger students struggling with remote learning."
     }
   },
   "timeline": {
     "title": "Business Case Training Sessions",
     "event1": {
-      "title": "Session 1: Introduction to Business Case & Strategic Thinking",
-      "description": "Learn about Business Case Competitions structure, MECE Framework, and hypothesis-driven approach. Analyze real cases to identify core issues.",
+      "title": "Session 1: Entrepreneurial Mindset & Founder Spirit",
+      "description": "Students explore the mindset of successful founders by discovering their personal target (WHY) using the Golden Circle (WHY–HOW–WHAT). They learn the value of Grit, Curiosity, Vision, and reflect through activities like Ikigai Canvas and Founder Bingo. The session ends with each student creating their personal 1-page Founder’s Manifesto and setting 12-month goals.",
       "date": "Week 1",
       "location": "Training Room A",
-      "image": "/app.png"
+      "image": "/session1.png"
     },
     "event2": {
-      "title": "Session 2: Market & Competitive Analysis",
-      "description": "Master Porter's Five Forces, PESTLE Analysis, TAM/SAM/SOM, and SWOT analysis. Apply these frameworks to real market cases.",
+      "title": "Session 2: The American Business Mindset",
+      "description": "This session focuses on structured startup thinking—identifying real-world problems and validating solutions. Students learn TAM–SAM–SOM market sizing using Excel and analyze the success story of Airbnb. Each group estimates market size for their own idea and writes a 150-word Problem Statement.",
       "date": "Week 2",
       "location": "Training Room A",
-      "image": "/Thumbnail.png"
+      "image": "/session2.png"
     },
     "event3": {
-      "title": "Session 3: Business Strategy & Financials",
-      "description": "Explore growth strategies, Business Model Canvas, and financial forecasting including break-even analysis, ROI, and NPV.",
+      "title": "Session 3: Design Thinking & User Insights",
+      "description": "Using the 5-step Design Thinking process, students learn how to discover user pain points and turn them into actionable insights. Through techniques like 5 Whys and Shadowing, students conduct 1–1 interviews and map insights visually using Empathy Maps and Affinity Mapping.",
       "date": "Week 3",
       "location": "Training Room A",
-      "image": "/app.png"
+      "image": "/session3.png"
     },
     "event4": {
-      "title": "Session 4: Marketing & Go-to-Market Strategy",
-      "description": "Dive into 4Ps Marketing Mix, STP, digital marketing strategies, and develop comprehensive Go-to-Market plans.",
+      "title": "Session 4: Market Analysis & Target Customers",
+      "description": "Students build customer personas using demographics, psychographics, and JTBD. They map customer journeys and analyze competition using Porter’s 5 Forces and SWOT. Each group creates a competitive matrix comparing their startup with three real competitors.",
       "date": "Week 4",
       "location": "Training Room A",
-      "image": "/Thumbnail.png"
+      "image": "/session4.png"
     },
     "event5": {
-      "title": "Session 5: Pitching & Storytelling",
-      "description": "Learn effective pitch structure, public speaking techniques, and Q&A handling. Practice group pitching with detailed feedback.",
+      "title": "Session 5: Business Models & Lean Canvas",
+      "description": "Students complete their Lean Canvas and explore monetization strategies like subscriptions, ads, and freemium. Using the MVP Ladder, they define must-have vs. nice-to-have features and stress-test their ideas in a 360° peer review exercise called 'Kill Your Idea'.",
       "date": "Week 5",
       "location": "Training Room A",
-      "image": "/app.png"
+      "image": "/session5.png"
     },
     "event6": {
-      "title": "Session 6: Mock Business Case Competition (Preliminary)",
-      "description": "Team-based business case challenge. Develop strategy, analyze market, prepare financials, and pitch to judging panel.",
+      "title": "Session 6: MVP Building & Product Strategy",
+      "description": "Groups select an MVP type (Wizard-of-Oz, Concierge, Landing Page) and design wireframes using Figma. Students define a key success KPI (e.g., Activation Rate) and prepare to test their MVPs with at least 5 real users using checklists.",
       "date": "Week 6",
-      "location": "Competition Hall",
-      "image": "/Thumbnail.png"
+      "location": "Training Room A",
+      "image": "/session6.png"
     },
     "event7": {
-      "title": "Session 7: Final Pitch Preparation & Revisions",
-      "description": "Refine strategies based on feedback, optimize pitches, and practice handling tough questions from judges.",
+      "title": "Session 7: Teamwork & Agile Fundamentals",
+      "description": "Shifting from individual to team-based projects, students adopt Agile practices using Scrum. They define team roles via the RACI Matrix, set quarterly OKRs, and participate in the Marshmallow Challenge. Each group builds a Sprint-0 Backlog with 15+ user stories.",
       "date": "Week 7",
       "location": "Training Room A",
-      "image": "/app.png"
+      "image": "/session7.png"
     },
     "event8": {
-      "title": "Session 8: Business Case Simulation (Final Competition)",
-      "description": "Full-scale mock competition with complete pitches, rebuttals, scoring, and detailed evaluations from instructors.",
+      "title": "Session 8: Marketing Fundamentals & Growth Hacking",
+      "description": "Students explore the AARRR funnel—from acquisition to revenue—and create social content based on Growth Loops. They analyze Duolingo’s viral TikTok strategy and design 3 mock posts for their startup using Canva.",
       "date": "Week 8",
+      "location": "Training Room A",
+      "image": "/session8.png"
+    },
+    "event9": {
+      "title": "Session 9: Financial Forecasting & Fundraising Basics",
+      "description": "Students calculate startup metrics like CAC, LTV, and Break-even. Each team builds a 3-year P&L financial model and role-plays a mock pitch in Shark Tank format, gaining practical knowledge of early-stage fundraising.",
+      "date": "Week 9",
+      "location": "Training Room A",
+      "image": "/session9.png"
+    },
+    "event10": {
+      "title": "Session 10: Pitch Deck & Storytelling",
+      "description": "Students create a 10-slide pitch deck using the Guy Kawasaki framework. They practice delivering 60-second elevator pitches, review one another’s presentations, and refine their stories using feedback from mentors and peers.",
+      "date": "Week 10",
+      "location": "Training Room A",
+      "image": "/session10.png"
+    },
+    "event11": {
+      "title": "Session 11: Project Sprint & User Testing",
+      "description": "Teams run a real user testing sprint, gather feedback from at least 10 users, and measure activation, NPS, and churn. Students then decide whether to pivot or persevere based on feedback and sprint metrics.",
+      "date": "Week 11",
+      "location": "Training Room A",
+      "image": "/session11.png"
+    },
+    "event12": {
+      "title": "Session 12: 1-on-1 Mentor Coaching",
+      "description": "Each team receives personalized coaching from mentors to refine their pitch deck, financials, demo video, and traction in preparation for international competitions like JA or DECA. Students leave with a clear action plan for final submission.",
+      "date": "Week 12",
+      "location": "Training Room A",
+      "image": "/session12.png"
+    },
+    "event13": {
+      "title": "Session 13: Mock Competition & Q&A",
+      "description": "Students pitch live in a simulated competition, followed by a tough Q&A round. They learn to handle questions with confidence using bridging techniques, refine body language, and score themselves using judge rubrics.",
+      "date": "Week 13",
       "location": "Competition Hall",
-      "image": "/Thumbnail.png"
-    }
+      "image": "/session13.png"
+    },
+    "event14": {
+      "title": "Session 14: Startup Ecosystem & Networking",
+      "description": "Students explore the startup ecosystem map (Vietnam & US), practice cold-emailing mentors/VCs, and build networking skills. The session features a live panel with alumni founders and VC analysts to expand students’ networks.",
+      "date": "Week 14",
+      "location": "Training Room A",
+      "image": "/session14.png"
+    },
+    "event15": {
+      "title": "Session 15: Reflection & University Pathway",
+      "description": "The journey ends with portfolio building, career vision planning, and a personalized university roadmap. Students write a letter to their 'Future Me', create a vision board, and map out a 4-year SMART plan across leadership, academics, and startup goals.",
+      "date": "Week 15",
+      "location": "Training Room A",
+      "image": "/session15.png"
+    },
+    "joinProgramTitle": "Ready to join the Program?",
+    "joinProgramDescription": "Take your business case skills to the next level with our expert-led training sessions",
+    "joinProgramButton": "Apply Now"
   },
   "projects": {
     "title": "Project Showcase",
@@ -220,34 +327,34 @@
     "button2": "View Project →",
     "project1": {
       "id": "1",
-      "title": "Eco-Friendly Packaging Solution",
-      "description": "A sustainable packaging solution that reduces waste and costs for e-commerce businesses.",
-      "image": "/app.png",
-      "team": "Team Green Innovators",
+      "title": "Improving the School Canteen Sales System",
+      "description": "The team analyzed the current operations of the school canteen and proposed a digital payment solution to reduce wait times and improve the student experience.",
+      "image": "/Thumbnail.png",
+      "team": "School Innovation",
       "category": "Business Case"
     },
     "project2": {
       "id": "2",
-      "title": "AI-Powered Learning Platform",
-      "description": "Personalized learning experience using artificial intelligence to adapt to student needs.",
+      "title": "Friendly Study Reminder App",
+      "description": "In a 48-hour hackathon, the team designed a prototype of an app that lets students set study reminders and notes through a simple, user-friendly interface.",
       "image": "/Thumbnail.png",
-      "team": "TechEd Solutions",
-      "category": "Startup Pitch"
+      "team": "Code & Learn",
+      "category": "Hackathon"
     },
     "project3": {
       "id": "3",
-      "title": "Mobile Healthcare Application",
-      "description": "Mobile application connecting local healthcare providers with patients in underserved areas.",
-      "image": "/app.png",
-      "team": "HealthTech Team",
-      "category": "Hackathon"
+      "title": "Used Textbook Sharing Platform",
+      "description": "The team pitched a nonprofit startup model that enables students to exchange or donate used textbooks via a simple online platform.",
+      "image": "/Thumbnail.png",
+      "team": "Startup For Good",
+      "category": "Startup Pitch"
     },
     "project4": {
       "id": "4",
-      "title": "Urban Tech Solutions",
-      "description": "An innovative platform that uses IoT and AI to optimize city resources and improve urban living conditions.",
+      "title": "Optimizing Club Activity Planning",
+      "description": "This project used survey data analysis to help student clubs create more engaging plans and improve overall participation rates.",
       "image": "/Thumbnail.png",
-      "team": "UrbanTech Collective",
+      "team": "Future Leaders",
       "category": "Business Case"
     }
   },
@@ -344,29 +451,83 @@
     "button3": "Register Now",
     "service1": {
       "id": "1",
-      "title": "Internships/Research Finding for Freshman & Sophomore",
-      "description": "Support students in finding suitable internships and research opportunities",
-      "start": "Flexible",
-      "duration": "3-6 months",
-      "people": "1-2 students",
+      "title": "Startup Sprint Program",
+      "description": "Work in teams to develop an original startup idea, guided by mentors and real business tools.",
+      "start": "Quarterly",
+      "duration": "4-6 weeks",
+      "people": "3-5 students per team",
       "fee": "Cost - Contact Us",
-      "detail1": "Personalized internship matching",
-      "detail2": "Research opportunity guidance",
-      "detail3": "Application support",
-      "detail4": "Interview preparation"
+      "detail1": "Problem discovery and market validation",
+      "detail2": "Lean Canvas & MVP design",
+      "detail3": "Pitch deck development",
+      "detail4": "Final pitch to judges"
     },
     "service2": {
       "id": "2",
-      "title": "Business Case Competition Training",
-      "description": "Prepare students for business case competitions with expert guidance",
+      "title": "Business Case Bootcamp",
+      "description": "Train like a real consultant with case-solving challenges from real-world companies and industries.",
       "start": "Monthly",
-      "duration": "2-3 weeks",
-      "people": "3-5 students",
+      "duration": "2 weeks",
+      "people": "4 students per team",
       "fee": "Cost - Contact Us",
-      "detail1": "Case analysis techniques",
-      "detail2": "Presentation skills",
-      "detail3": "Team collaboration",
-      "detail4": "Competition strategy"
+      "detail1": "Structured case analysis frameworks",
+      "detail2": "Team strategy and brainstorming",
+      "detail3": "Client-style presentation training",
+      "detail4": "Mini-case competition simulation"
+    },
+    "service3": {
+      "id": "3",
+      "title": "1-on-1 Mentorship",
+      "description": "Get personalized guidance from experienced mentors to explore your strengths and goals.",
+      "start": "Rolling admission",
+      "duration": "2-3 sessions/month",
+      "people": "Individual",
+      "fee": "Cost - Contact Us",
+      "detail1": "Mentor-student matching",
+      "detail2": "Goal-setting and reflection",
+      "detail3": "Career and college advice",
+      "detail4": "Support with projects or applications"
+    },
+    "service4": {
+      "id": "4",
+      "title": "Startup Showcase & Certification",
+      "description": "Present your project at the final showcase and earn a certificate for completing the full Youngpreneur journey.",
+      "start": "End of each cohort",
+      "duration": "1 day",
+      "people": "All program participants",
+      "fee": "Cost - Contact Us",
+      "detail1": "Public pitch presentation",
+      "detail2": "Feedback from guest judges",
+      "detail3": "Certificate of Completion",
+      "detail4": "Alumni network invitation"
+    }
+  },
+  "faq": {
+    "title": "Frequently Asked Questions",
+    "question1": {
+      "id": "1",
+      "label": "Who can join the Youngpreneur Academy program?",
+      "answer": "High school students in grades 10 to 12 across Vietnam, especially those interested in business, creativity, and teamwork."
+    },
+    "question2": {
+      "id": "2",
+      "label": "How long is the program and what is the learning format?",
+      "answer": "The program consists of 15 sessions held weekly. The format includes in-person learning combined with team activities, presentations, and real-world project work."
+    },
+    "question3": {
+      "id": "3",
+      "label": "What will students gain after completing the program?",
+      "answer": "Students will develop business thinking, teamwork skills, presentation techniques, market analysis, product development, and basic fundraising abilities."
+    },
+    "question4": {
+      "id": "4",
+      "label": "Do students need any prior knowledge to join?",
+      "answer": "No. The program is designed for beginners who have no prior experience but are eager to learn and grow."
+    },
+    "question5": {
+      "id": "5",
+      "label": "Do students have to submit a final project?",
+      "answer": "Yes. Each team will present a real project during the final session in a mock startup competition format."
     }
   }
 }

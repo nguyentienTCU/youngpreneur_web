@@ -21,7 +21,7 @@
 </template>
 
 <script setup lang="ts">
-import HomeHero from '../components/home/index.vue';
+import HomeHero from '../components/home/banner/index.vue';
 import Intro from '../components/home/feature/index.vue';
 import Testimonials from '../components/testimonials/index.vue';
 import ProfilesSection from '../components/home/profiles/index.vue';

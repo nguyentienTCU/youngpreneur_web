@@ -7,8 +7,8 @@
                     class="card bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105 h-[500px] flex flex-col max-w-[360px] mx-auto">
                     <img :src="item.image" :alt="item.name" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
                     <h3 class="text-xl font-semibold text-center mb-2 text-gray-800">{{ item.name }}</h3>
-                    <p class="text-gray-600 text-center mb-2 text-base">{{ item.role }}</p>
-                    <p class="text-gray-500 text-center mb-4 text-base">{{ item.description }}</p>
+                    <p class="text-gray-600 text-center mb-2 text-sm">{{ item.role }}</p>
+                    <p class="text-gray-500 text-center mb-4 text-xs">{{ item.description }}</p>
                 </div>
             </div>
             <!-- Duplicate set of items for seamless loop -->
@@ -17,8 +17,8 @@
                     class="card bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105 h-[500px] flex flex-col max-w-[360px] mx-auto">
                     <img :src="item.image" :alt="item.name" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
                     <h3 class="text-xl font-semibold text-center mb-2 text-gray-800">{{ item.name }}</h3>
-                    <p class="text-gray-600 text-center mb-2 text-base">{{ item.role }}</p>
-                    <p class="text-gray-500 text-center mb-4 text-base">{{ item.description }}</p>
+                    <p class="text-gray-600 text-center mb-2 text-sm">{{ item.role }}</p>
+                    <p class="text-gray-500 text-center mb-4 text-xs">{{ item.description }}</p>
                 </div>
             </div>
         </div>

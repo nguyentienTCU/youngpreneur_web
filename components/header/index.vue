@@ -38,61 +38,6 @@
             <img :src="`/${locale.code === 'vi' ? 'vietnamese-flag' : 'english-flag'}.png`" class="w-6 h-4"
               :alt="locale.name" />
           </button>
-          <!-- User is logged out -->
-          <template v-if="!auth.res || Object.keys(auth.res).length === 0">
-            <NuxtLink to="/sign-in">
-              <UButton class="rounded-full" size="lg">
-                {{ t('header.login') }}
-              </UButton>
-            </NuxtLink>
-          </template>
-
-          <!-- User is logged in -->
-          <!-- <template v-else>
-            <UDropdown>
-              <UButton 
-                variant="ghost" 
-                color="gray" 
-                class="flex items-center gap-2 rounded-full" 
-                size="lg"
-              >
-                <UAvatar 
-                  :src="auth.user?.firstName ? `https://ui-avatars.com/api/?name=${auth.user.firstName}+${auth.user.lastName}&background=random` : undefined" 
-                  size="sm" 
-                />
-                <span>{{ auth.user?.displayName || 'User' }}</span>
-                <UIcon name="i-heroicons-chevron-down-20-solid" class="w-5 h-5" />
-              </UButton>
-              
-              <template #popper>
-                <UList>
-                  <UListGroup>
-                    <UListItem to="/account">
-                      <template #leading>
-                        <UIcon name="i-heroicons-user-circle" />
-                      </template>
-                      Account
-                    </UListItem>
-                    <UListItem to="/settings">
-                      <template #leading>
-                        <UIcon name="i-heroicons-cog-6-tooth" />
-                      </template>
-                      Settings
-                    </UListItem>
-                  </UListGroup>
-                  <UDivider />
-                  <UListGroup>
-                    <UListItem @click="handleLogout">
-                      <template #leading>
-                        <UIcon name="i-heroicons-arrow-right-on-rectangle" />
-                      </template>
-                      Sign out
-                    </UListItem>
-                  </UListGroup>
-                </UList>
-              </template>
-            </UDropdown>
-          </template> -->
         </div>
       </nav>
     </div>
@@ -100,17 +45,10 @@
 </template>
 
 <script lang="ts" setup>
-import { useAuthStore } from '~/stores/auth'
 import { useI18n } from '#imports'
 
 const route = useRoute();
-const router = useRouter()
-const auth = useAuthStore()
 const { t, locales, setLocale } = useI18n()
-
-// Add console logging to debug auth state
-console.log('Auth state:', auth)
-console.log('Auth res:', auth.res)
 
 const navItems = computed(() => [
   {
@@ -138,11 +76,6 @@ const navItems = computed(() => [
     name: t('header.blog'),
   },
 ]);
-
-// async function handleLogout() {
-//   await auth.logout()
-//   router.push('/')
-// }
 
 const isOpenMenu = ref(false);
 const clicked = (code: 'en' | 'vi') => {

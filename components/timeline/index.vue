@@ -68,6 +68,48 @@ const events: Events[] = [
     description: t('timeline.event8.description'),
     date: t('timeline.event8.date'),
     image: t('timeline.event8.image')
+  },
+  {
+    title: t('timeline.event9.title'),
+    description: t('timeline.event9.description'),
+    date: t('timeline.event9.date'),
+    image: t('timeline.event9.image')
+  },
+  {
+    title: t('timeline.event10.title'),
+    description: t('timeline.event10.description'),
+    date: t('timeline.event10.date'),
+    image: t('timeline.event10.image')
+  },
+  {
+    title: t('timeline.event11.title'),
+    description: t('timeline.event11.description'),
+    date: t('timeline.event11.date'),
+    image: t('timeline.event11.image')
+  },
+  {
+    title: t('timeline.event12.title'),
+    description: t('timeline.event12.description'),
+    date: t('timeline.event12.date'),
+    image: t('timeline.event12.image')
+  },
+  {
+    title: t('timeline.event13.title'),
+    description: t('timeline.event13.description'),
+    date: t('timeline.event13.date'),
+    image: t('timeline.event13.image')
+  },
+  {
+    title: t('timeline.event14.title'),
+    description: t('timeline.event14.description'),
+    date: t('timeline.event14.date'),
+    image: t('timeline.event14.image')
+  },
+  {
+    title: t('timeline.event15.title'),
+    description: t('timeline.event15.description'),
+    date: t('timeline.event15.date'),
+    image: t('timeline.event15.image')
   }
 ];
 

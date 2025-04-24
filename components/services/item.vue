@@ -1,27 +1,26 @@
 <template>
     <UCard class="service-card">
         <div class="service-header">
-            <UTypography class="text-2xl font-bold">{{ service.title }}</UTypography>
-            <br />
-            <UTypography>{{ service.description }}</UTypography>
+            <UText class="block mb-2 font-bold text-2xl">{{ service.title }}</UText>
+            <UText color="gray" class="block">{{ service.description }}</UText>
         </div>
 
         <div class="service-info">
             <div class="info-item">
                 <CalendarOutlined class="icon" />
-                <UTypography>{{ service.start }}</UTypography>
+                <UText color="gray">{{ service.start }}</UText>
             </div>
             <div class="info-item">
                 <ClockCircleOutlined class="icon" />
-                <UTypography>{{ service.duration }}</UTypography>
+                <UText color="gray">{{ service.duration }}</UText>
             </div>
             <div class="info-item">
                 <UsergroupAddOutlined class="icon" />
-                <UTypography>{{ service.people }}</UTypography>
+                <UText color="gray">{{ service.people }}</UText>
             </div>
             <div class="info-item">
                 <DollarOutlined class="icon" />
-                <UTypography>{{ service.fee }}</UTypography>
+                <UText color="gray">{{ service.fee }}</UText>
             </div>
         </div>
 
@@ -31,7 +30,7 @@
 
         <ul v-if="expanded" class="service-details mt-3 list-disc pl-6">
             <li v-for="(detail, index) in service.details" :key="index">
-                <UTypography>{{ detail }}</UTypography>
+                <UText color="gray">{{ detail }}</UText>
             </li>
         </ul>
     </UCard>

@@ -7,7 +7,6 @@
     "settings": "Cài đặt",
     "apply": "Ứng tuyển",
     "blog": "Blog",
-    "login": "Đăng nhập",
     "services": "Dịch vụ"
   },
   "home": {
@@ -107,112 +106,220 @@
     "description": "Gặp gỡ những cá nhân tài năng đang định hình tương lai",
     "mentee1": {
       "id": "1",
-      "name": "A",
-      "role": "Sinh viên Kinh doanh",
+      "name": "Minh Anh",
+      "role": "Học sinh lớp 12 - Trường THPT chuyên Hà Nội - Amsterdam, Hà Nội",
       "image": "/app.png",
-      "description": "Đam mê khởi nghiệp và đổi mới"
+      "description": "Đạt giải Nhì cuộc thi ý tưởng kinh doanh cấp thành phố với dự án nền tảng dạy kèm học sinh."
     },
     "mentee2": {
       "id": "2",
-      "name": "B",
-      "role": "Sinh viên Kỹ thuật",
-      "image": "/Thumbnail.png",
-      "description": "Yêu thích công nghệ với trọng tâm vào các giải pháp bền vững"
+      "name": "Quang Huy",
+      "role": "Học sinh lớp 12 - Trường THPT Kim Liên, Hà Nội",
+      "image": "/app.png",
+      "description": "Tự phát triển ứng dụng điện thoại giúp bạn cùng lớp ôn luyện Tin học."
     },
     "mentee3": {
       "id": "3",
-      "name": "C",
-      "role": "Sinh viên Thiết kế",
+      "name": "Thu Hà",
+      "role": "Học sinh lớp 12 - Trường THPT chuyên Trần Đại Nghĩa, TP. HCM",
       "image": "/app.png",
-      "description": "Tư duy sáng tạo với niềm đam mê trải nghiệm người dùng"
+      "description": "Thiết kế poster và hình ảnh truyền thông cho câu lạc bộ Văn học của trường."
     },
     "mentee4": {
       "id": "4",
-      "name": "D",
-      "role": "Sinh viên Marketing",
-      "image": "/Thumbnail.png",
-      "description": "Chuyên gia marketing kỹ thuật số với kinh nghiệm thương hiệu toàn cầu"
+      "name": "Đức Duy",
+      "role": "Học sinh lớp 10 - Trường THPT chuyên Hà Nội - Amsterdam, Hà Nội",
+      "image": "/app.png",
+      "description": "Xây dựng kênh YouTube chia sẻ kiến thức Khoa học dành cho tuổi teen với hơn 1.000 lượt theo dõi."
     },
     "mentee5": {
       "id": "5",
-      "name": "E",
-      "role": "Sinh viên Kinh doanh",
+      "name": "Ngọc Trâm",
+      "role": "Học sinh lớp 12 - Trường Phổ thông Năng khiếu - ĐHQG TP.HCM, TP. HCM",
       "image": "/app.png",
-      "description": "Đam mê khởi nghiệp và đổi mới"
+      "description": "Lọt vào vòng chung kết quốc gia cuộc thi mô phỏng tài chính và toán học dành cho học sinh THPT."
     },
     "mentee6": {
       "id": "6",
-      "name": "F",
-      "role": "Sinh viên Kinh doanh",
-      "image": "/Thumbnail.png",
-      "description": "Đam mê khởi nghiệp và đổi mới"
+      "name": "Phúc Thịnh",
+      "role": "Học sinh lớp 11 - Trường THPT chuyên Chu Văn An, Hà Nội",
+      "image": "/app.png",
+      "description": "Thực hiện khảo sát về thói quen học tập và trình bày kết quả bằng biểu đồ Excel."
     },
     "mentee7": {
       "id": "7",
-      "name": "G",
-      "role": "Sinh viên Kinh doanh",
+      "name": "Lan Chi",
+      "role": "Học sinh lớp 11 - Trường THPT chuyên Khoa học tự nhiên, Hà Nội",
       "image": "/app.png",
-      "description": "Đam mê khởi nghiệp và đổi mới"
+      "description": "Dẫn dắt đội lớp tổ chức hội chợ gây quỹ hỗ trợ học sinh có hoàn cảnh khó khăn."
+    },
+    "mentee8": {
+      "id": "8",
+      "name": "Tuấn Khôi",
+      "role": "Học sinh lớp 12 - Trường THPT chuyên Lê Hồng Phong, Nam Định, HN",
+      "image": "/app.png",
+      "description": "Đại diện trường tham gia cuộc thi đổi mới sáng tạo khu vực với dự án công nghệ giáo dục."
+    },
+    "mentee9": {
+      "id": "9",
+      "name": "Mai Linh",
+      "role": "Học sinh lớp 11 - Trường THPT chuyên Sư phạm, Hà Nội",
+      "image": "/app.png",
+      "description": "Viết bài luận đạt giải về tác động của lạm phát đến hành vi tiêu dùng của giới trẻ."
+    },
+    "mentee10": {
+      "id": "10",
+      "name": "Khánh Vân",
+      "role": "Học sinh lớp 11 - Trường THPT chuyên Nguyễn Huệ, Hà Nội",
+      "image": "/app.png",
+      "description": "Đạt giải Nhất cuộc thi thiết kế truyện tranh với chủ đề an toàn mạng học đường."
+    },
+    "mentee11": {
+      "id": "11",
+      "name": "Gia Bảo",
+      "role": "Học sinh lớp 10 - Trường Phổ thông Năng khiếu - ĐHQG TP.HCM, TP. HCM",
+      "image": "/app.png",
+      "description": "Phối hợp thực hiện mô hình cảm biến đo chất lượng không khí trong CLB STEM của trường."
+    },
+    "mentee12": {
+      "id": "12",
+      "name": "Trọng Nhân",
+      "role": "Học sinh lớp 12 - Trường THPT chuyên Quốc Học Huế, Thừa Thiên Huế",
+      "image": "/app.png",
+      "description": "Khởi động dự án bán đồ thủ công trong tuần lễ khởi nghiệp học sinh tại trường."
+    },
+    "mentee13": {
+      "id": "13",
+      "name": "Diễm Quỳnh",
+      "role": "Học sinh lớp 12 - Trường THPT Thăng Long, Hà Nội",
+      "image": "/app.png",
+      "description": "Sản xuất video highlight cho các sự kiện lớn nhỏ và lễ tốt nghiệp của trường."
+    },
+    "mentee14": {
+      "id": "14",
+      "name": "Nhật Minh",
+      "role": "Học sinh lớp 11 - Trường THPT chuyên Phan Bội Châu, Nghệ An",
+      "image": "/app.png",
+      "description": "Quản lý truyền thông và hậu cần cho cuộc thi tranh biện cấp quận do trường đăng cai."
+    },
+    "mentee15": {
+      "id": "15",
+      "name": "Thanh Hương",
+      "role": "Học sinh lớp 10 - Trường THPT chuyên Trần Đại Nghĩa, TP. HCM",
+      "image": "/app.png",
+      "description": "Đồng sáng lập nhóm hỗ trợ học sinh yếu nhằm chia sẻ kiến thức và hướng dẫn học online."
     }
   },
   "timeline": {
-    "title": "Lộ trình 8 buổi học chuyên sâu",
+    "title": "Lộ trình 15 buổi học chuyên sâu",
     "event1": {
-      "title": "Buổi 1: Giới thiệu về Đề Án Kinh doanh & Tư duy Chiến lược",
-      "description": "Tìm hiểu về cấu trúc Cuộc thi Tình huống Kinh doanh, Khung MECE và cách tiếp cận dựa trên giả thuyết. Phân tích các tình huống thực tế để xác định vấn đề cốt lõi.",
+      "title": "Buổi 1: Tư duy Khởi nghiệp & Tinh thần Doanh nhân",
+      "description": "Học viên sẽ khám phá tư duy nền tảng của một nhà sáng lập: bắt đầu từ việc hiểu và xác định mục đích (WHY) cá nhân qua khung Golden Circle (WHY–HOW–WHAT), hiểu vai trò của Grit, Curiosity và Vision trong hành trình startup. Qua hoạt động Ikigai Canvas và trò chơi Founder Bingo, học viên xác định điểm mạnh, đam mê và mục tiêu 12 tháng của mình trong bản tuyên ngôn Founder’s Manifesto.",
       "date": "Tuần 1",
       "location": "Phòng Đào tạo A",
       "image": "/app.png"
     },
     "event2": {
-      "title": "Buổi 2: Phân tích Thị trường & Cạnh tranh",
-      "description": "Thành thạo Mô hình 5 Lực lượng của Porter, Phân tích PESTLE, TAM/SAM/SOM và phân tích SWOT. Áp dụng các khung phân tích này vào các tình huống thị trường thực tế.",
+      "title": "Buổi 2: Business Mindset chuẩn Mỹ",
+      "description": "Buổi học tập trung vào cách tư duy chiến lược kiểu Mỹ, bắt đầu từ việc xác định rõ Problem–Solution Fit. Học viên sẽ thực hành ước tính kích thước thị trường (TAM–SAM–SOM) cho ý tưởng startup của nhóm mình, và học hỏi qua case study nổi tiếng của Airbnb – từ ý tưởng 'nệm hơi' đến startup tỷ đô. Kết thúc buổi học là thảo luận nhóm và nộp bản trình bày thị trường kèm định nghĩa vấn đề.",
       "date": "Tuần 2",
       "location": "Phòng Đào tạo A",
       "image": "/Thumbnail.png"
     },
     "event3": {
-      "title": "Buổi 3: Chiến lược Kinh doanh & Tài chính",
-      "description": "Khám phá các chiến lược tăng trưởng, Mô hình Kinh doanh Canvas và dự báo tài chính bao gồm phân tích hòa vốn, ROI và NPV.",
+      "title": "Buổi 3: Design Thinking & Insight",
+      "description": "Thông qua quy trình 5 bước Design Thinking, học viên học cách khai thác nhu cầu thật sự của người dùng và chuyển nó thành insight hành động. Các kỹ thuật phỏng vấn như 5 Whys, Laddering, Shadowing sẽ được thực hành 1–1 trong lớp. Học viên sử dụng Miro để tạo Empathy Map và Affinity Mapping, tổng hợp kết quả thành báo cáo Insight gồm trích dẫn thực tế và bản đồ cảm xúc người dùng.",
       "date": "Tuần 3",
       "location": "Phòng Đào tạo A",
-      "image": "/app.png"
+      "image": "/Thumbnail.png"
     },
     "event4": {
-      "title": "Buổi 4: Tiếp thị & Chiến lược Thâm nhập Thị trường",
-      "description": "Đi sâu vào Marketing Mix 4P, STP, các chiến lược tiếp thị kỹ thuật số và phát triển kế hoạch Thâm nhập Thị trường toàn diện.",
+      "title": "Buổi 4: Phân tích Thị trường & Khách hàng Mục tiêu",
+      "description": "Học viên học cách xây dựng chân dung khách hàng (persona) dựa trên yếu tố nhân khẩu học, tâm lý học và Jobs-To-Be-Done. Buổi học đi sâu vào hành trình khách hàng và các điểm quyết định (Moment of Truth). Nhóm sẽ sử dụng công cụ SWOT và Porter’s 5 Forces để đánh giá thị trường cạnh tranh và trình bày ma trận cạnh tranh với các đối thủ trực tiếp.",
       "date": "Tuần 4",
       "location": "Phòng Đào tạo A",
       "image": "/Thumbnail.png"
     },
     "event5": {
-      "title": "Buổi 5: Thuyết trình & Kể chuyện",
-      "description": "Học cấu trúc thuyết trình hiệu quả, kỹ thuật nói chuyện trước công chúng và xử lý Q&A. Thực hành thuyết trình nhóm với phản hồi chi tiết.",
+      "title": "Buổi 5: Business Model & Lean Canvas",
+      "description": "Học viên hoàn thiện mô hình kinh doanh thông qua Lean Canvas và khám phá các mô hình tạo doanh thu như subscription, freemium và quảng cáo. Thực hành phân biệt tính năng must-have và nice-to-have qua MVP Ladder. Trong lớp, nhóm sẽ phản biện chéo mô hình của nhau trong phiên 'Kill your idea' để cải thiện tính khả thi.",
       "date": "Tuần 5",
       "location": "Phòng Đào tạo A",
-      "image": "/app.png"
+      "image": "/Thumbnail.png"
     },
     "event6": {
-      "title": "Buổi 6: Cuộc thi Tình huống Kinh doanh Mô phỏng (Vòng sơ loại)",
-      "description": "Thử thách tình huống kinh doanh theo nhóm. Phát triển chiến lược, phân tích thị trường, chuẩn bị tài chính và thuyết trình trước ban giám khảo.",
+      "title": "Buổi 6: Xây dựng MVP & Chiến lược Sản phẩm",
+      "description": "Từ bản Lean Canvas, học viên lên kế hoạch xây MVP nhanh, đơn giản và tiết kiệm bằng các phương pháp như Wizard-of-Oz, Landing Page, hoặc Explainer Video. Dưới sự hướng dẫn của mentor, nhóm sẽ thiết kế prototype trên Figma, chọn KPI chính như Activation Rate hoặc Day-1 Retention và lên kế hoạch test với ít nhất 5 người dùng thực.",
       "date": "Tuần 6",
-      "location": "Hội trường Thi đấu",
+      "location": "Phòng Đào tạo A",
       "image": "/Thumbnail.png"
     },
     "event7": {
-      "title": "Buổi 7: Chuẩn bị & Chỉnh sửa Bài Thuyết trình Chung kết",
-      "description": "Tinh chỉnh chiến lược dựa trên phản hồi, tối ưu hóa bài thuyết trình và thực hành xử lý các câu hỏi khó từ ban giám khảo.",
+      "title": "Buổi 7: Teamwork & Agile Fundamentals",
+      "description": "Khóa học chuyển từ 'ý tưởng cá nhân' sang 'dự án nhóm' với phương pháp Agile. Học viên sẽ áp dụng Scrum, thiết lập vai trò nhóm theo RACI Matrix (CEO, CTO, CMO, CFO) và đặt OKR theo quý. Qua thử thách Marshmallow Challenge và lập Sprint Backlog, các nhóm hiểu rõ cách làm việc hiệu quả trong khởi nghiệp tinh gọn.",
       "date": "Tuần 7",
       "location": "Phòng Đào tạo A",
-      "image": "/app.png"
+      "image": "/Thumbnail.png"
     },
     "event8": {
-      "title": "Buổi 8: Mô phỏng Tình huống Kinh doanh (Vòng Chung kết)",
-      "description": "Cuộc thi mô phỏng toàn diện với bài thuyết trình hoàn chỉnh, phản biện, chấm điểm và đánh giá chi tiết từ giảng viên.",
+      "title": "Buổi 8: Marketing Cơ bản & Growth Hacking",
+      "description": "Tìm hiểu hành trình khách hàng qua mô hình AARRR: từ thu hút đến doanh thu. Học viên phân tích chiến lược viral và nội dung trên TikTok, xây dựng Content Calendar và thiết kế bài đăng mẫu trên Canva. Các nhóm teardown chiến dịch thành công của Duolingo để hiểu rõ cách một startup tạo ra tăng trưởng đột phá dù ngân sách hạn chế.",
       "date": "Tuần 8",
+      "location": "Phòng Đào tạo A",
+      "image": "/Thumbnail.png"
+    },
+    "event9": {
+      "title": "Buổi 9: Dự toán Tài chính & Gọi vốn Cơ bản",
+      "description": "Học viên học cách tính toán chi phí thu hút khách hàng (CAC), giá trị vòng đời khách hàng (LTV), và điểm hoà vốn. Dự án nhóm sẽ xây dựng mô hình tài chính 3 năm (P&L) và giả lập gọi vốn qua role-play kiểu Shark Tank. Đây là buổi giúp học viên làm quen với ngôn ngữ và kỹ thuật gọi vốn ở giai đoạn seed-stage.",
+      "date": "Tuần 9",
+      "location": "Phòng Đào tạo A",
+      "image": "/Thumbnail.png"
+    },
+    "event10": {
+      "title": "Buổi 10: Pitch Deck & Storytelling",
+      "description": "Học viên sẽ học cách kể một câu chuyện startup thuyết phục qua slide theo cấu trúc 10-slide của Guy Kawasaki. Từ phần mở đầu cuốn hút đến phần kêu gọi đầu tư (The Ask), học viên luyện tập elevator pitch 60 giây và nhận phản hồi từ bạn bè & mentor. Bài tập cuối buổi: quay video pitch ngắn và hoàn thiện slide theo feedback.",
+      "date": "Tuần 10",
+      "location": "Phòng Đào tạo A",
+      "image": "/Thumbnail.png"
+    },
+    "event11": {
+      "title": "Buổi 11: Sprint Dự án & User Testing",
+      "description": "Các nhóm bước vào giai đoạn kiểm nghiệm sản phẩm thực tế: lập kế hoạch sprint, test usability, và thu thập feedback từ ít nhất 10 người dùng. Học viên sẽ ghi lại chỉ số Activation, vẽ biểu đồ NPS và quyết định Pivot hay Persevere. Đây là bước then chốt để cải tiến dự án trước khi bước vào vòng mock competition.",
+      "date": "Tuần 11",
+      "location": "Phòng Đào tạo A",
+      "image": "/Thumbnail.png"
+    },
+    "event12": {
+      "title": "Buổi 12: Mentor 1-1 Coaching",
+      "description": "Mỗi nhóm được coaching cá nhân 1–1 bởi chuyên gia để hoàn thiện bộ hồ sơ dự thi quốc tế như JA, DECA, hoặc Diamond Challenge. Qua buổi này, học viên rà soát pitch deck, tài chính, video demo và lập action plan 7 ngày trước deadline. Đây là buổi tinh chỉnh cuối cùng để bước vào phần thi chính thức.",
+      "date": "Tuần 12",
+      "location": "Phòng Đào tạo A",
+      "image": "/Thumbnail.png"
+    },
+    "event13": {
+      "title": "Buổi 13: Mock Competition & Q&A",
+      "description": "Mỗi nhóm sẽ tham gia vòng thi mô phỏng trước ban giám khảo giả lập: trình bày trong 5 phút và trả lời phản biện 5 phút. Học viên học cách xử lý Q&A bằng kỹ thuật Bridging, cải thiện ngôn ngữ cơ thể và nhận feedback theo thang điểm BGK. Buổi này rèn luyện sự tự tin và tinh thần sẵn sàng cho các cuộc thi thực tế.",
+      "date": "Tuần 13",
       "location": "Hội trường Thi đấu",
       "image": "/Thumbnail.png"
-    }
+    },
+    "event14": {
+      "title": "Buổi 14: Startup Ecosystem & Networking",
+      "description": "Học viên khám phá hệ sinh thái startup tại Việt Nam và Hoa Kỳ: từ incubator, VC, đến các nguồn tài trợ sinh viên. Buổi học hướng dẫn viết cold email, xây dựng mối quan hệ trên LinkedIn, và thực hành viết thư networking gửi mentor/VC thực tế. Panel thảo luận cùng alumni và chuyên gia giúp học viên kết nối sâu hơn với cộng đồng.",
+      "date": "Tuần 14",
+      "location": "Phòng Đào tạo A",
+      "image": "/Thumbnail.png"
+    },
+    "event15": {
+      "title": "Buổi 15: Reflection & University Pathway",
+      "description": "Buổi học tổng kết giúp học viên hệ thống hóa toàn bộ hành trình thông qua portfolio cá nhân, vision board và roadmap đại học 4 năm. Học viên sẽ viết thư 'Gửi chính mình 12 tháng sau', lên kế hoạch SMART, và định hướng ngành học phù hợp như Entrepreneurship, Business Analytics, hoặc Computer Science.",
+      "date": "Tuần 15",
+      "location": "Phòng Đào tạo A",
+      "image": "/Thumbnail.png"
+    },
+    "joinProgramTitle": "Sẵn sàng tham gia chương trình?",
+    "joinProgramDescription": "Nâng cao kỹ năng quản lý dự án kinh doanh của bạn với khóa học chuyên sâu",
+    "joinProgramButton": "Đăng ký ngay"
   },
   "projects": {
     "title": "Các Dự án",
@@ -220,34 +327,34 @@
     "button2": "Xem dự án →",
     "project1": {
       "id": "1",
-      "title": "Giải pháp Đóng gói Thân thiện Môi trường",
-      "description": "Giải pháp đóng gói bền vững giúp giảm thiểu chất thải và chi phí cho các doanh nghiệp thương mại điện tử.",
-      "image": "/app.png",
-      "team": "Đội Sáng tạo Xanh",
+      "title": "Cải tiến Hệ thống Bán Hàng tại Căn-tin",
+      "description": "Nhóm phân tích quy trình vận hành hiện tại tại căn-tin trường và đề xuất hệ thống thanh toán số giúp giảm thời gian chờ và tăng trải nghiệm người dùng.",
+      "image": "/Thumbnail.png",
+      "team": "School Innovation",
       "category": "Business Case"
     },
     "project2": {
       "id": "2",
-      "title": "Nền tảng Học Trí tuệ Nhân tạo",
-      "description": "Trải nghiệm học tập cá nhân hóa sử dụng trí tuệ nhân tạo để thích ứng với nhu cầu của học viên.",
+      "title": "Ứng dụng Nhắc Nhở Học Tập Thân thiện",
+      "description": "Trong 48 giờ hackathon, nhóm thiết kế prototype ứng dụng giúp học sinh tự đặt nhắc nhở và ghi chú việc học qua giao diện đơn giản, dễ dùng.",
       "image": "/Thumbnail.png",
-      "team": "Giải pháp Giáo dục Công nghệ",
-      "category": "Startup Pitch"
+      "team": "Code & Learn",
+      "category": "Hackathon"
     },
     "project3": {
       "id": "3",
-      "title": "Ứng dụng Chăm sóc Sức khỏe Di động",
-      "description": "Ứng dụng di động kết nối nhà cung cấp dịch vụ y tế địa phương với bệnh nhân ở các khu vực thiếu dịch vụ.",
-      "image": "/app.png",
-      "team": "Đội Công nghệ Y tế",
-      "category": "Hackathon"
+      "title": "Giải pháp Chia sẻ Sách cũ giữa các học sinh",
+      "description": "Nhóm trình bày mô hình khởi nghiệp phi lợi nhuận giúp học sinh chia sẻ hoặc đổi sách giáo khoa cũ trong trường qua nền tảng online đơn giản.",
+      "image": "/Thumbnail.png",
+      "team": "Startup For Good",
+      "category": "Startup Pitch"
     },
     "project4": {
       "id": "4",
-      "title": "Giải pháp Công nghệ Đô thị",
-      "description": "Nền tảng sáng tạo sử dụng IoT và AI để tối ưu hóa tài nguyên thành phố và cải thiện điều kiện sống đô thị.",
+      "title": "Tối ưu Kế hoạch CLB ngoại khóa",
+      "description": "Giải pháp phân tích dữ liệu khảo sát học sinh để thiết kế kế hoạch hoạt động CLB phù hợp và tăng tỷ lệ tham gia.",
       "image": "/Thumbnail.png",
-      "team": "Tập thể Công nghệ Đô thị",
+      "team": "Future Leaders",
       "category": "Business Case"
     }
   },
@@ -344,29 +451,83 @@
     "button3": "Đăng Ký Ngay",
     "service1": {
       "id": "1",
-      "title": "Tìm Kiếm Thực Tập/Nghiên Cứu Cho Sinh Viên Năm Nhất & Năm Hai",
-      "description": "Hỗ trợ sinh viên tìm kiếm cơ hội thực tập và nghiên cứu phù hợp",
-      "start": "Linh Hoạt",
-      "duration": "3-6 tháng",
-      "people": "1-2 sinh viên",
+      "title": "Chương trình Startup Sprint",
+      "description": "Làm việc theo nhóm để phát triển ý tưởng khởi nghiệp, được hướng dẫn bởi mentor và sử dụng công cụ thực tế.",
+      "start": "Theo quý",
+      "duration": "4-6 tuần",
+      "people": "3-5 học sinh mỗi nhóm",
       "fee": "Chi Phí - Liên Hệ",
-      "detail1": "Kết nối thực tập phù hợp với từng cá nhân",
-      "detail2": "Hướng dẫn tìm kiếm cơ hội nghiên cứu",
-      "detail3": "Hỗ trợ quá trình nộp đơn",
-      "detail4": "Chuẩn bị phỏng vấn"
+      "detail1": "Khám phá vấn đề và kiểm chứng thị trường",
+      "detail2": "Thiết kế Lean Canvas & MVP",
+      "detail3": "Phát triển bài trình bày (pitch deck)",
+      "detail4": "Thuyết trình cuối cùng trước ban giám khảo"
     },
     "service2": {
       "id": "2",
-      "title": "Đào Tạo Cuộc Thi Business Case",
-      "description": "Chuẩn bị cho sinh viên tham gia các cuộc thi business case với sự hướng dẫn chuyên môn",
-      "start": "Hàng Tháng",
-      "duration": "2-3 tuần",
-      "people": "3-5 sinh viên",
+      "title": "Bootcamp Giải Case Kinh doanh",
+      "description": "Rèn luyện như tư vấn viên thực thụ với các bài toán thực tế từ doanh nghiệp và thị trường.",
+      "start": "Hàng tháng",
+      "duration": "2 tuần",
+      "people": "4 học sinh mỗi nhóm",
       "fee": "Chi Phí - Liên Hệ",
-      "detail1": "Kỹ thuật phân tích case study",
-      "detail2": "Kỹ năng thuyết trình",
-      "detail3": "Làm việc nhóm",
-      "detail4": "Chiến lược thi đấu"
+      "detail1": "Các mô hình phân tích case chuyên nghiệp",
+      "detail2": "Chiến lược làm việc nhóm hiệu quả",
+      "detail3": "Kỹ năng trình bày chuyên nghiệp",
+      "detail4": "Mô phỏng cuộc thi mini-case"
+    },
+    "service3": {
+      "id": "3",
+      "title": "Mentorship 1:1 Cá Nhân",
+      "description": "Hướng dẫn cá nhân từ mentor giúp học viên khám phá định hướng và phát triển bản thân.",
+      "start": "Liên tục",
+      "duration": "2-3 buổi/tháng",
+      "people": "Cá nhân",
+      "fee": "Chi Phí - Liên Hệ",
+      "detail1": "Kết nối mentor phù hợp",
+      "detail2": "Đặt mục tiêu và phản tư",
+      "detail3": "Tư vấn nghề nghiệp & định hướng đại học",
+      "detail4": "Hỗ trợ dự án & hồ sơ học bổng"
+    },
+    "service4": {
+      "id": "4",
+      "title": "Showcase & Chứng nhận Cuối kỳ",
+      "description": "Trình bày dự án cuối chương trình và nhận chứng nhận hoàn thành hành trình Youngpreneur.",
+      "start": "Cuối mỗi khoá",
+      "duration": "1 ngày",
+      "people": "Tất cả học viên chương trình",
+      "fee": "Chi Phí - Liên Hệ",
+      "detail1": "Thuyết trình dự án trước công chúng",
+      "detail2": "Nhận phản hồi từ ban giám khảo",
+      "detail3": "Nhận giấy chứng nhận hoàn thành",
+      "detail4": "Kết nối mạng lưới cựu học viên"
+    }
+  },
+  "faq": {
+    "title": "Câu Hỏi Thường Gặp",
+    "question1": {
+      "id": "1",
+      "label": "Ai có thể tham gia chương trình Youngpreneur Academy?",
+      "answer": "Học sinh trung học phổ thông từ lớp 10 đến lớp 12 trên toàn quốc, đặc biệt là những bạn yêu thích kinh doanh, sáng tạo và làm việc nhóm."
+    },
+    "question2": {
+      "id": "2",
+      "label": "Chương trình kéo dài bao lâu và diễn ra theo hình thức nào?",
+      "answer": "Chương trình gồm 15 buổi học, diễn ra hàng tuần. Hình thức học tập là trực tiếp kết hợp với hoạt động nhóm, thuyết trình và thực hành dự án thực tế."
+    },
+    "question3": {
+      "id": "3",
+      "label": "Học viên sẽ học được gì sau khi hoàn thành chương trình?",
+      "answer": "Học viên sẽ xây dựng tư duy kinh doanh, kỹ năng làm việc nhóm, thuyết trình, phân tích thị trường, xây dựng sản phẩm và gọi vốn cơ bản."
+    },
+    "question4": {
+      "id": "4",
+      "label": "Chương trình có yêu cầu kiến thức nền tảng gì không?",
+      "answer": "Không. Chương trình được thiết kế phù hợp với học sinh chưa có kinh nghiệm trước, nhưng có tinh thần cầu tiến và ham học hỏi."
+    },
+    "question5": {
+      "id": "5",
+      "label": "Học viên có cần phải nộp dự án cuối khóa không?",
+      "answer": "Có. Các nhóm sẽ trình bày một dự án thực tế trong buổi cuối cùng trước hội đồng phản biện như một cuộc thi startup mô phỏng."
     }
   }
 }

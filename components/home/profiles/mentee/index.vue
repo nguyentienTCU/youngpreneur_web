@@ -65,6 +65,62 @@ const mentees = reactive<Item[]>([
         role: t('mentee.mentee7.role'),
         image: t('mentee.mentee7.image'),
         description: t('mentee.mentee7.description')
+    },
+    {
+        id: parseInt(t('mentee.mentee8.id')),
+        name: t('mentee.mentee8.name'),
+        role: t('mentee.mentee8.role'),
+        image: t('mentee.mentee8.image'),
+        description: t('mentee.mentee8.description')
+    },
+    {
+        id: parseInt(t('mentee.mentee9.id')),
+        name: t('mentee.mentee9.name'),
+        role: t('mentee.mentee9.role'),
+        image: t('mentee.mentee9.image'),
+        description: t('mentee.mentee9.description')
+    },
+    {
+        id: parseInt(t('mentee.mentee10.id')),
+        name: t('mentee.mentee10.name'),
+        role: t('mentee.mentee10.role'),
+        image: t('mentee.mentee10.image'),
+        description: t('mentee.mentee10.description')
+    },
+    {
+        id: parseInt(t('mentee.mentee11.id')),
+        name: t('mentee.mentee11.name'),
+        role: t('mentee.mentee11.role'),
+        image: t('mentee.mentee11.image'),
+        description: t('mentee.mentee11.description')
+    },
+    {
+        id: parseInt(t('mentee.mentee12.id')),
+        name: t('mentee.mentee12.name'),
+        role: t('mentee.mentee12.role'),
+        image: t('mentee.mentee12.image'),
+        description: t('mentee.mentee12.description')
+    },
+    {
+        id: parseInt(t('mentee.mentee13.id')),
+        name: t('mentee.mentee13.name'),
+        role: t('mentee.mentee13.role'),
+        image: t('mentee.mentee13.image'),
+        description: t('mentee.mentee13.description')
+    },
+    {
+        id: parseInt(t('mentee.mentee14.id')),
+        name: t('mentee.mentee14.name'),
+        role: t('mentee.mentee14.role'),
+        image: t('mentee.mentee14.image'),
+        description: t('mentee.mentee14.description')
+    },
+    {
+        id: parseInt(t('mentee.mentee15.id')),
+        name: t('mentee.mentee15.name'),
+        role: t('mentee.mentee15.role'),
+        image: t('mentee.mentee15.image'),
+        description: t('mentee.mentee15.description')
     }
 ]);
 </script>

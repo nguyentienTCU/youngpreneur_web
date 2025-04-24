@@ -20,6 +20,7 @@ export default defineNuxtConfig({
           { code: "en", name: "English", file: "en.json" },
           { code: "vi", name: "Vietnamese", file: "vi.json" },
         ],
+        localDetection: false,
       },
     ],
   ],
