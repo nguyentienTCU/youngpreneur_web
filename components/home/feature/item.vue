@@ -93,20 +93,4 @@ defineProps<Props>();
     margin-bottom: 0.5rem;
   }
 }
-
-@media (prefers-color-scheme: dark) {
-  .description-text {
-    color: rgba(255, 255, 255, 0.8);
-  }
-
-  .feature-card:hover .description-text {
-    color: rgba(255, 255, 255, 0.95);
-  }
-
-  @media (max-width: 640px) {
-    .description-text {
-      color: rgba(255, 255, 255, 0.8);
-    }
-  }
-}
 </style>

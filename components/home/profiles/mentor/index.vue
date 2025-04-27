@@ -86,12 +86,6 @@ const mentors = reactive<Item[]>([
     text-shadow: 0 0 10px rgba(255, 107, 74, 0.1);
 }
 
-@media (prefers-color-scheme: dark) {
-    .description-text {
-        color: rgba(255, 255, 255, 0.8);
-    }
-}
-
 .carousel__slide {
     padding: 1rem;
 }
