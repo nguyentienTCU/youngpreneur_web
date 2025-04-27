@@ -20,7 +20,7 @@
 <script setup lang="ts">
 import type { Events } from '~/type/info';
 import { useI18n } from '#imports';
-import { ref } from 'vue';
+import { ref, computed } from 'vue';
 
 const { t } = useI18n();
 
@@ -52,7 +52,8 @@ const getTimelineIcon = (index: number) => {
   return icons[index % icons.length];
 };
 
-const events: Events[] = [
+// Make events reactive to locale changes
+const events = computed<Events[]>(() => [
   {
     title: t('timeline.event1.title'),
     description: t('timeline.event1.description'),
@@ -143,10 +144,7 @@ const events: Events[] = [
     date: t('timeline.event15.date'),
     image: t('timeline.event15.image')
   }
-];
-
-// // Debug events data
-// console.log('Events data:', events);
+]);
 </script>
 
 <style scoped>

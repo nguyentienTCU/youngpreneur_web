@@ -70,7 +70,7 @@ import { useI18n } from '#imports';
 
 const { locale, t } = useI18n();
 
-const posts = reactive<BlogPost[]>([
+const posts = computed<BlogPost[]>(() => [
   {
     id: t('blog.post1.id'),
     title: t('blog.post1.title'),
@@ -120,9 +120,9 @@ const selectedCategory = ref('All Posts');
 
 const filteredPosts = computed(() => {
   if (selectedCategory.value === 'All Posts') {
-    return posts;
+    return posts.value;
   }
-  return posts.filter(post => post.category === selectedCategory.value);
+  return posts.value.filter(post => post.category === selectedCategory.value);
 });
 
 // Get the featured post (first post)

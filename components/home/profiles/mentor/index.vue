@@ -8,14 +8,14 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from 'vue';
+import { computed } from 'vue';
 import ScrollableCarousel from '~/components/custom ui/carousel/Scrollable/index.vue';
 import { useI18n } from '#imports';
 import type { Item } from '~/type/info';
 
 const { t } = useI18n();
 
-const mentors = reactive<Item[]>([
+const mentors = computed<Item[]>(() => [
     {
         id: parseInt(t('mentor.mentor1.id')),
         name: t('mentor.mentor1.name'),
@@ -44,8 +44,7 @@ const mentors = reactive<Item[]>([
         image: t('mentor.mentor4.image'),
         description: t('mentor.mentor4.description')
     }
-])
-
+]);
 </script>
 
 <style scoped>

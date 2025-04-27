@@ -42,14 +42,14 @@
 
 <script setup lang="ts">
 import Project from './Project.vue';
-import { ref, computed, reactive } from 'vue';
+import { ref, computed } from 'vue';
 import { useI18n } from '#imports';
 
 import type { Projects } from '~/type/info';
 
 const { t, locale } = useI18n();
 
-const projects = reactive<Projects[]>([
+const projects = computed<Projects[]>(() => [
   {
     id: t('projects.project1.id'),
     title: t('projects.project1.title'),
@@ -95,9 +95,9 @@ const selectedCategory = ref('All Projects');
 // Filter projects based on selected category
 const filteredProjects = computed(() => {
   if (selectedCategory.value === 'All Projects') {
-    return projects;
+    return projects.value;
   }
-  return projects.filter(project => project.category === selectedCategory.value);
+  return projects.value.filter(project => project.category === selectedCategory.value);
 });
 </script>
 

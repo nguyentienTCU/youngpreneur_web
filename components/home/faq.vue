@@ -34,10 +34,11 @@
 
 <script setup lang="ts">
 import { useI18n } from 'vue-i18n';
+import { computed } from 'vue';
 
 const { t } = useI18n();
 
-const faqList = ref([
+const faqList = computed(() => [
   {
     id: t("faq.question1.id"),
     label: t("faq.question1.label"),

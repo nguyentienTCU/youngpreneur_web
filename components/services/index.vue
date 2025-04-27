@@ -24,7 +24,7 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';
+import { computed } from 'vue';
 import ServiceItem from './item.vue';
 import type { Service } from '@/type/info';
 import { useI18n } from 'vue-i18n';
@@ -32,7 +32,7 @@ import { useI18n } from 'vue-i18n';
 const { t } = useI18n();
 console.log(t('services.service1.details', { returnObjects: true }))
 
-const services = ref<Service[]>([
+const services = computed<Service[]>(() => [
     {
         id: t('services.service1.id'),
         title: t('services.service1.title'),

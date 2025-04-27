@@ -9,15 +9,14 @@
 </template>
 
 <script setup lang="ts">
-import { reactive } from 'vue';
+import { computed } from 'vue';
 import AutoSlide from '~/components/custom ui/carousel/AutoSlide/index.vue';
 import type { Item } from '~/type/info';
 import { useI18n } from '#imports';
 
 const { t } = useI18n();
 
-
-const mentees = reactive<Item[]>([
+const mentees = computed<Item[]>(() => [
     {
         id: parseInt(t('mentee.mentee1.id')),
         name: t('mentee.mentee1.name'),
