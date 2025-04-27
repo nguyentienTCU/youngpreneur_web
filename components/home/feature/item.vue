@@ -8,7 +8,7 @@
     <h3 class="text-base sm:text-2xl font-medium mb-3 sm:mb-4 title-glow">
       {{ item.title }}
     </h3>
-    <p class="text-xs sm:text-base description-text">
+    <p class="text-sm sm:text-base description-text">
       {{ item.description }}
     </p>
   </div>
@@ -29,6 +29,8 @@ defineProps<Props>();
   border: 1px solid rgba(255, 107, 74, 0.1);
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 0 20px rgba(255, 107, 74, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
 }
 
 .feature-card:hover {
@@ -71,15 +73,25 @@ defineProps<Props>();
 }
 
 .description-text {
-  color: rgba(74, 74, 74, 0.9);
-  text-shadow: 0 0 10px rgba(255, 107, 74, 0.1);
+  color: #4a4a4a;
   line-height: 1.6;
   letter-spacing: 0.3px;
   transition: all 0.3s ease;
+  opacity: 1;
+  visibility: visible;
 }
 
 .feature-card:hover .description-text {
-  color: rgba(51, 51, 51, 1);
+  color: #333333;
+}
+
+@media (max-width: 640px) {
+  .description-text {
+    color: #4a4a4a;
+    opacity: 1;
+    visibility: visible;
+    margin-bottom: 0.5rem;
+  }
 }
 
 @media (prefers-color-scheme: dark) {
@@ -89,6 +101,12 @@ defineProps<Props>();
 
   .feature-card:hover .description-text {
     color: rgba(255, 255, 255, 0.95);
+  }
+
+  @media (max-width: 640px) {
+    .description-text {
+      color: rgba(255, 255, 255, 0.8);
+    }
   }
 }
 </style>
