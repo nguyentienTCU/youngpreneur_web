@@ -1,5 +1,5 @@
 <template>
-  <div :class="{ 'bg-gradient-to-r from-flame to-golden': $route.path !== '/' }">
+  <div class="bg-gradient-to-r from-flame to-golden">
     <Header />
     <slot />
     <Chatbot />

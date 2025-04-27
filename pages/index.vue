@@ -36,6 +36,10 @@ useHead({
     },
   ],
 });
+
+definePageMeta({
+  layout: 'home'
+})
 </script>
 
 <style scoped>
