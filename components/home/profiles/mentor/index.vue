@@ -1,7 +1,7 @@
 <template>
     <div class="py-16">
-        <h2 class="text-3xl font-bold text-center mb-8">{{ t('mentor.title') }}</h2>
-        <p class="text-xl text-gray-600 text-center mb-12">{{ t('mentor.description') }}</p>
+        <h2 class="text-xl sm:text-3xl font-bold text-center mb-6 sm:mb-8 section-title">{{ t('mentor.title') }}</h2>
+        <p class="text-sm sm:text-xl text-center mb-8 sm:mb-12 description-text">{{ t('mentor.description') }}</p>
 
         <ScrollableCarousel :items="mentors" />
     </div>
@@ -14,7 +14,6 @@ import { useI18n } from '#imports';
 import type { Item } from '~/type/info';
 
 const { t } = useI18n();
-
 
 const mentors = reactive<Item[]>([
     {
@@ -47,11 +46,52 @@ const mentors = reactive<Item[]>([
     }
 ])
 
-
-
 </script>
 
-<style>
+<style scoped>
+.section-title {
+    background: linear-gradient(135deg, #e74c3c 0%, #ff6b4a 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 0 15px rgba(255, 107, 74, 0.2);
+    position: relative;
+}
+
+.section-title::after {
+    content: '';
+    position: absolute;
+    width: 40px;
+
+    @media (min-width: 640px) {
+        width: 60px;
+    }
+
+    height: 3px;
+    bottom: -8px;
+
+    @media (min-width: 640px) {
+        bottom: -10px;
+    }
+
+    left: 50%;
+    transform: translateX(-50%);
+    background: linear-gradient(90deg, #e74c3c 0%, #ff6b4a 100%);
+    border-radius: 2px;
+    box-shadow: 0 0 10px rgba(255, 107, 74, 0.3);
+}
+
+.description-text {
+    color: rgba(74, 74, 74, 0.9);
+    text-shadow: 0 0 10px rgba(255, 107, 74, 0.1);
+}
+
+@media (prefers-color-scheme: dark) {
+    .description-text {
+        color: rgba(255, 255, 255, 0.8);
+    }
+}
+
 .carousel__slide {
     padding: 1rem;
 }

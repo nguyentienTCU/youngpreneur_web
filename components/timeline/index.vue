@@ -3,7 +3,10 @@
     <h2 class="timeline-title">{{ t('timeline.title') }}</h2>
     <div class="timeline-container">
       <div v-for="(event, index) in events" :key="index" :class="['timeline-item', index % 2 === 0 ? 'left' : 'right']">
-        <div class="content">
+        <div class="timeline-dot" @click="toggleCard(index)" :class="{ 'active': visibleCards[index] }">
+          <Icon :name="getTimelineIcon(index)" class="timeline-icon" />
+        </div>
+        <div class="content" v-show="visibleCards[index]" :class="{ 'fade-enter': visibleCards[index] }">
           <span class="event-date">{{ event.date }}</span>
           <h4 class="event-title">{{ event.title }}</h4>
           <p class="event-description">{{ event.description }}</p>
@@ -17,8 +20,37 @@
 <script setup lang="ts">
 import type { Events } from '~/type/info';
 import { useI18n } from '#imports';
+import { ref } from 'vue';
 
 const { t } = useI18n();
+
+// Initialize all cards as visible
+const visibleCards = ref(Array(15).fill(true));
+
+const toggleCard = (index: number) => {
+  visibleCards.value[index] = !visibleCards.value[index];
+};
+
+const getTimelineIcon = (index: number) => {
+  const icons = [
+    'ph:flame-fill',
+    'ph:lightbulb-fill',
+    'ph:trophy-fill',
+    'ph:star-fill',
+    'ph:rocket-fill',
+    'ph:target-fill',
+    'ph:chart-line-up-fill',
+    'ph:brain-fill',
+    'ph:users-fill',
+    'ph:presentation-fill',
+    'ph:handshake-fill',
+    'ph:medal-fill',
+    'ph:crown-fill',
+    'ph:network-fill',
+    'ph:flag-fill'
+  ];
+  return icons[index % icons.length];
+};
 
 const events: Events[] = [
   {
@@ -113,20 +145,20 @@ const events: Events[] = [
   }
 ];
 
-// Debug events data
-console.log('Events data:', events);
+// // Debug events data
+// console.log('Events data:', events);
 </script>
 
 <style scoped>
 .timeline-section {
   padding: 50px 20px;
-  background-color: var(--background-color);
+  background: linear-gradient(135deg, #fff5e6 0%, #ffe0b2 100%);
   min-height: 100vh;
 }
 
 .timeline-title {
   text-align: center;
-  color: var(--primary-color);
+  color: black;
   margin-bottom: 50px;
   font-size: 2rem;
   font-weight: bold;
@@ -144,10 +176,12 @@ console.log('Events data:', events);
   position: absolute;
   left: 50%;
   top: 0;
-  width: 4px;
+  width: 6px;
   height: 100%;
-  background-color: var(--primary-color);
+  background: linear-gradient(to bottom, #ff6b4a 0%, #ffd700 100%);
   transform: translateX(-50%);
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba(255, 107, 74, 0.3);
 }
 
 .timeline-item {
@@ -168,13 +202,21 @@ console.log('Events data:', events);
 
 .timeline-item .content {
   position: relative;
-  background-color: var(--primary-color);
+  background: linear-gradient(135deg, #ff6b4a 0%, #ff4b2b 100%);
   color: #fff;
-  border-radius: 8px;
+  border-radius: 12px;
   padding: 20px;
   animation: fadeInUp 0.6s ease both;
   opacity: 1;
   visibility: visible;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 6px rgba(255, 107, 74, 0.1);
+}
+
+.timeline-item:hover .content {
+  transform: scale(1.05);
+  box-shadow: 0 12px 24px rgba(255, 107, 74, 0.2);
+  background: linear-gradient(135deg, #ff7d61 0%, #ff5c40 100%);
 }
 
 .timeline-item.left .content::after {
@@ -184,7 +226,7 @@ console.log('Events data:', events);
   right: -15px;
   border-width: 8px;
   border-style: solid;
-  border-color: transparent transparent transparent var(--primary-color);
+  border-color: transparent transparent transparent #ff4b2b;
 }
 
 .timeline-item.right .content::after {
@@ -194,44 +236,34 @@ console.log('Events data:', events);
   left: -15px;
   border-width: 8px;
   border-style: solid;
-  border-color: transparent var(--primary-color) transparent transparent;
+  border-color: transparent #ff6b4a transparent transparent;
 }
 
 .timeline-item::before {
-  content: "";
-  position: absolute;
-  top: 30px;
-  right: -8px;
-  width: 16px;
-  height: 16px;
-  background-color: var(--secondary-color);
-  border: 4px solid var(--primary-color);
-  border-radius: 50%;
-  z-index: 1;
-}
-
-.timeline-item.right::before {
-  left: -8px;
+  display: none;
 }
 
 .event-date {
   font-size: 0.9rem;
-  color: #fff;
+  color: #FFC300;
   margin-bottom: 5px;
   display: block;
+  font-weight: 600;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .event-title {
-  color: var(--secondary-color);
+  color: #FFE0B2;
   margin-bottom: 10px;
   font-size: 1.2rem;
   font-weight: bold;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.1);
 }
 
 .event-description {
   font-size: 1rem;
-  line-height: 1.5;
-  color: #fff;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.95);
   margin: 0;
 }
 
@@ -290,7 +322,78 @@ console.log('Events data:', events);
   }
 }
 
+.timeline-dot {
+  position: absolute;
+  top: 30px;
+  right: -12px;
+  width: 24px;
+  height: 24px;
+  background: linear-gradient(135deg, #ff6b4a 0%, #ffd700 100%);
+  border: 4px solid #fff;
+  border-radius: 50%;
+  z-index: 1;
+  box-shadow: 0 0 10px rgba(255, 107, 74, 0.3);
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.timeline-item.right .timeline-dot {
+  left: -12px;
+  right: auto;
+}
+
+.timeline-icon {
+  width: 14px;
+  height: 14px;
+  color: #fff;
+}
+
+.timeline-item:hover .timeline-dot {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(255, 107, 74, 0.5);
+}
+
+.timeline-dot.active {
+  background: linear-gradient(135deg, #ffd700 0%, #ff6b4a 100%);
+  transform: scale(1.1);
+}
+
+.timeline-dot:hover {
+  transform: scale(1.2);
+  box-shadow: 0 0 15px rgba(255, 107, 74, 0.5);
+}
+
+.content {
+  transition: all 0.3s ease;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.content.fade-enter {
+  animation: fadeInUp 0.3s ease-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 @media screen and (max-width: 768px) {
+  .timeline-title {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+  }
+
   .timeline-item {
     width: 100%;
     left: 0 !important;
@@ -303,6 +406,26 @@ console.log('Events data:', events);
     margin-left: 30px;
   }
 
+  .event-date,
+  .event-title,
+  .event-description {
+    text-align: left;
+  }
+
+  .event-date {
+    font-size: 0.8rem;
+  }
+
+  .event-title {
+    font-size: 1rem;
+    margin-bottom: 8px;
+  }
+
+  .event-description {
+    font-size: 0.9rem;
+    line-height: 1.4;
+  }
+
   .timeline-item.left .content::after,
   .timeline-item.right .content::after {
     left: -15px;
@@ -310,12 +433,22 @@ console.log('Events data:', events);
     border-color: transparent var(--primary-color) transparent transparent;
   }
 
-  .timeline-item::before {
-    left: 15px;
-  }
-
   .timeline-line {
     left: 20px;
+  }
+
+  .timeline-dot {
+    left: 20px !important;
+    right: auto;
+    transform: translate(-50%, 0);
+  }
+
+  .timeline-item:hover .timeline-dot {
+    transform: translate(-50%, 0) scale(1.2);
+  }
+
+  .timeline-dot.active {
+    transform: translate(-50%, 0) scale(1.1);
   }
 }
 </style>

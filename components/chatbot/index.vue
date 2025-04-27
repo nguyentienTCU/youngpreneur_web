@@ -4,8 +4,8 @@
         <div :class="['chat-modal', { open: isOpen }]">
             <div class="chat-header">
                 <div class="header-content">
-                    <h3>Let's Chat!</h3>
-                    <p class="header-subtitle">We'll reply as soon as we can</p>
+                    <h3>Let's Chat! <span role="img" aria-label="flame">🔥</span></h3>
+                    <p class="header-subtitle">Ready to ignite your entrepreneurial journey!</p>
                 </div>
                 <button class="close-button" @click="toggleChat">
                     <CloseOutlined />
@@ -16,9 +16,7 @@
                 <template v-if="noMessages">
                     <div class="message-block assistant-block">
                         <div class="message assistant">
-                            <p>
-                                {{ currentUser?.name ? `Hi, ${currentUser.name}! How can I help you today?` : 'Hi! How can I help you today ? ' }}
-                            </p>
+                            <p>Hi there! 🔥 Ready to start your journey?</p>
                         </div>
                         <span class="message-time">{{ formatTime() }}</span>
                     </div>
@@ -42,7 +40,7 @@
                 <button type="button" class="emoji-button">
                     <SmileOutlined />
                 </button>
-                <input class="chat-input" v-model="input" placeholder="Write your message..." />
+                <input class="chat-input" v-model="input" placeholder="Ask me anything..." />
                 <button type="submit" class="send-button">Send</button>
             </form>
         </div>
@@ -59,9 +57,6 @@ import { ref, watch, nextTick } from 'vue'
 import { MessageOutlined, CloseOutlined, SmileOutlined } from '@ant-design/icons-vue'
 import PromptSuggestionsRow from './PromptSuggestionsRow.vue'
 import LoadingBubble from '../custom ui/LoadingBubble.vue'
-
-// Mocked composable for auth (replace with your own auth logic)
-const currentUser = ref({ name: '' }) // or null
 
 const input = ref('')
 const messages = ref([])
@@ -250,7 +245,7 @@ watch(isOpen, (newValue) => {
     width: 60px;
     height: 60px;
     border-radius: 30px;
-    background-color: #1677ff;
+    background: linear-gradient(135deg, #FF6B00 0%, #FFC300 100%);
     color: white;
     border: none;
     cursor: pointer;
@@ -258,14 +253,13 @@ watch(isOpen, (newValue) => {
     align-items: center;
     justify-content: center;
     font-size: 24px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 4px 12px rgba(255, 107, 0, 0.25);
+    transition: all 0.3s ease;
 }
 
 .chat-toggle-button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2);
-    background-color: #4096ff;
+    transform: translateY(-2px) scale(1.05);
+    box-shadow: 0 6px 16px rgba(255, 107, 0, 0.35);
 }
 
 .chat-modal {
@@ -274,9 +268,9 @@ watch(isOpen, (newValue) => {
     right: 20px;
     width: 370px;
     height: 550px;
-    background: white;
-    border-radius: 16px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    background: #FFF8F0;
+    border-radius: 24px;
+    box-shadow: 0 4px 24px rgba(255, 107, 0, 0.15);
     display: flex;
     flex-direction: column;
     overflow: hidden;
@@ -284,9 +278,7 @@ watch(isOpen, (newValue) => {
     transform: translateY(20px);
     pointer-events: none;
     transition: all 0.3s ease;
-    border: 1px solid #e8e8e8;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-        Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+    border: 1px solid rgba(255, 107, 0, 0.1);
 }
 
 .chat-modal.open {
@@ -297,43 +289,39 @@ watch(isOpen, (newValue) => {
 
 .chat-header {
     padding: 20px;
-    background-color: white;
-    color: #333;
+    background: linear-gradient(135deg, #FF6B00 0%, #FFC300 100%);
+    color: white;
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    border-bottom: 1px solid #e8e8e8;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 }
 
-.header-content {
-    display: flex;
-    flex-direction: column;
-    gap: 4px;
-}
-
-.chat-header h3 {
+.header-content h3 {
     margin: 0;
-    color: #333;
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
 }
 
 .header-subtitle {
-    margin: 0;
-    color: #666;
+    margin: 4px 0 0;
+    opacity: 0.9;
     font-size: 14px;
 }
 
 .close-button {
     background: none;
     border: none;
-    color: #999;
+    color: white;
     cursor: pointer;
     font-size: 18px;
     padding: 4px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.close-button:hover {
+    opacity: 1;
 }
 
 .chat-messages {
@@ -343,7 +331,7 @@ watch(isOpen, (newValue) => {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    background-color: #f5f5f5;
+    background: #FFF8F0;
 }
 
 .message-block {
@@ -365,7 +353,8 @@ watch(isOpen, (newValue) => {
 
 .message {
     padding: 12px 16px;
-    border-radius: 16px;
+    border-radius: 20px;
+    max-width: 85%;
 }
 
 .message p {
@@ -375,41 +364,44 @@ watch(isOpen, (newValue) => {
 
 .message-time {
     font-size: 12px;
-    color: #999;
-    padding: 0 4px;
-}
-
-.message.user {
-    background-color: #1677ff;
-    color: white;
-    border-bottom-right-radius: 4px;
+    color: #666;
+    margin-top: 4px;
 }
 
 .message.assistant {
-    background-color: white;
-    color: #333;
-    border-bottom-left-radius: 4px;
+    background: #FF6B00;
+    color: white;
+    border-bottom-left-radius: 8px;
+}
+
+.message.user {
+    background: linear-gradient(135deg, #F0386B 0%, #FF6B98 100%);
+    color: white;
+    border-bottom-right-radius: 8px;
 }
 
 .chat-input-form {
     padding: 16px;
-    border-top: 1px solid #e8e8e8;
+    background: white;
+    border-top: 1px solid rgba(255, 107, 0, 0.1);
     display: flex;
     gap: 12px;
-    background: white;
     align-items: center;
 }
 
 .emoji-button {
+    color: #FF6B00;
     background: none;
     border: none;
-    color: #999;
     cursor: pointer;
     font-size: 20px;
     padding: 8px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    opacity: 0.8;
+    transition: opacity 0.2s ease;
+}
+
+.emoji-button:hover {
+    opacity: 1;
 }
 
 .chat-input {
@@ -419,6 +411,7 @@ watch(isOpen, (newValue) => {
     outline: none;
     font-size: 14px;
     background: transparent;
+    color: #333;
 }
 
 .chat-input::placeholder {
@@ -426,18 +419,19 @@ watch(isOpen, (newValue) => {
 }
 
 .send-button {
-    background-color: #1677ff;
+    background: linear-gradient(135deg, #FF6B00 0%, #FFC300 100%);
     color: white;
     border: none;
     padding: 8px 16px;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
-    transition: background-color 0.2s ease;
+    transition: all 0.3s ease;
     font-weight: 500;
 }
 
 .send-button:hover {
-    background-color: #4096ff;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(255, 107, 0, 0.2);
 }
 
 .starter-text {

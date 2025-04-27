@@ -1,6 +1,6 @@
 <template>
-    <div className="loading-bubble">
-        <div className="typing-dots">
+    <div class="loading-bubble">
+        <div class="typing-dots">
             <span></span>
             <span></span>
             <span></span>
@@ -10,9 +10,10 @@
 
 <style scoped>
 .loading-bubble {
-    background-color: #f0f0f0;
+    background-color: #FFC300;
     padding: 12px 16px;
-    border-radius: 18px;
+    border-radius: 20px;
+    border-bottom-left-radius: 8px;
     display: inline-block;
     margin: 8px 0;
     align-self: flex-start;
@@ -26,7 +27,7 @@
 .typing-dots span {
     width: 8px;
     height: 8px;
-    background-color: #999;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 50%;
     animation: typing 1.4s infinite;
     display: inline-block;
@@ -45,7 +46,7 @@
     0%,
     100% {
         transform: translateY(0);
-        opacity: 0.3;
+        opacity: 0.4;
     }
 
     50% {

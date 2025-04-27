@@ -1,7 +1,8 @@
 <template>
     <div class="mentee-section">
-        <h2 class="text-3xl font-bold text-center mb-8 text-white">{{ t('mentee.title') }}</h2>
-        <p class="text-xl text-white/80 text-center mb-12">{{ t('mentee.description') }}</p>
+        <h2 class="text-xl sm:text-3xl font-bold text-center mb-6 sm:mb-8 text-white">{{ t('mentee.title') }}</h2>
+        <p class="text-sm sm:text-xl text-white/90 text-center mb-8 sm:mb-12 subtitle-glow">{{ t('mentee.description')
+        }}</p>
 
         <AutoSlide :items="mentees" />
     </div>
@@ -128,8 +129,12 @@ const mentees = reactive<Item[]>([
 <style>
 .mentee-section {
     padding: 4rem 0;
-    background: linear-gradient(135deg, #6366f1 0%, #8b5cf6 100%);
+    background: linear-gradient(135deg, #FF6B00 0%, #FFC300 100%);
     width: 100%;
     min-height: 100%;
+}
+
+.subtitle-glow {
+    text-shadow: 0 0 15px rgba(255, 140, 0, 0.2);
 }
 </style>

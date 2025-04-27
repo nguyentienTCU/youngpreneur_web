@@ -1,36 +1,36 @@
 <template>
     <UCard class="service-card">
         <div class="service-header">
-            <UText class="block mb-2 font-bold text-2xl">{{ service.title }}</UText>
-            <UText color="gray" class="block">{{ service.description }}</UText>
+            <UText class="block mb-2 font-bold text-xl md:text-2xl">{{ service.title }}</UText>
+            <UText color="gray" class="block text-sm md:text-base">{{ service.description }}</UText>
         </div>
 
         <div class="service-info">
             <div class="info-item">
                 <CalendarOutlined class="icon" />
-                <UText color="gray">{{ service.start }}</UText>
+                <UText color="gray" class="text-sm md:text-base">{{ service.start }}</UText>
             </div>
             <div class="info-item">
                 <ClockCircleOutlined class="icon" />
-                <UText color="gray">{{ service.duration }}</UText>
+                <UText color="gray" class="text-sm md:text-base">{{ service.duration }}</UText>
             </div>
             <div class="info-item">
                 <UsergroupAddOutlined class="icon" />
-                <UText color="gray">{{ service.people }}</UText>
+                <UText color="gray" class="text-sm md:text-base">{{ service.people }}</UText>
             </div>
             <div class="info-item">
                 <DollarOutlined class="icon" />
-                <UText color="gray">{{ service.fee }}</UText>
+                <UText color="gray" class="text-sm md:text-base">{{ service.fee }}</UText>
             </div>
         </div>
 
-        <UButton type="primary" class="expand-button max-w-28 !text-center" @click="expanded = !expanded">
+        <UButton type="primary" class="expand-button max-w-28" @click="expanded = !expanded">
             {{ expanded ? t('services.button1,1') : t('services.button1,2') }}
         </UButton>
 
         <ul v-if="expanded" class="service-details mt-3 list-disc pl-6">
             <li v-for="(detail, index) in service.details" :key="index">
-                <UText color="gray">{{ detail }}</UText>
+                <UText color="gray" class="text-sm md:text-base">{{ detail }}</UText>
             </li>
         </ul>
     </UCard>
@@ -61,6 +61,7 @@ const { t } = useI18n();
     width: 50%;
     min-width: 700px;
     max-width: 800px;
+    padding: 1rem;
 }
 
 .service-header {
@@ -82,10 +83,20 @@ const { t } = useI18n();
 }
 
 .expand-button {
+    background-color: #FF3C38;
     margin-top: 12px;
     width: 100%;
     @apply flex items-center justify-center w-full;
     text-align: center;
+}
+
+.expand-button:hover {
+    background-color: #FF8360;
+}
+
+.icon {
+    font-size: 1rem;
+    @apply text-base md:text-lg;
 }
 
 @media screen and (max-width: 1500px) {

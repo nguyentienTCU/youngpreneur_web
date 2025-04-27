@@ -9,9 +9,9 @@
 
 <script setup>
 const suggestions = [
-    "Tell me about the YoungPreneur Academy program",
-    "How can I join as a mentor?",
-    "What career opportunities are available?",
+    "Tell me about YoungPreneur Academy 🚀",
+    "How can I join as a mentor? 🤝",
+    "Career opportunities available? 💼",
 ];
 
 const emit = defineEmits(['suggestion-selected']);
@@ -24,60 +24,43 @@ const handleSuggestionClick = (suggestion) => {
 <style scoped>
 .prompt-suggestions {
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.5rem;
-    margin-top: 1rem;
+    flex-direction: column;
+    gap: 12px;
+    margin: 20px 0;
+    width: 100%;
 }
 
 .suggestion-button {
-    background-color: #f0f0f0;
-    border: none;
-    border-radius: 6px;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    transition: background-color 0.2s ease;
-}
-
-.suggestion-button:hover {
-    background-color: #e0e0e0;
-}
-</style>
-
-
-<style scoped>
-.prompt-suggestions {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 8px;
-    margin: 16px 0;
-}
-
-.suggestion-button {
-    background-color: white;
-    border: 1px solid #F0386B;
+    background: linear-gradient(135deg, #ffffff 0%, #fff5f8 100%);
+    border: 1.5px solid rgba(240, 56, 107, 0.3);
     color: #F0386B;
-    padding: 8px 16px;
-    border-radius: 20px;
+    padding: 10px 16px;
+    border-radius: 24px;
     cursor: pointer;
-    transition: all 0.2s ease;
-    font-size: 0.9rem;
-    white-space: nowrap;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    font-size: 0.85rem;
+    text-align: left;
+    width: 100%;
+    overflow: visible;
+    white-space: normal;
+    line-height: 1.4;
+    backdrop-filter: blur(8px);
+    box-shadow: 0 2px 8px rgba(240, 56, 107, 0.1);
 }
 
 .suggestion-button:hover {
-    background-color: #F0386B;
+    background: linear-gradient(135deg, #F0386B 0%, #FF6B98 100%);
     color: white;
-    transform: translateY(-2px);
+    transform: translateY(-2px) scale(1.01);
+    box-shadow: 0 6px 16px rgba(240, 56, 107, 0.25);
+    border-color: transparent;
 }
 
 @media (max-width: 768px) {
-    .prompt-suggestions {
-        flex-direction: column;
-    }
-
     .suggestion-button {
-        width: 100%;
-        text-align: center;
+        text-align: left;
+        padding: 8px 14px;
+        font-size: 0.8rem;
     }
 }
 </style>

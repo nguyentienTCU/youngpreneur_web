@@ -1,21 +1,16 @@
 <template>
   <div>
-    <!-- Home Sections -->
+    <!-- Home Hero (Header) -->
     <HomeHero />
 
-    <Intro />
-
-    <Testimonials />
-
-    <!-- Profiles Section -->
-    <ProfilesSection />
-
-    <!-- Projects Section -->
-    <ProjectsSection />
-
-    <!-- Blog Section -->
-    <BlogSection />
-
+    <!-- Main Content with Warm Background -->
+    <div class="main-content">
+      <Intro />
+      <Testimonials />
+      <ProfilesSection />
+      <ProjectsSection />
+      <BlogSection />
+    </div>
     <FAQSection />
   </div>
 </template>
@@ -42,3 +37,27 @@ useHead({
   ],
 });
 </script>
+
+<style scoped>
+.main-content {
+  background: linear-gradient(135deg, #FFF4E5 0%, #FFE0B2 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.main-content::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(45deg, rgba(255, 107, 74, 0.05) 0%, rgba(255, 195, 0, 0.05) 100%);
+  z-index: 1;
+}
+
+.main-content>* {
+  position: relative;
+  z-index: 2;
+}
+</style>

@@ -6,6 +6,14 @@ export default <Partial<Config>>{
       fontFamily: {
         sans: ["Noto Sans", "DM Sans", ...defaultTheme.fontFamily.sans],
       },
+      colors: {
+        flame: '#FF6B00',
+        golden: '#FFC300',
+        sunset: '#FF3C38',
+        cream: '#FFF8E7',
+        charcoal: '#333333',
+        coral: '#FF8360',
+      },
     },
   },
 };

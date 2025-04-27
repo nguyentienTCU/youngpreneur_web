@@ -4,20 +4,22 @@
             <!-- First set of items -->
             <div v-for="item in items" :key="item.id" class="embla__slide">
                 <div
-                    class="card bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105 h-[500px] flex flex-col max-w-[360px] mx-auto">
-                    <img :src="item.image" :alt="item.name" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="text-xl font-semibold text-center mb-2 text-gray-800">{{ item.name }}</h3>
-                    <p class="text-gray-600 text-center mb-2 text-sm">{{ item.role }}</p>
+                    class="card bg-white/90 backdrop-blur-md rounded-lg shadow-lg p-4 sm:p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-xl h-[500px] flex flex-col max-w-[360px] mx-auto">
+                    <img :src="item.image" :alt="item.name"
+                        class="w-20 sm:w-24 h-20 sm:h-24 rounded-full mx-auto mb-3 sm:mb-4 object-cover">
+                    <h3 class="text-lg sm:text-xl font-semibold text-center mb-2 name-gradient">{{ item.name }}</h3>
+                    <p class="text-gray-600 text-center mb-2 text-xs sm:text-sm">{{ item.role }}</p>
                     <p class="text-gray-500 text-center mb-4 text-xs">{{ item.description }}</p>
                 </div>
             </div>
             <!-- Duplicate set of items for seamless loop -->
             <div v-for="item in items" :key="`duplicate-${item.id}`" class="embla__slide">
                 <div
-                    class="card bg-white rounded-lg shadow-lg p-6 transform transition-transform hover:scale-105 h-[500px] flex flex-col max-w-[360px] mx-auto">
-                    <img :src="item.image" :alt="item.name" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
-                    <h3 class="text-xl font-semibold text-center mb-2 text-gray-800">{{ item.name }}</h3>
-                    <p class="text-gray-600 text-center mb-2 text-sm">{{ item.role }}</p>
+                    class="card bg-white/90 backdrop-blur-md rounded-lg shadow-lg p-4 sm:p-6 transform transition-all duration-300 hover:scale-105 hover:shadow-xl h-[500px] flex flex-col max-w-[360px] mx-auto">
+                    <img :src="item.image" :alt="item.name"
+                        class="w-20 sm:w-24 h-20 sm:h-24 rounded-full mx-auto mb-3 sm:mb-4 object-cover">
+                    <h3 class="text-lg sm:text-xl font-semibold text-center mb-2 name-gradient">{{ item.name }}</h3>
+                    <p class="text-gray-600 text-center mb-2 text-xs sm:text-sm">{{ item.role }}</p>
                     <p class="text-gray-500 text-center mb-4 text-xs">{{ item.description }}</p>
                 </div>
             </div>
@@ -44,15 +46,15 @@ onMounted(() => {
     if (emblaNode.value) {
         const options = {
             loop: true,
-            dragFree: true,
+            dragFree: false,
+            draggable: false,
             containScroll: 'trimSnaps',
             align: 'start',
             skipSnaps: true,
             inViewThreshold: 0.7,
-            dragThreshold: 0,
+            dragThreshold: 20,
+            touchThreshold: 20,
             selectedClass: '',
-            draggable: false,
-            skipSnaps: true,
             speed: 1,
             preventInteractionOnTransition: true
         }
@@ -90,21 +92,31 @@ onMounted(() => {
 
         emblaApi = EmblaCarousel(emblaNode.value, options, plugins)
 
-        // Prevent default mouse behaviors
+        // Prevent ALL touch and mouse events
         const container = emblaNode.value.querySelector('.embla__container')
         if (container) {
-            container.addEventListener('mousedown', (e) => {
+            const preventAll = (e) => {
                 e.preventDefault()
                 e.stopPropagation()
-            })
-            container.addEventListener('mouseup', (e) => {
-                e.preventDefault()
-                e.stopPropagation()
-            })
-            container.addEventListener('mousemove', (e) => {
-                e.preventDefault()
-                e.stopPropagation()
-            })
+            }
+
+            // Mouse events
+            container.addEventListener('mousedown', preventAll, { passive: false })
+            container.addEventListener('mouseup', preventAll, { passive: false })
+            container.addEventListener('mousemove', preventAll, { passive: false })
+            container.addEventListener('click', preventAll, { passive: false })
+
+            // Touch events
+            container.addEventListener('touchstart', preventAll, { passive: false })
+            container.addEventListener('touchmove', preventAll, { passive: false })
+            container.addEventListener('touchend', preventAll, { passive: false })
+            container.addEventListener('touchcancel', preventAll, { passive: false })
+
+            // Pointer events
+            container.addEventListener('pointerdown', preventAll, { passive: false })
+            container.addEventListener('pointermove', preventAll, { passive: false })
+            container.addEventListener('pointerup', preventAll, { passive: false })
+            container.addEventListener('pointercancel', preventAll, { passive: false })
         }
     }
 })
@@ -129,6 +141,7 @@ onUnmounted(() => {
             black 20%,
             black 80%,
             transparent);
+    pointer-events: none;
 }
 
 .embla__container {
@@ -141,6 +154,7 @@ onUnmounted(() => {
     touch-action: none;
     -webkit-tap-highlight-color: transparent;
     will-change: transform;
+    pointer-events: none;
 }
 
 .embla__slide {
@@ -150,9 +164,36 @@ onUnmounted(() => {
     position: relative;
     width: 100%;
     max-width: 360px;
+    pointer-events: none;
 }
 
 .card {
-    pointer-events: auto;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(31, 38, 135, 0.15);
+}
+
+.card:hover {
+    border-color: rgba(255, 140, 0, 0.2);
+    box-shadow: 0 15px 45px rgba(255, 140, 0, 0.15);
+}
+
+.name-gradient {
+    background: linear-gradient(135deg, #1a1a1a 0%, #4a3f35 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+img {
+    border: 2px solid rgba(255, 140, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.card:hover img {
+    border-color: rgba(255, 140, 0, 0.3);
+    transform: scale(1.05);
 }
 </style>

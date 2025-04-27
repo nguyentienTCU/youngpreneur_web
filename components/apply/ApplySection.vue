@@ -1,11 +1,11 @@
 <template>
-  <section class="py-20 bg-gradient-to-b from-gray-50 to-white hero-section">
+  <section class="py-20 hero-section">
     <div class="text-center mb-12 mt-8">
-        <h2 class="text-4xl font-bold text-gray-900 mb-4">{{ t('apply.title') }}</h2>
-        <p class="text-gray-600 text-lg max-w-xl mx-auto">
-          {{ t('apply.description') }}
-        </p>
-      </div>
+      <h2 class="text-2xl md:text-4xl font-bold text-gray-900 mb-4">{{ t('apply.title') }}</h2>
+      <p class="text-base md:text-lg text-gray-600 max-w-xl mx-auto px-4">
+        {{ t('apply.description') }}
+      </p>
+    </div>
     <div class="container mx-auto px-4 max-w-2xl">
 
       <!-- Success Message -->
@@ -255,24 +255,27 @@ const handleSubmit = async () => {
 
 <style scoped>
 .custom-action-button {
-    @apply flex items-center justify-center;
-    background-color: #1890ff;
-    color: white;
-    padding: 0.5rem 2rem;
-    border-radius: 9999px;
-    transition: all 0.3s ease;
-    width: 100%;
-    max-width: 12rem;
-    text-align: center;
+  @apply flex items-center justify-center;
+  background-color: #FF3C38;
+  color: #FFFFFF;
+  padding: 0.5rem 2rem;
+  border-radius: 9999px;
+  transition: all 0.3s ease;
+  width: 100%;
+  max-width: 12rem;
+  text-align: center;
+  border: 2px solid #FF3C38;
 }
 
 .custom-action-button:hover {
-    background-color: #40a9ff;
-    transform: translateY(-2px);
+  background-color: #FFFFFF;
+  transform: translateY(-5px);
+  border: 2px solid #FF3C38;
+  color: #FF3C38;
 }
 
 .hero-section {
-    @apply flex flex-col bg-gradient-to-r from-orange-600 to-yellow-600;
+  @apply flex flex-col;
 }
 
 .bg-gray {

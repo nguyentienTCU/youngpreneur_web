@@ -1,8 +1,8 @@
 <template>
     <section class="hero-section services-section">
         <div class="mt-24">
-            <div class="container mx-auto px-4 text-center">
-                <h1 class="text-5xl font-bold mb-6 text-white">{{ t('services.title') }}</h1>
+            <div class="container mx-auto px-4 py-3 pb-5 text-center">
+                <h1 class="text-2xl md:text-4xl font-bold mb-6 text-black">{{ t('services.title') }}</h1>
             </div>
 
             <ServiceItem v-for="service in services" :key="service.id" :service="service" />
@@ -98,7 +98,7 @@ const services = ref<Service[]>([
 
 <style scoped>
 .hero-section {
-    @apply relative flex flex-col bg-gradient-to-r from-orange-600 to-yellow-600;
+    @apply relative flex flex-col;
 }
 
 .services-container {
@@ -116,18 +116,21 @@ const services = ref<Service[]>([
 
 .custom-action-button {
     @apply flex items-center justify-center;
-    background-color: #1890ff;
-    color: white;
+    background-color: #FF3C38;
+    color: #FFFFFF;
     padding: 0.5rem 2rem;
     border-radius: 9999px;
     transition: all 0.3s ease;
     width: 100%;
     max-width: 12rem;
     text-align: center;
+    border: 2px solid #FF3C38;
 }
 
 .custom-action-button:hover {
-    background-color: #40a9ff;
-    transform: translateY(-2px);
+    background-color: #FFFFFF;
+    transform: translateY(-5px);
+    border: 2px solid #FF3C38;
+    color: #FF3C38;
 }
 </style>
