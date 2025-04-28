@@ -22,7 +22,8 @@
             </div>
           </USlideover>
           <NuxtLink to="/">
-            <NuxtImg preload class="w-10 h-10" src="/logo.svg" />
+            <!-- <NuxtImg preload :class="route.path === '/' ? 'w-8 h-10' : 'w-9 h-8'" :src="route.path === '/' ? '/logo_image.png' : '/logo_image_black.png'" /> -->
+            <NuxtImg preload class="'w-10 h-10" src="/logo_image_black.png" />
           </NuxtLink>
         </div>
 
