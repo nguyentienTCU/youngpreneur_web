@@ -1,6 +1,6 @@
 <template>
   <section class="pb-20 pt-5">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4" data-aos="fade-right">
       <h2 class="text-xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 section-title">{{ t('testimonials.title') }}
       </h2>
 

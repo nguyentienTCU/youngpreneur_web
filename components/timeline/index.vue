@@ -2,7 +2,8 @@
   <section class="timeline-section">
     <h2 class="timeline-title">{{ t('timeline.title') }}</h2>
     <div class="timeline-container">
-      <div v-for="(event, index) in events" :key="index" :class="['timeline-item', index % 2 === 0 ? 'left' : 'right']">
+      <div class="timeline-line"></div>
+      <div data-aos="fade-in" v-for="(event, index) in events" :key="index" :class="['timeline-item', index % 2 === 0 ? 'left' : 'right']">
         <div class="timeline-dot" @click="toggleCard(index)" :class="{ 'active': visibleCards[index] }">
           <Icon :name="getTimelineIcon(index)" class="timeline-icon" />
         </div>
@@ -12,7 +13,6 @@
           <p class="event-description">{{ event.description }}</p>
         </div>
       </div>
-      <div class="timeline-line"></div>
     </div>
   </section>
 </template>

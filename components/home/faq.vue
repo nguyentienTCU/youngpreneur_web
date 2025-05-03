@@ -1,6 +1,6 @@
 <template>
   <div class="faq-section py-12 sm:py-24">
-    <div class="max-w-7xl mx-auto px-4 md:px-8">
+    <div class="max-w-7xl mx-auto px-4 md:px-8" data-aos="fade-down" >
       <h2 class="text-center text-xl sm:text-4xl mb-6 sm:mb-16 font-semibold section-title text-black">
         {{ t("faq.title") }}
       </h2>

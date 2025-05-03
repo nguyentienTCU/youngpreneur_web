@@ -74,31 +74,35 @@
     "description": "Các cố vấn của chúng tôi là những doanh nhân và lãnh đạo ngành có kinh nghiệm, luôn tận tâm giúp bạn thành công.",
     "mentor1": {
       "id": "1",
-      "name": "Michael Chen",
-      "role": "Doanh nhân công nghệ",
-      "image": "/app.png",
-      "description": "Doanh nhân kỳ cựu với 3 lần thoái vốn thành công"
+      "name": "Bùi Đình trí",
+      "role": "Head Mentor",
+      "image": "/TriBui.png",
+      "description1": "Đại học Macalester College",
+      "description2": "Hoa Kỳ"
     },
     "mentor2": {
       "id": "2",
-      "name": "Lisa Rodriguez",
-      "role": "Chiến lược gia kinh doanh",
-      "image": "/Thumbnail.png",
-      "description": "Hơn 20 năm kinh nghiệm trong phát triển kinh doanh"
+      "name": "Nguyễn Tuệ Anh",
+      "role": "Co-mentor",
+      "image": "/TueAnh.png",
+      "description1": "Đại học Kinh tế - ĐHQGHN",
+      "description2": "Đại học Ngoại Ngữ - ĐHQGHN"
     },
     "mentor3": {
       "id": "3",
-      "name": "David Kim",
-      "role": "Chuyên gia đầu tư",
-      "image": "/app.png",
-      "description": "Nhà đầu tư mạo hiểm chuyên về các startup giai đoạn đầu"
+      "name": "Nguyễn Chi Lan",
+      "role": "Assisting Mentor",
+      "image": "/LanNguyen.png",
+      "description1": "Tập đoàn McKinsey",
+      "description2": "Đại học Kinh tế Quốc dân"
     },
     "mentor4": {
       "id": "4",
-      "name": "Emma Wilson",
-      "role": "Chuyên gia tiếp thị",
-      "image": "/Thumbnail.png",
-      "description": "Chuyên gia tiếp thị với hơn 15 năm kinh nghiệm"
+      "name": "Bùi Ngân Hà Nhi",
+      "role": "Assisting Mentor",
+      "image": "/NhiBui.png",
+      "description1": "Đại học Oberlin",
+      "description2": "Hoa Kỳ"
     }
   },
   "mentee": {

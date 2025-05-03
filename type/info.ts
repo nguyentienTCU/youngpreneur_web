@@ -18,7 +18,8 @@ export type Item = {
   name: string;
   role: string;
   image: string;
-  description: string;
+  description1: string;
+  description2: string;
 };
 
 export type Events = {

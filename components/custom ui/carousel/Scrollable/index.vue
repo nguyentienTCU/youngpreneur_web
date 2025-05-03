@@ -7,7 +7,10 @@
                         class="w-20 sm:w-24 h-20 sm:h-24 rounded-full mx-auto mb-3 sm:mb-4 object-cover avatar">
                     <h3 class="mentor-name">{{ item.name }}</h3>
                     <p class="mentor-role">{{ item.role }}</p>
-                    <p class="mentor-description">{{ item.description }}</p>
+                    <div>
+                    <p class="mentor-description">{{ item.description1 }}</p>
+                    <p class="mentor-description">{{ item.description2 }}</p>
+                    </div>
                     <!-- Additional content space -->
                     <div class="flex-1 flex flex-col justify-end">
                         <div class="text-xs sm:text-sm text-gray-500 text-center">
@@ -64,6 +67,13 @@ const currentSlide = ref(0)
     background: linear-gradient(135deg, #FFF4E5 0%, #FFFFFF 100%);
     border-radius: 1rem;
     padding: 0.875rem;
+
+    @media(min-width: 1280px){
+        min-width: 360px;
+    }
+    @media(max-width: 1279px){
+        min-width: 300px;
+    }
 
     @media (min-width: 640px) {
         padding: 1.25rem;
@@ -189,13 +199,20 @@ const currentSlide = ref(0)
 .mentor-description {
     color: #4B5563;
     text-align: center;
-    margin-bottom: 1rem;
+    margin-bottom: 0.3rem;
     font-size: 0.875rem;
 
     @media (min-width: 640px) {
         font-size: 1rem;
     }
-
     line-height: 1.6;
+}
+
+.mentor-description-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
 }
 </style>

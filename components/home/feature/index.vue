@@ -1,6 +1,6 @@
 <template>
   <div class=" py-12 sm:py-24">
-    <div class="max-w-7xl mx-auto px-4 md:px-8 ">
+    <div data-aos="fade-in" class="max-w-7xl mx-auto px-4 md:px-8">
       <h2 class="text-center text-xl sm:text-4xl mb-6 sm:mb-16 font-semibold section-title">
         {{ t('feature.title') }}
       </h2>

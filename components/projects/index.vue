@@ -1,6 +1,6 @@
 <template>
   <section class="py-20">
-    <div class="container mx-auto px-4">
+    <div class="container mx-auto px-4" data-aos="fade-out">
       <h2 class="text-xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 section-title">{{ t('projects.title') }}</h2>
 
       <!-- Category Filter -->

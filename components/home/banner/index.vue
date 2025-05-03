@@ -1,5 +1,5 @@
 <template>
-  <div class="relative w-full aspect-[12/9] sm:aspect-[16/9] overflow-hidden border-b border-slate-200 no-padding-md-range ">
+  <div class="relative w-full aspect-[13/9] sm:aspect-[16/9] overflow-hidden border-b border-slate-200 no-padding-md-range ">
     <div class="flex sm:w-full h-full pointer-events-none">
       <InspiraSpline :scene="sceneUrl" class="sm:w-full sm:h-full sm:mt-12" />
     </div>

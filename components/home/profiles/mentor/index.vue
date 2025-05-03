@@ -21,28 +21,32 @@ const mentors = computed<Item[]>(() => [
         name: t('mentor.mentor1.name'),
         role: t('mentor.mentor1.role'),
         image: t('mentor.mentor1.image'),
-        description: t('mentor.mentor1.description')
+        description1: t('mentor.mentor1.description1'),
+        description2: t('mentor.mentor1.description2')
     },
     {
         id: parseInt(t('mentor.mentor2.id')),
         name: t('mentor.mentor2.name'),
         role: t('mentor.mentor2.role'),
         image: t('mentor.mentor2.image'),
-        description: t('mentor.mentor2.description')
+        description1: t('mentor.mentor2.description1'),
+        description2: t('mentor.mentor2.description2')
     },
     {
         id: parseInt(t('mentor.mentor3.id')),
         name: t('mentor.mentor3.name'),
         role: t('mentor.mentor3.role'),
         image: t('mentor.mentor3.image'),
-        description: t('mentor.mentor3.description')
+        description1: t('mentor.mentor3.description1'),
+        description2: t('mentor.mentor3.description2')
     },
     {
         id: parseInt(t('mentor.mentor4.id')),
         name: t('mentor.mentor4.name'),
         role: t('mentor.mentor4.role'),
         image: t('mentor.mentor4.image'),
-        description: t('mentor.mentor4.description')
+        description1: t('mentor.mentor4.description1'),
+        description2: t('mentor.mentor4.description2')
     }
 ]);
 </script>

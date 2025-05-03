@@ -74,31 +74,35 @@
     "description": "Our mentors are experienced entrepreneurs and industry leaders who are dedicated to helping you succeed.",
     "mentor1": {
       "id": "1",
-      "name": "Dr. Michael Chen",
-      "role": "Tech Entrepreneur",
-      "image": "/app.png",
-      "description": "Serial entrepreneur with 3 successful exits"
+      "name": "Bùi Đình trí",
+      "role": "Head Mentor",
+      "image": "/TriBui.png",
+      "description1": "Macalester College",
+      "description2": "United States"
     },
     "mentor2": {
       "id": "2",
-      "name": "Lisa Rodriguez",
-      "role": "Business Strategist",
-      "image": "/Thumbnail.png",
-      "description": "20+ years of experience in business development"
+      "name": "Nguyễn Tuệ Anh",
+      "role": "Co-mentor",
+      "image": "/TueAnh.png",
+      "description1": "University of Economics and Business - Vietnam National University, Hanoi",
+      "description2": "University of Languages and International Studies – Vietnam National University, Hanoi"
     },
     "mentor3": {
       "id": "3",
-      "name": "David Kim",
-      "role": "Investment Expert",
-      "image": "/app.png",
-      "description": "Venture capitalist specializing in early-stage startups"
+      "name": "Nguyễn Chi Lan",
+      "role": "Assisting Mentor",
+      "image": "/LanNguyen.png",
+      "description1": "McKinsey & Company",
+      "description2": "Vietnam National Economics University"
     },
     "mentor4": {
       "id": "4",
-      "name": "Emma Wilson",
-      "role": "Marketing Guru",
-      "image": "/Thumbnail.png",
-      "description": "Digital marketing expert with global brand experience"
+      "name": "Bùi Ngân Hà Nhi",
+      "role": "Assisting Mentor",
+      "image": "/NhiBui.png",
+      "description1": "Oberlin College",
+      "description2": "United States"
     }
   },
   "mentee": {

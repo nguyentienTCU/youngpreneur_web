@@ -1,7 +1,7 @@
 <template>
   <section
     class="relative min-h-[60vh] md:h-[80vh] flex items-center justify-center text-black bg-gradient-to-r from-flame to-golden px-4">
-    <div class="container mx-auto px-4 text-center">
+    <div class="container mx-auto px-4 text-center" data-aos="fade-left">
       <h1 class="text-3xl md:text-5xl font-bold mb-4 md:mb-6">{{ t('home.title') }}</h1>
       <p class="text-base md:text-xl mb-6 md:mb-8 max-w-2xl mx-auto">{{ t('home.description') }}</p>
       <div class="flex flex-col sm:flex-row justify-center items-center gap-4 sm:space-x-4">

@@ -1,11 +1,11 @@
 <template>
-  <div>
-    <TimelineHero />
+  <section>
+      <TimelineHero />
     <!-- Timeline Content -->
     <Timeline />
 
     <!-- CTA Section -->
-    <section class="py-20">
+    <div class="py-20" data-aos="fade-up">
       <div class="container mx-auto px-4 text-center">
         <h2 class="text-xl md:text-3xl font-bold mb-4 md:mb-6">{{ t("timeline.joinProgramTitle") }}</h2>
         <p class="text-base md:text-xl text-gray-600 mb-6 md:mb-8">{{ t("timeline.joinProgramDescription") }}</p>
@@ -16,8 +16,8 @@
           </button>
         </NuxtLink>
       </div>
-    </section>
-  </div>
+    </div>
+  </section>
 </template>
 
 <script setup>
