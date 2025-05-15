@@ -1,6 +1,6 @@
 <template>
   <div>
-    <!-- Home Hero (Header) -->
+    <!-- Home Hero (Image) -->
     <HomeHero />
 
     <!-- Main Content with Warm Background -->
@@ -9,7 +9,6 @@
       <Testimonials />
       <ProfilesSection />
       <ProjectsSection />
-      <BlogSection />
     </div>
     <FAQSection />
   </div>
@@ -21,7 +20,6 @@ import Intro from '../components/home/feature/index.vue';
 import Testimonials from '../components/testimonials/index.vue';
 import ProfilesSection from '../components/home/profiles/index.vue';
 import ProjectsSection from '../components/projects/index.vue';
-import BlogSection from '../components/blog/index.vue';
 import FAQSection from '~/components/home/faq.vue';
 import { useI18n } from '#imports';
 

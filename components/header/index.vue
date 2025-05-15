@@ -59,20 +59,12 @@ const navItems = computed(() => [
     name: t('header.services'),
   },
   {
-    path: "/profiles",
-    name: t('header.profiles'),
-  },
-  {
     path: "/projects",
     name: t('header.projects'),
   },
   {
     path: "/apply",
     name: t('header.apply'),
-  },
-  {
-    path: "/blog",
-    name: t('header.blog'),
   },
 ]);
 

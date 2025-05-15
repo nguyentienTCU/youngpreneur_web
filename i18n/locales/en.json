@@ -332,34 +332,38 @@
     "project1": {
       "id": "1",
       "title": "Improving the School Canteen Sales System",
-      "description": "The team analyzed the current operations of the school canteen and proposed a digital payment solution to reduce wait times and improve the student experience.",
-      "image": "/Thumbnail.png",
+      "description": "The team explored how long wait times were affecting students during lunch breaks. After surveying over 100 students, they proposed a digital pre-order and payment system that could cut average wait times by nearly 40%.",
+      "image": "/CanteenSalesSystem.png",
       "team": "School Innovation",
-      "category": "Business Case"
+      "category": "Business Case",
+      "skills": "Market research, process design, digital prototyping"
     },
     "project2": {
       "id": "2",
       "title": "Friendly Study Reminder App",
-      "description": "In a 48-hour hackathon, the team designed a prototype of an app that lets students set study reminders and notes through a simple, user-friendly interface.",
-      "image": "/Thumbnail.png",
+      "description": "During a 48-hour hackathon, this team created a mobile app prototype that lets students set study reminders, organize notes, and stay on track with school deadlines. The interface was built to be simple and stress-free for everyday use.",
+      "image": "/StudyReminderApp.png",
       "team": "Code & Learn",
-      "category": "Hackathon"
+      "category": "Hackathon",
+      "skills": "UX design, mobile app prototyping, time management analysis"
     },
     "project3": {
       "id": "3",
       "title": "Used Textbook Sharing Platform",
-      "description": "The team pitched a nonprofit startup model that enables students to exchange or donate used textbooks via a simple online platform.",
-      "image": "/Thumbnail.png",
+      "description": "The team pitched a nonprofit startup idea that allows students to donate or exchange textbooks through a peer-to-peer web platform. The model focused on accessibility and reducing educational waste, especially at the end of each semester.",
+      "image": "/TextbookSharing.png",
       "team": "Startup For Good",
-      "category": "Startup Pitch"
+      "category": "Startup Pitch",
+      "skills": "Social entrepreneurship, wireframing, platform strategy"
     },
     "project4": {
       "id": "4",
       "title": "Optimizing Club Activity Planning",
-      "description": "This project used survey data analysis to help student clubs create more engaging plans and improve overall participation rates.",
-      "image": "/Thumbnail.png",
+      "description": "By analyzing feedback from 10 different school clubs, this project helped student leaders design more engaging events and boost attendance. Their insights led to a sample calendar template now being tested by several club heads.",
+      "image": "/ActivityPlanning.png",
       "team": "Future Leaders",
-      "category": "Business Case"
+      "category": "Business Case",
+      "skills": "Survey design, data analysis, leadership planning"
     }
   },
   "blog": {

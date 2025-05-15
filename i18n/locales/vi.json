@@ -332,34 +332,38 @@
     "project1": {
       "id": "1",
       "title": "Cải tiến Hệ thống Bán Hàng tại Căn-tin",
-      "description": "Nhóm phân tích quy trình vận hành hiện tại tại căn-tin trường và đề xuất hệ thống thanh toán số giúp giảm thời gian chờ và tăng trải nghiệm người dùng.",
-      "image": "/Thumbnail.png",
+      "description": "Nhóm đã khảo sát ảnh hưởng của thời gian chờ đợi tại căng tin trường đến học sinh trong giờ nghỉ trưa. Sau khi khảo sát hơn 100 học sinh, họ đề xuất một hệ thống đặt hàng và thanh toán kỹ thuật số có thể giảm thời gian chờ trung bình gần 40%.",
+      "image": "/CanteenSalesSystem.png",
       "team": "School Innovation",
-      "category": "Business Case"
+      "category": "Business Case",
+      "skills": "Nghiên cứu thị trường, thiết kế quy trình, tạo mẫu kỹ thuật số"
     },
     "project2": {
       "id": "2",
       "title": "Ứng dụng Nhắc Nhở Học Tập Thân thiện",
-      "description": "Trong 48 giờ hackathon, nhóm thiết kế prototype ứng dụng giúp học sinh tự đặt nhắc nhở và ghi chú việc học qua giao diện đơn giản, dễ dùng.",
-      "image": "/Thumbnail.png",
+      "description": "Trong một cuộc thi hackathon kéo dài 48 giờ, nhóm này đã tạo ra một nguyên mẫu ứng dụng di động cho phép học sinh đặt lời nhắc học tập, sắp xếp ghi chú và theo dõi các hạn chót của trường. Giao diện được xây dựng đơn giản và dễ sử dụng hàng ngày.",
+      "image": "/StudyReminderApp.png",
       "team": "Code & Learn",
-      "category": "Hackathon"
+      "category": "Hackathon",
+      "skills": "Thiết kế UX, tạo mẫu ứng dụng di động, phân tích quản lý thời gian"
     },
     "project3": {
       "id": "3",
       "title": "Giải pháp Chia sẻ Sách cũ giữa các học sinh",
-      "description": "Nhóm trình bày mô hình khởi nghiệp phi lợi nhuận giúp học sinh chia sẻ hoặc đổi sách giáo khoa cũ trong trường qua nền tảng online đơn giản.",
-      "image": "/Thumbnail.png",
+      "description": "Nhóm đã trình bày ý tưởng khởi nghiệp phi lợi nhuận cho phép học sinh quyên góp hoặc trao đổi sách giáo khoa thông qua nền tảng web ngang hàng. Mô hình tập trung vào khả năng tiếp cận và giảm lãng phí giáo dục, đặc biệt vào cuối mỗi học kỳ.",
+      "image": "/TextbookSharing.png",
       "team": "Startup For Good",
-      "category": "Startup Pitch"
+      "category": "Startup Pitch",
+      "skills": "Khởi nghiệp xã hội, wireframing, chiến lược nền tảng"
     },
     "project4": {
       "id": "4",
       "title": "Tối ưu Kế hoạch CLB ngoại khóa",
-      "description": "Giải pháp phân tích dữ liệu khảo sát học sinh để thiết kế kế hoạch hoạt động CLB phù hợp và tăng tỷ lệ tham gia.",
-      "image": "/Thumbnail.png",
+      "description": "Bằng cách phân tích phản hồi từ 10 câu lạc bộ khác nhau của trường, dự án này đã giúp các lãnh đạo học sinh thiết kế các sự kiện hấp dẫn hơn và tăng cường sự tham dự. Những hiểu biết của họ đã dẫn đến một mẫu lịch mẫu hiện đang được thử nghiệm bởi một số trưởng câu lạc bộ.",
+      "image": "/ActivityPlanning.png",
       "team": "Future Leaders",
-      "category": "Business Case"
+      "category": "Business Case",
+      "skills": "Survey design, data analysis, leadership planning"
     }
   },
   "blog": {

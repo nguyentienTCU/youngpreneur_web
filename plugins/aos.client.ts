@@ -5,7 +5,6 @@ export default defineNuxtPlugin((nuxtApp) => {
 
     AOS.init({
       once: false,
-      disable: "mobile",
       easing: 'ease-out-cubic',
       duration: 600
     });
