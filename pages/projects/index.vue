@@ -1,9 +1,9 @@
 <template>
-  <ProjectsSection />
+  <ProjectsSection :darkMode="true" />
 </template>
 
 <script setup lang="ts">
-import ProjectsSection from '../components/projects/index.vue';
+import ProjectsSection from '@/components/projects/index.vue';
 
 useHead({
   meta: [

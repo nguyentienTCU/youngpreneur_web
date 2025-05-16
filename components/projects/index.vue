@@ -1,15 +1,21 @@
 <template>
   <section class="py-20">
-    <div class="container mx-auto px-4" data-aos="fade-out">
-      <h2 class="text-xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 section-title">{{ t('projects.title') }}</h2>
+    <div class="container mx-auto px-4 mt-8" data-aos="fade-out">
+      <h2 :class="[
+        darkMode
+          ? 'text-2xl sm:text-4xl font-bold text-center mb-8 sm:mb-12 section-title section-title-dark no-underline-title'
+          : 'text-xl sm:text-3xl font-bold text-center mb-8 sm:mb-12 section-title'
+      ]">
+        {{ t('projects.title') }}
+      </h2>
 
       <!-- Category Filter -->
       <div class="flex flex-wrap justify-center gap-4 mb-8 sm:mb-12">
         <button v-if="locale === 'en'" v-for="category in categories" :key="category.en"
           class="text-sm sm:text-base px-3 sm:px-4 py-1.5 sm:py-2 rounded-full transition-all duration-300" :class="[
             selectedCategory === category.en
-              ? 'bg-flame text-white'
-              : 'border-2 border-flame text-flame hover:bg-golden-hover'
+              ? (darkMode ? 'bg-black text-white' : 'bg-flame text-white')
+              : (darkMode ? 'border-2 border-black text-black hover:bg-gray-200' : 'border-2 border-flame text-flame hover:bg-golden-hover')
           ]" @click="selectedCategory = category.en">
           {{ category.en }}
         </button>
@@ -17,8 +23,8 @@
         <button v-if="locale === 'vi'" v-for="category in categories" :key="category.en"
           class="text-sm sm:text-base px-3 sm:px-4 py-1.5 sm:py-2 rounded-full transition-all duration-300" :class="[
             selectedCategory === category.en
-              ? 'bg-flame text-white'
-              : 'border-2 border-flame text-flame hover:bg-golden-hover'
+              ? (darkMode ? 'bg-black text-white' : 'bg-flame text-white')
+              : (darkMode ? 'border-2 border-black text-black hover:bg-gray-200' : 'border-2 border-flame text-flame hover:bg-golden-hover')
           ]" @click="selectedCategory = category.en">
           {{ category.vi }}
         </button>
@@ -30,9 +36,10 @@
       </div>
 
       <!-- View More Button -->
-      <div class="text-right mt-8">
-        <NuxtLink to="/projects"
-          class="inline-block transparent-btn px-6 py-3 rounded-md transition-all duration-300 hover:scale-105">
+      <div v-if="!darkMode" class="text-right mt-8">
+        <NuxtLink to="/projects" :class="[
+          'inline-block transparent-btn px-6 py-3 rounded-md transition-all duration-300 hover:scale-105'
+        ]">
           {{ t('projects.button1') }}
         </NuxtLink>
       </div>
@@ -46,6 +53,9 @@ import { ref, computed } from 'vue';
 import { useI18n } from '#imports';
 
 import type { Projects } from '~/type/info';
+
+const props = defineProps<{ darkMode?: boolean }>();
+const darkMode = props.darkMode ?? false;
 
 const { t, locale } = useI18n();
 
@@ -122,6 +132,17 @@ const filteredProjects = computed(() => {
   background: linear-gradient(90deg, #e74c3c 0%, #ff6b4a 100%);
   border-radius: 2px;
   box-shadow: 0 0 10px rgba(255, 107, 74, 0.3);
+}
+
+.section-title-dark {
+  background: none !important;
+  -webkit-text-fill-color: black !important;
+  color: black !important;
+  text-shadow: none !important;
+}
+
+.no-underline-title.section-title::after {
+  display: none !important;
 }
 
 .bg-flame {

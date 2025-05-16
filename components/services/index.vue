@@ -5,7 +5,9 @@
                 <h1 class="text-2xl md:text-4xl font-bold mb-6 text-black">{{ t('services.title') }}</h1>
             </div>
 
-            <ServiceItem v-for="service in services" :key="service.id" :service="service" />
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 px-4 max-w-6xl mx-auto">
+                <ServiceItem v-for="service in services" :key="service.id" :service="service" />
+            </div>
 
             <div class="global-action-buttons">
                 <a href="https://www.facebook.com/profile.php?id=61574975645471" target="_blank" class="no-underline">
